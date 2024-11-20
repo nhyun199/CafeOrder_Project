@@ -114,7 +114,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Middlewares/Third_Party/LwIP/system/arch/sys_arch.h \
  ../LWIP/Target/ethernetif.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h \
- ../USB_HOST/App/usb_host.h ../Core/Inc/tcp_echo_server.h
+ ../USB_HOST/App/usb_host.h ../Core/Inc/tcp_echo_server.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/inet.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h \
+ ../Middlewares/Third_Party/LwIP/src/include/lwip/netdb.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -237,3 +241,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h:
 ../USB_HOST/App/usb_host.h:
 ../Core/Inc/tcp_echo_server.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/inet.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/errno.h:
+../Middlewares/Third_Party/LwIP/src/include/lwip/netdb.h:

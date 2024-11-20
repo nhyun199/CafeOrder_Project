@@ -41,12 +41,12 @@
 #endif /* WITH_RTOS */
 
 /* USER CODE BEGIN 0 */
-
+extern struct netif gnetif;
 /* USER CODE END 0 */
 
 /* Global Variables ----------------------------------------------------------*/
 extern ETH_HandleTypeDef heth;
-extern struct netif gnetif;
+
 /* LWIP init function */
 void MX_LWIP_Init(void);
 

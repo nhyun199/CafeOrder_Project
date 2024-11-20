@@ -27,10 +27,10 @@
 ../Core/Src/stm32f7xx_hal_msp.c:1294:6:HAL_TIM_Base_MspDeInit	6
 ../Core/Src/stm32f7xx_hal_msp.c:1360:6:HAL_TIM_PWM_MspDeInit	2
 ../Core/Src/stm32f7xx_hal_msp.c:1382:6:HAL_UART_MspInit	5
-../Core/Src/stm32f7xx_hal_msp.c:1471:6:HAL_UART_MspDeInit	3
-../Core/Src/stm32f7xx_hal_msp.c:1516:13:HAL_FMC_MspInit	2
-../Core/Src/stm32f7xx_hal_msp.c:1622:6:HAL_SDRAM_MspInit	1
-../Core/Src/stm32f7xx_hal_msp.c:1634:13:HAL_FMC_MspDeInit	2
-../Core/Src/stm32f7xx_hal_msp.c:1708:6:HAL_SDRAM_MspDeInit	1
-../Core/Src/stm32f7xx_hal_msp.c:1720:6:HAL_SAI_MspInit	5
-../Core/Src/stm32f7xx_hal_msp.c:1770:6:HAL_SAI_MspDeInit	5
+../Core/Src/stm32f7xx_hal_msp.c:1477:6:HAL_UART_MspDeInit	3
+../Core/Src/stm32f7xx_hal_msp.c:1526:13:HAL_FMC_MspInit	2
+../Core/Src/stm32f7xx_hal_msp.c:1632:6:HAL_SDRAM_MspInit	1
+../Core/Src/stm32f7xx_hal_msp.c:1644:13:HAL_FMC_MspDeInit	2
+../Core/Src/stm32f7xx_hal_msp.c:1718:6:HAL_SDRAM_MspDeInit	1
+../Core/Src/stm32f7xx_hal_msp.c:1730:6:HAL_SAI_MspInit	5
+../Core/Src/stm32f7xx_hal_msp.c:1780:6:HAL_SAI_MspDeInit	5

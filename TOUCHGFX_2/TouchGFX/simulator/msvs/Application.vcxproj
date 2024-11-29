@@ -20,10 +20,16 @@
     <ClCompile Include="..\..\gui\src\common\FrontendApplication.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\common\FrontendApplicationBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen_screen\screenPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\screen_screen\screenView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen_screen\screenViewBase.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
+    <ClCompile Include="..\..\gui\src\intro_screen\INTROPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\intro_screen\INTROView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\intro_screen\INTROViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\main_screen\MAINPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\main_screen\MAINView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\main_screen\MAINViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\order_screen\ORDERPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\order_screen\ORDERView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\order_screen\ORDERViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -172,11 +178,17 @@
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\MJPEGDecoder.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\model\Model.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen_screen\screenPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\screen_screen\screenView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_screen\screenViewBase.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\intro_screen\INTROPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\intro_screen\INTROView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\intro_screen\INTROViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\main_screen\MAINPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\main_screen\MAINView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\main_screen\MAINViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\order_screen\ORDERPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\order_screen\ORDERView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\order_screen\ORDERViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

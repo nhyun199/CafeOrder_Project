@@ -16,14 +16,34 @@ struct Typography
     static const touchgfx::FontId DEFAULT = 0;
     static const touchgfx::FontId LARGE = 1;
     static const touchgfx::FontId SMALL = 2;
+    static const touchgfx::FontId NOTO_EX_BOLD_10 = 3;
+    static const touchgfx::FontId NOTO_EX_BOLD_10_AUTO_GENERATED_FOR_GB = 4;
+    static const touchgfx::FontId NOTO_EX_BOLD_15 = 5;
+    static const touchgfx::FontId NOTO_EX_BOLD_15_AUTO_GENERATED_FOR_GB = 6;
+    static const touchgfx::FontId PRETENDARD_10 = 7;
+    static const touchgfx::FontId PRETENDARD_10_AUTO_GENERATED_FOR_GB = 8;
+    static const touchgfx::FontId PRETENDARD_13 = 9;
+    static const touchgfx::FontId PRETENDARD_13_AUTO_GENERATED_FOR_GB = 10;
+    static const touchgfx::FontId HAKGYOANSIM_10 = 11;
+    static const touchgfx::FontId HAKGYOANSIM_10_AUTO_GENERATED_FOR_GB = 12;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0; // verdana_20_4bpp
-    static const touchgfx::FontId LARGE = 1;   // verdana_40_4bpp
-    static const touchgfx::FontId SMALL = 2;   // verdana_10_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 3;
+    static const touchgfx::FontId DEFAULT = 0;                               // verdana_20_4bpp
+    static const touchgfx::FontId LARGE = 1;                                 // verdana_40_4bpp
+    static const touchgfx::FontId SMALL = 2;                                 // verdana_10_4bpp
+    static const touchgfx::FontId NOTO_EX_BOLD_10 = 3;                       // NotoSansKR_ExtraBold_10_4bpp
+    static const touchgfx::FontId NOTO_EX_BOLD_10_AUTO_GENERATED_FOR_GB = 3; // NotoSansKR_ExtraBold_10_4bpp
+    static const touchgfx::FontId NOTO_EX_BOLD_15 = 4;                       // NotoSansKR_ExtraBold_15_4bpp
+    static const touchgfx::FontId NOTO_EX_BOLD_15_AUTO_GENERATED_FOR_GB = 4; // NotoSansKR_ExtraBold_15_4bpp
+    static const touchgfx::FontId PRETENDARD_10 = 5;                         // Pretendard_ExtraBold_otf_10_4bpp
+    static const touchgfx::FontId PRETENDARD_10_AUTO_GENERATED_FOR_GB = 5;   // Pretendard_ExtraBold_otf_10_4bpp
+    static const touchgfx::FontId PRETENDARD_13 = 6;                         // Pretendard_ExtraBold_otf_13_4bpp
+    static const touchgfx::FontId PRETENDARD_13_AUTO_GENERATED_FOR_GB = 6;   // Pretendard_ExtraBold_otf_13_4bpp
+    static const touchgfx::FontId HAKGYOANSIM_10 = 7;                        // HakgyoansimBareondotumR_otf_10_4bpp
+    static const touchgfx::FontId HAKGYOANSIM_10_AUTO_GENERATED_FOR_GB = 7;  // HakgyoansimBareondotumR_otf_10_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 8;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

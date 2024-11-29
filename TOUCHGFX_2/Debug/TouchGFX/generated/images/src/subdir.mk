@@ -7,17 +7,74 @@
 CPP_SRCS += \
 ../TouchGFX/generated/images/src/BitmapDatabase.cpp \
 ../TouchGFX/generated/images/src/SVGDatabase.cpp \
-../TouchGFX/generated/images/src/image_Americano.cpp 
+../TouchGFX/generated/images/src/image_americano_100100.cpp \
+../TouchGFX/generated/images/src/image_back_2020.cpp \
+../TouchGFX/generated/images/src/image_basket_40-48-60.cpp \
+../TouchGFX/generated/images/src/image_basket_40-48.cpp \
+../TouchGFX/generated/images/src/image_bi_logo1_100-50.cpp \
+../TouchGFX/generated/images/src/image_bi_logo3_200-100.cpp \
+../TouchGFX/generated/images/src/image_cube_latte_100100.cpp \
+../TouchGFX/generated/images/src/image_indicator1010.cpp \
+../TouchGFX/generated/images/src/image_indicator_highlight1010.cpp \
+../TouchGFX/generated/images/src/image_kakaoEvent250250.cpp \
+../TouchGFX/generated/images/src/image_main_40-48-60.cpp \
+../TouchGFX/generated/images/src/image_main_40-48.cpp \
+../TouchGFX/generated/images/src/image_order_40-48-60.cpp \
+../TouchGFX/generated/images/src/image_order_40-48.cpp \
+../TouchGFX/generated/images/src/image_pay5050.cpp \
+../TouchGFX/generated/images/src/image_profile_40-48-60.cpp \
+../TouchGFX/generated/images/src/image_profile_40-48.cpp \
+../TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.cpp \
+../TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.cpp \
+../TouchGFX/generated/images/src/image_strawberry_latte_100100.cpp 
 
 OBJS += \
 ./TouchGFX/generated/images/src/BitmapDatabase.o \
 ./TouchGFX/generated/images/src/SVGDatabase.o \
-./TouchGFX/generated/images/src/image_Americano.o 
+./TouchGFX/generated/images/src/image_americano_100100.o \
+./TouchGFX/generated/images/src/image_back_2020.o \
+./TouchGFX/generated/images/src/image_basket_40-48-60.o \
+./TouchGFX/generated/images/src/image_basket_40-48.o \
+./TouchGFX/generated/images/src/image_bi_logo1_100-50.o \
+./TouchGFX/generated/images/src/image_bi_logo3_200-100.o \
+./TouchGFX/generated/images/src/image_cube_latte_100100.o \
+./TouchGFX/generated/images/src/image_indicator1010.o \
+./TouchGFX/generated/images/src/image_indicator_highlight1010.o \
+./TouchGFX/generated/images/src/image_kakaoEvent250250.o \
+./TouchGFX/generated/images/src/image_main_40-48-60.o \
+./TouchGFX/generated/images/src/image_main_40-48.o \
+./TouchGFX/generated/images/src/image_order_40-48-60.o \
+./TouchGFX/generated/images/src/image_order_40-48.o \
+./TouchGFX/generated/images/src/image_pay5050.o \
+./TouchGFX/generated/images/src/image_profile_40-48-60.o \
+./TouchGFX/generated/images/src/image_profile_40-48.o \
+./TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.o \
+./TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.o \
+./TouchGFX/generated/images/src/image_strawberry_latte_100100.o 
 
 CPP_DEPS += \
 ./TouchGFX/generated/images/src/BitmapDatabase.d \
 ./TouchGFX/generated/images/src/SVGDatabase.d \
-./TouchGFX/generated/images/src/image_Americano.d 
+./TouchGFX/generated/images/src/image_americano_100100.d \
+./TouchGFX/generated/images/src/image_back_2020.d \
+./TouchGFX/generated/images/src/image_basket_40-48-60.d \
+./TouchGFX/generated/images/src/image_basket_40-48.d \
+./TouchGFX/generated/images/src/image_bi_logo1_100-50.d \
+./TouchGFX/generated/images/src/image_bi_logo3_200-100.d \
+./TouchGFX/generated/images/src/image_cube_latte_100100.d \
+./TouchGFX/generated/images/src/image_indicator1010.d \
+./TouchGFX/generated/images/src/image_indicator_highlight1010.d \
+./TouchGFX/generated/images/src/image_kakaoEvent250250.d \
+./TouchGFX/generated/images/src/image_main_40-48-60.d \
+./TouchGFX/generated/images/src/image_main_40-48.d \
+./TouchGFX/generated/images/src/image_order_40-48-60.d \
+./TouchGFX/generated/images/src/image_order_40-48.d \
+./TouchGFX/generated/images/src/image_pay5050.d \
+./TouchGFX/generated/images/src/image_profile_40-48-60.d \
+./TouchGFX/generated/images/src/image_profile_40-48.d \
+./TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.d \
+./TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.d \
+./TouchGFX/generated/images/src/image_strawberry_latte_100100.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +84,7 @@ TouchGFX/generated/images/src/%.o TouchGFX/generated/images/src/%.su TouchGFX/ge
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src
 
 clean-TouchGFX-2f-generated-2f-images-2f-src:
-	-$(RM) ./TouchGFX/generated/images/src/BitmapDatabase.cyclo ./TouchGFX/generated/images/src/BitmapDatabase.d ./TouchGFX/generated/images/src/BitmapDatabase.o ./TouchGFX/generated/images/src/BitmapDatabase.su ./TouchGFX/generated/images/src/SVGDatabase.cyclo ./TouchGFX/generated/images/src/SVGDatabase.d ./TouchGFX/generated/images/src/SVGDatabase.o ./TouchGFX/generated/images/src/SVGDatabase.su ./TouchGFX/generated/images/src/image_Americano.cyclo ./TouchGFX/generated/images/src/image_Americano.d ./TouchGFX/generated/images/src/image_Americano.o ./TouchGFX/generated/images/src/image_Americano.su
+	-$(RM) ./TouchGFX/generated/images/src/BitmapDatabase.cyclo ./TouchGFX/generated/images/src/BitmapDatabase.d ./TouchGFX/generated/images/src/BitmapDatabase.o ./TouchGFX/generated/images/src/BitmapDatabase.su ./TouchGFX/generated/images/src/SVGDatabase.cyclo ./TouchGFX/generated/images/src/SVGDatabase.d ./TouchGFX/generated/images/src/SVGDatabase.o ./TouchGFX/generated/images/src/SVGDatabase.su ./TouchGFX/generated/images/src/image_americano_100100.cyclo ./TouchGFX/generated/images/src/image_americano_100100.d ./TouchGFX/generated/images/src/image_americano_100100.o ./TouchGFX/generated/images/src/image_americano_100100.su ./TouchGFX/generated/images/src/image_back_2020.cyclo ./TouchGFX/generated/images/src/image_back_2020.d ./TouchGFX/generated/images/src/image_back_2020.o ./TouchGFX/generated/images/src/image_back_2020.su ./TouchGFX/generated/images/src/image_basket_40-48-60.cyclo ./TouchGFX/generated/images/src/image_basket_40-48-60.d ./TouchGFX/generated/images/src/image_basket_40-48-60.o ./TouchGFX/generated/images/src/image_basket_40-48-60.su ./TouchGFX/generated/images/src/image_basket_40-48.cyclo ./TouchGFX/generated/images/src/image_basket_40-48.d ./TouchGFX/generated/images/src/image_basket_40-48.o ./TouchGFX/generated/images/src/image_basket_40-48.su ./TouchGFX/generated/images/src/image_bi_logo1_100-50.cyclo ./TouchGFX/generated/images/src/image_bi_logo1_100-50.d ./TouchGFX/generated/images/src/image_bi_logo1_100-50.o ./TouchGFX/generated/images/src/image_bi_logo1_100-50.su ./TouchGFX/generated/images/src/image_bi_logo3_200-100.cyclo ./TouchGFX/generated/images/src/image_bi_logo3_200-100.d ./TouchGFX/generated/images/src/image_bi_logo3_200-100.o ./TouchGFX/generated/images/src/image_bi_logo3_200-100.su ./TouchGFX/generated/images/src/image_cube_latte_100100.cyclo ./TouchGFX/generated/images/src/image_cube_latte_100100.d ./TouchGFX/generated/images/src/image_cube_latte_100100.o ./TouchGFX/generated/images/src/image_cube_latte_100100.su ./TouchGFX/generated/images/src/image_indicator1010.cyclo ./TouchGFX/generated/images/src/image_indicator1010.d ./TouchGFX/generated/images/src/image_indicator1010.o ./TouchGFX/generated/images/src/image_indicator1010.su ./TouchGFX/generated/images/src/image_indicator_highlight1010.cyclo ./TouchGFX/generated/images/src/image_indicator_highlight1010.d ./TouchGFX/generated/images/src/image_indicator_highlight1010.o ./TouchGFX/generated/images/src/image_indicator_highlight1010.su ./TouchGFX/generated/images/src/image_kakaoEvent250250.cyclo ./TouchGFX/generated/images/src/image_kakaoEvent250250.d ./TouchGFX/generated/images/src/image_kakaoEvent250250.o ./TouchGFX/generated/images/src/image_kakaoEvent250250.su ./TouchGFX/generated/images/src/image_main_40-48-60.cyclo ./TouchGFX/generated/images/src/image_main_40-48-60.d ./TouchGFX/generated/images/src/image_main_40-48-60.o ./TouchGFX/generated/images/src/image_main_40-48-60.su ./TouchGFX/generated/images/src/image_main_40-48.cyclo ./TouchGFX/generated/images/src/image_main_40-48.d ./TouchGFX/generated/images/src/image_main_40-48.o ./TouchGFX/generated/images/src/image_main_40-48.su ./TouchGFX/generated/images/src/image_order_40-48-60.cyclo ./TouchGFX/generated/images/src/image_order_40-48-60.d ./TouchGFX/generated/images/src/image_order_40-48-60.o ./TouchGFX/generated/images/src/image_order_40-48-60.su ./TouchGFX/generated/images/src/image_order_40-48.cyclo ./TouchGFX/generated/images/src/image_order_40-48.d ./TouchGFX/generated/images/src/image_order_40-48.o ./TouchGFX/generated/images/src/image_order_40-48.su ./TouchGFX/generated/images/src/image_pay5050.cyclo ./TouchGFX/generated/images/src/image_pay5050.d ./TouchGFX/generated/images/src/image_pay5050.o ./TouchGFX/generated/images/src/image_pay5050.su ./TouchGFX/generated/images/src/image_profile_40-48-60.cyclo ./TouchGFX/generated/images/src/image_profile_40-48-60.d ./TouchGFX/generated/images/src/image_profile_40-48-60.o ./TouchGFX/generated/images/src/image_profile_40-48-60.su ./TouchGFX/generated/images/src/image_profile_40-48.cyclo ./TouchGFX/generated/images/src/image_profile_40-48.d ./TouchGFX/generated/images/src/image_profile_40-48.o ./TouchGFX/generated/images/src/image_profile_40-48.su ./TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.cyclo ./TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.d ./TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.o ./TouchGFX/generated/images/src/image_santa_coconut_appletea_latte_100100.su ./TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.cyclo ./TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.d ./TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.o ./TouchGFX/generated/images/src/image_strawberry_cookie_frappe_100100.su ./TouchGFX/generated/images/src/image_strawberry_latte_100100.cyclo ./TouchGFX/generated/images/src/image_strawberry_latte_100100.d ./TouchGFX/generated/images/src/image_strawberry_latte_100100.o ./TouchGFX/generated/images/src/image_strawberry_latte_100100.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src
 

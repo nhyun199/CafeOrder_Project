@@ -123,6 +123,11 @@ int _write(int file, char *ptr, int len)
   HAL_UART_Transmit(&huart1, (uint8_t*)ptr, len, HAL_MAX_DELAY);
   return len;
 }
+
+void ButtonClickTest()
+{
+  printf("Button Clicked !!!!\r\n");
+}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -1568,7 +1573,7 @@ void StartDefaultTask(void const * argument)
   MX_LWIP_Init();
   /* USER CODE BEGIN 5 */
   //MX_TouchGFX_Process();
-  printf("TEST TEXT\r\n");
+  printf("Default Task Start\r\n");
   /* Infinite loop */
   for(;;)
   {
@@ -1588,6 +1593,7 @@ void StartDefaultTask(void const * argument)
 __weak void TouchGFX_Task(void const * argument)
 {
   /* USER CODE BEGIN TouchGFX_Task */
+  printf("TouchGFX Task Start\r\n");
   /* Infinite loop */
   for(;;)
   {
@@ -1608,9 +1614,9 @@ void StartEchoServerTask(void const * argument)
   /* USER CODE BEGIN StartEchoServerTask */
   printf("Starting Echo Server Task...\r\n");
 
-
-  while (gnetif.ip_addr.addr == 0) {
-    printf("Waiting for IP address...\r\n");
+  printf("Waiting for IP address...\r\n");
+  while (gnetif.ip_addr.addr == 0)
+  {
     osDelay(500);
   }
 

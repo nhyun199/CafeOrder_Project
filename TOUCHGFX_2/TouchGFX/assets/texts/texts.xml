@@ -6,8 +6,29 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_7Y6B" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">test text</Translation>
+      <Text Id="__SingleUse_T6JZ" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">큐브라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_MEAM" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">딸기쿠키프라페</Translation>
+      </Text>
+      <Text Id="__SingleUse_NDFL" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">딸기라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_C70E" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">산타 코코넛&#10;애플티 라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_DREI" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB">메가리카노</Translation>
+      </Text>
+      <Text Id="__SingleUse_0QVJ" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB">주문하기</Translation>
+      </Text>
+      <Text Id="__SingleUse_DOT0" Alignment="Left" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">nhyun 님을 위한 추천 메뉴</Translation>
+      </Text>
+      <Text Id="__SingleUse_8YH5" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">Copyright 2024.nhyun.All rights reserved.</Translation>
       </Text>
     </TextGroup>
   </Texts>
@@ -15,5 +36,20 @@
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Noto_Ex_Bold_10" Font="NotoSansKR-ExtraBold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="NotoSansKR-ExtraBold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    </Typography>
+    <Typography Id="Noto_Ex_Bold_15" Font="NotoSansKR-ExtraBold.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="NotoSansKR-ExtraBold.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    </Typography>
+    <Typography Id="Pretendard_10" Font="Pretendard-ExtraBold.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    </Typography>
+    <Typography Id="Pretendard_13" Font="Pretendard-ExtraBold.otf" Size="13" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="13" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    </Typography>
+    <Typography Id="Hakgyoansim_10" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+      <LanguageSetting Language="GB" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    </Typography>
   </Typographies>
 </TextDatabase>

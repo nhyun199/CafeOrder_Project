@@ -200,14 +200,14 @@ FontFlashSection :
   *(.gnu.linkonce.r.*)
   . = ALIGN(0x4);
 } >FLASH
-
+	
 TextFlashSection :
 {
   *(TextFlashSection TextFlashSection.*)
   *(.gnu.linkonce.r.*)
   . = ALIGN(0x4);
 } >FLASH
-  
+
 ExtFlashSection :
 {
   *(ExtFlashSection ExtFlashSection.*)

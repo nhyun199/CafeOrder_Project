@@ -4,8 +4,292 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="name">
+      <Text Id="menuText0" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">메가리카노</Translation>
+      </Text>
+      <Text Id="menuText1" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">산타 코코넛 애플티 라떼</Translation>
+      </Text>
+      <Text Id="menuText2" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">딸기라떼</Translation>
+      </Text>
+      <Text Id="menuText3" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">딸기쿠키프라페</Translation>
+      </Text>
+      <Text Id="menuText4" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">큐브라떼</Translation>
+      </Text>
+      <Text Id="menuText5" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">(ICE)아메리카노</Translation>
+      </Text>
+      <Text Id="menuText6" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">(HOT)아메리카노</Translation>
+      </Text>
+      <Text Id="menuText7" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">티라미수라떼</Translation>
+      </Text>
+      <Text Id="menuText8" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">카페모카</Translation>
+      </Text>
+      <Text Id="menuText9" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">녹차라떼</Translation>
+      </Text>
+      <Text Id="menuText10" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">오레오초코라떼</Translation>
+      </Text>
+      <Text Id="menuText11" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">곡물라떼</Translation>
+      </Text>
+      <Text Id="menuText12" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">복숭아아이스티</Translation>
+      </Text>
+      <Text Id="menuText13" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">사과유자차</Translation>
+      </Text>
+      <Text Id="menuText14" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">레몬티</Translation>
+      </Text>
+      <Text Id="menuText15" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">자몽티</Translation>
+      </Text>
+      <Text Id="menuText16" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">치즈케익</Translation>
+      </Text>
+      <Text Id="menuText17" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">초코무스 케익</Translation>
+      </Text>
+      <Text Id="menuText18" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">티라미수 케익</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="menu_description" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_VE5H" Alignment="Center" TypographyId="Pretndard_16">
+        <Translation Language="GB">결제하기</Translation>
+      </Text>
+      <Text Id="__SingleUse_UZ4F" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_AQL8" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZZOP" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_PVNP" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_W0QF" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_1US7" Alignment="Right" TypographyId="Pretendard_13">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_CAY7" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_GKR6" Alignment="Right" TypographyId="Pretendard_13">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R6HC" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB">상품금액</Translation>
+      </Text>
+      <Text Id="__SingleUse_X5H3" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O4JP" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_GE53" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_CD45" Alignment="Center" TypographyId="Pretendard_13">
+        <Translation Language="GB">주문 상세</Translation>
+      </Text>
+      <Text Id="__SingleUse_N190" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB">주문하기</Translation>
+      </Text>
+      <Text Id="__SingleUse_U9FS" Alignment="Center" TypographyId="Pretendard_13">
+        <Translation Language="GB">장바구니 담기</Translation>
+      </Text>
+      <Text Id="__SingleUse_FTUP" Alignment="Center" TypographyId="Pretendard_13">
+        <Translation Language="GB">바로 주문</Translation>
+      </Text>
+      <Text Id="__SingleUse_DEJO" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_0O6E" Alignment="Left" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="__SingleUse_9XCX" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_PO5L" Alignment="Left" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_UPGC" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MCK5" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_9M3I" Alignment="Left" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_OM5A" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_2PT4" Alignment="Left" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">상품금액</Translation>
+      </Text>
+      <Text Id="__SingleUse_ENY0" Alignment="Left" TypographyId="Noto_Ex_Bold_15">
+        <Translation Language="GB">카테고리를 선택해주세요</Translation>
+      </Text>
+      <Text Id="__SingleUse_TZO7" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">티라미수 케익</Translation>
+      </Text>
+      <Text Id="__SingleUse_XCO8" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,500원</Translation>
+      </Text>
+      <Text Id="__SingleUse_WMVX" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">초코무스 케익</Translation>
+      </Text>
+      <Text Id="__SingleUse_LUMX" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,500원</Translation>
+      </Text>
+      <Text Id="__SingleUse_26XM" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">자몽티</Translation>
+      </Text>
+      <Text Id="__SingleUse_EV8C" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,300원</Translation>
+      </Text>
+      <Text Id="__SingleUse_BKTS" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">레몬티</Translation>
+      </Text>
+      <Text Id="__SingleUse_S4P9" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,300원</Translation>
+      </Text>
+      <Text Id="__SingleUse_W95W" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">사과유자차</Translation>
+      </Text>
+      <Text Id="__SingleUse_I59I" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,500원</Translation>
+      </Text>
+      <Text Id="__SingleUse_53L6" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">곡물라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_CNUJ" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_V40E" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">오레오초코라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_KNSV" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_M3AL" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">녹차라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_TZZ9" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_AVCL" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">딸기쿠키프라페</Translation>
+      </Text>
+      <Text Id="__SingleUse_96QB" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,900원</Translation>
+      </Text>
+      <Text Id="__SingleUse_4S11" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">산타 코코넛&#10;애플티 라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_1SUT" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,900원</Translation>
+      </Text>
+      <Text Id="__SingleUse_J8PQ" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">치즈 케익</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZN7P" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,500원</Translation>
+      </Text>
+      <Text Id="__SingleUse_NQAW" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">복숭아아이스티</Translation>
+      </Text>
+      <Text Id="__SingleUse_3LGM" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_YI7V" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">딸기라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_UFQ4" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_IRUH" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">카페모카</Translation>
+      </Text>
+      <Text Id="__SingleUse_I1GW" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,900원</Translation>
+      </Text>
+      <Text Id="__SingleUse_N4QD" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">큐브라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_KDOA" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">4,200원</Translation>
+      </Text>
+      <Text Id="__SingleUse_6ZCL" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">티라미수라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_0HUW" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,900원</Translation>
+      </Text>
+      <Text Id="__SingleUse_MT4Q" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB">(HOT)아메리카노</Translation>
+      </Text>
+      <Text Id="__SingleUse_WE35" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">1,500원</Translation>
+      </Text>
+      <Text Id="__SingleUse_5ZNX" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">(ICE)아메리카노</Translation>
+      </Text>
+      <Text Id="__SingleUse_28WU" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">2,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_221N" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">메가리카노</Translation>
+      </Text>
+      <Text Id="__SingleUse_MXSJ" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_X4IT" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">큐브라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_N9NV" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">4,200원</Translation>
+      </Text>
+      <Text Id="__SingleUse_EC6Q" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">딸기쿠키프라페</Translation>
+      </Text>
+      <Text Id="__SingleUse_8DUM" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,900원</Translation>
+      </Text>
+      <Text Id="__SingleUse_IKAB" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB">딸기라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_UZSQ" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,700원</Translation>
+      </Text>
+      <Text Id="__SingleUse_3Q3A" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,900원</Translation>
+      </Text>
+      <Text Id="__SingleUse_TXVZ" Alignment="Center" TypographyId="Noto_Ex_Bold_10">
+        <Translation Language="GB">3,000원</Translation>
+      </Text>
+      <Text Id="__SingleUse_LJB4" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">산타 코코넛&#10;애플티 라떼</Translation>
+      </Text>
+      <Text Id="__SingleUse_S7HT" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">메가리카노</Translation>
+      </Text>
       <Text Id="__SingleUse_T6JZ" Alignment="Center" TypographyId="Pretendard_10">
         <Translation Language="GB">큐브라떼</Translation>
       </Text>
@@ -33,23 +317,31 @@
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Noto_Ex_Bold_10" Font="NotoSansKR-ExtraBold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="NotoSansKR-ExtraBold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Noto_Ex_Bold_10" Font="NotoSansKR-ExtraBold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="NotoSansKR-ExtraBold.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
-    <Typography Id="Noto_Ex_Bold_15" Font="NotoSansKR-ExtraBold.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="NotoSansKR-ExtraBold.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Noto_Ex_Bold_15" Font="NotoSansKR-ExtraBold.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="NotoSansKR-ExtraBold.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
-    <Typography Id="Pretendard_10" Font="Pretendard-ExtraBold.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Pretendard_Light_10" Font="Pretendard-Light.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="Pretendard-Light.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
-    <Typography Id="Pretendard_13" Font="Pretendard-ExtraBold.otf" Size="13" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="13" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Pretendard_10" Font="Pretendard-ExtraBold.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
-    <Typography Id="Hakgyoansim_10" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
-      <LanguageSetting Language="GB" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Pretendard_13" Font="Pretendard-ExtraBold.otf" Size="13" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="13" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
+    </Typography>
+    <Typography Id="Hakgyoansim_10" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
+    </Typography>
+    <Typography Id="Pretendard_11" Font="Pretendard-ExtraBold.otf" Size="11" Bpp="8" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="11" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
+    </Typography>
+    <Typography Id="Pretndard_16" Font="Pretendard-ExtraBold.otf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+      <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
   </Typographies>
 </TextDatabase>

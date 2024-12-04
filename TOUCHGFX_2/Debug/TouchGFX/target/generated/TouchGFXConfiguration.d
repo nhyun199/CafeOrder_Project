@@ -36,7 +36,7 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
@@ -47,12 +47,14 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Atomic.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  ../TouchGFX/gui/include/gui/model/Model.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
  ../TouchGFX/gui/include/gui/intro_screen/INTROView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/INTROViewBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
@@ -64,16 +66,24 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../TouchGFX/gui/include/gui/main_screen/MAINView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/main_screen/MAINViewBase.hpp \
  ../TouchGFX/gui/include/gui/main_screen/MAINPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp \
  ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../TouchGFX/gui/include/gui/test_screen/TESTView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp \
+ ../TouchGFX/gui/include/gui/test_screen/TESTPresenter.hpp \
  ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
@@ -81,57 +91,7 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../TouchGFX/target/generated/STM32DMA.hpp \
  ../TouchGFX/target/TouchGFXHAL.hpp \
  ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
- ../TouchGFX/target/STM32TouchController.hpp \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
- ../Core/Inc/stm32f7xx_hal_conf.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h \
- ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
- ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f746xx.h \
- ../Drivers/CMSIS/Include/core_cm7.h \
- ../Drivers/CMSIS/Include/cmsis_version.h \
- ../Drivers/CMSIS/Include/cmsis_compiler.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h \
- ../Drivers/CMSIS/Include/mpu_armv7.h \
- ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sdram.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_fmc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_ltdc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_ltdc_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_qspi.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_hcd.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h
+ ../TouchGFX/target/STM32TouchController.hpp
 ../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:
@@ -168,7 +128,7 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp:
@@ -179,12 +139,14 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Atomic.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:
 ../TouchGFX/gui/include/gui/model/Model.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
 ../TouchGFX/gui/include/gui/intro_screen/INTROView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/INTROViewBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
@@ -196,16 +158,24 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/main_screen/MAINViewBase.hpp:
 ../TouchGFX/gui/include/gui/main_screen/MAINPresenter.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 ../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../TouchGFX/gui/include/gui/test_screen/TESTView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp:
+../TouchGFX/gui/include/gui/test_screen/TESTPresenter.hpp:
 ../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
@@ -214,53 +184,3 @@ TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../TouchGFX/target/TouchGFXHAL.hpp:
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
 ../TouchGFX/target/STM32TouchController.hpp:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
-../Core/Inc/stm32f7xx_hal_conf.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:
-../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
-../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f746xx.h:
-../Drivers/CMSIS/Include/core_cm7.h:
-../Drivers/CMSIS/Include/cmsis_version.h:
-../Drivers/CMSIS/Include/cmsis_compiler.h:
-../Drivers/CMSIS/Include/cmsis_gcc.h:
-../Drivers/CMSIS/Include/mpu_armv7.h:
-../Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_exti.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_cortex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_adc_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_crc_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dma2d.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_dcmi.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_eth.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sdram.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_fmc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_ltdc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_ltdc_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_qspi.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rtc_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sai.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spdifrx.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_hcd.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h:

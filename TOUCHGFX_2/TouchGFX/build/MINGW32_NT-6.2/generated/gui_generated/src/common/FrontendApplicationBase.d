@@ -39,13 +39,16 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferAllocator.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
- gui/include/gui/model/Model.hpp gui/include/gui/common/FrontendHeap.hpp \
+ gui/include/gui/model/Model.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
+ gui/include/gui/common/FrontendHeap.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp \
  ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  gui/include/gui/intro_screen/INTROView.hpp \
  generated/gui_generated/include/gui_generated/intro_screen/INTROViewBase.hpp \
@@ -60,17 +63,24 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/main_screen/MAINView.hpp \
  generated/gui_generated/include/gui_generated/main_screen/MAINViewBase.hpp \
  gui/include/gui/main_screen/MAINPresenter.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ generated/texts/include/texts/TextKeysAndLanguages.hpp \
  gui/include/gui/order_screen/ORDERView.hpp \
  generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp \
  gui/include/gui/order_screen/ORDERPresenter.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ gui/include/gui/test_screen/TESTView.hpp \
+ generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp \
+ gui/include/gui/test_screen/TESTPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
 
@@ -154,6 +164,8 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 
 gui/include/gui/model/Model.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
+
 gui/include/gui/common/FrontendHeap.hpp:
 
 generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
@@ -164,9 +176,11 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/WipeTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
@@ -196,10 +210,6 @@ generated/gui_generated/include/gui_generated/main_screen/MAINViewBase.hpp:
 
 gui/include/gui/main_screen/MAINPresenter.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
@@ -210,13 +220,31 @@ gui/include/gui/main_screen/MAINPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+generated/texts/include/texts/TextKeysAndLanguages.hpp:
+
 gui/include/gui/order_screen/ORDERView.hpp:
 
 generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:
 
 gui/include/gui/order_screen/ORDERPresenter.hpp:
 
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+gui/include/gui/test_screen/TESTView.hpp:
+
+generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp:
+
+gui/include/gui/test_screen/TESTPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 

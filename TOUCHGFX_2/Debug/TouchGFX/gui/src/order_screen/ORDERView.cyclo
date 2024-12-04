@@ -1,9 +1,52 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:136:5:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:515:10:void touchgfx::Drawable::setVisible(bool)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp:11:13:ORDERView::~ORDERView()	1
-../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp:11:13:virtual ORDERView::~ORDERView()	1
-../TouchGFX/gui/src/order_screen/ORDERView.cpp:3:1:ORDERView::ORDERView()	1
-../TouchGFX/gui/src/order_screen/ORDERView.cpp:8:6:virtual void ORDERView::setupScreen()	1
-../TouchGFX/gui/src/order_screen/ORDERView.cpp:13:6:virtual void ORDERView::tearDownScreen()	1
+../TouchGFX/gui/include/gui/model/Model.hpp:22:10:void Model::saveCounter(uint32_t)	1
+../TouchGFX/gui/include/gui/model/Model.hpp:27:10:void Model::savePrice(uint32_t)	1
+../TouchGFX/gui/include/gui/model/Model.hpp:32:10:void Model::saveTotalPrice(uint32_t)	1
+../TouchGFX/gui/include/gui/model/Model.hpp:37:10:void Model::saveImageCode(uint16_t)	1
+../TouchGFX/gui/include/gui/model/Model.hpp:42:10:void Model::saveTextID(int)	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:31:10:void ORDERPresenter::saveCounter(uint32_t)	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:36:10:void ORDERPresenter::savePrice(uint32_t)	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:41:10:void ORDERPresenter::saveTotalPrice(uint32_t)	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:46:10:void ORDERPresenter::saveImageCode(uint16_t)	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:51:10:void ORDERPresenter::saveTextID(int)	1
+../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp:13:13:ORDERView::~ORDERView()	1
+../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp:13:13:virtual ORDERView::~ORDERView()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:5:1:ORDERView::ORDERView()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:10:6:virtual void ORDERView::setupScreen()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:15:6:virtual void ORDERView::tearDownScreen()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:20:6:void ORDERView::hiddenContainer()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:37:6:virtual void ORDERView::selected_recommend()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:44:6:virtual void ORDERView::selected_coffe()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:51:6:virtual void ORDERView::selected_beverage()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:58:6:virtual void ORDERView::selected_tea()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:65:6:virtual void ORDERView::selected_food()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:72:6:virtual void ORDERView::deselectable_button()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:79:6:void ORDERView::formatPriceWithComma(uint32_t, touchgfx::Unicode::UnicodeChar*, uint16_t)	3
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:102:6:virtual void ORDERView::onAddButtonClicked()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:116:6:virtual void ORDERView::onMinusButtonClicked()	2
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:133:6:virtual void ORDERView::hideDetail()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:141:6:virtual void ORDERView::nowPurchase()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:150:6:virtual void ORDERView::menu0()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:171:6:virtual void ORDERView::menu1()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:192:6:virtual void ORDERView::menu2()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:213:6:virtual void ORDERView::menu3()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:234:6:virtual void ORDERView::menu4()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:255:6:virtual void ORDERView::menu5()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:276:6:virtual void ORDERView::menu6()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:297:6:virtual void ORDERView::menu7()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:318:6:virtual void ORDERView::menu8()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:339:6:virtual void ORDERView::menu9()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:360:6:virtual void ORDERView::menu10()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:381:6:virtual void ORDERView::menu11()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:402:6:virtual void ORDERView::menu12()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:423:6:virtual void ORDERView::menu13()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:444:6:virtual void ORDERView::menu14()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:465:6:virtual void ORDERView::menu15()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:486:6:virtual void ORDERView::menu16()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:507:6:virtual void ORDERView::menu17()	1
+../TouchGFX/gui/src/order_screen/ORDERView.cpp:528:6:virtual void ORDERView::menu18()	1

@@ -13,25 +13,20 @@ MAINViewBase::MAINViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    PAY.setXY(212, 2);
-    PAY.setBitmaps(touchgfx::Bitmap(BITMAP_PAY5050_ID), touchgfx::Bitmap(BITMAP_PAY5050_ID));
-    PAY.setVisible(false);
-    add(PAY);
-
-    scrollableContainer1.setPosition(0, 55, 272, 370);
-    scrollableContainer1.enableHorizontalScroll(false);
-    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    scrollableContainer1.setScrollbarsAlpha(255);
-    scrollableContainer1.setScrollbarsVisible(false);
-    bodyBackground.setPosition(0, 0, 272, 500);
+    Body.setPosition(0, 55, 272, 370);
+    Body.enableHorizontalScroll(false);
+    Body.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Body.setScrollbarsAlpha(255);
+    Body.setScrollbarsVisible(false);
+    bodyBackground.setPosition(0, 0, 272, 512);
     bodyBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    scrollableContainer1.add(bodyBackground);
+    Body.add(bodyBackground);
 
-    scrollContainer.setPosition(12, 42, 250, 130);
-    scrollContainer.enableVerticalScroll(false);
-    scrollContainer.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    scrollContainer.setScrollbarsAlpha(255);
-    scrollContainer.setScrollbarsVisible(false);
+    Recommend.setPosition(12, 42, 250, 130);
+    Recommend.enableVerticalScroll(false);
+    Recommend.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Recommend.setScrollbarsAlpha(255);
+    Recommend.setScrollbarsVisible(false);
     recommendMenu.setPosition(0, 0, 600, 130);
     menu1.setPosition(0, 0, 100, 112);
     image1.setXY(0, 0);
@@ -46,7 +41,7 @@ MAINViewBase::MAINViewBase() :
 
     recommendMenu.add(menu1);
 
-    menu2.setPosition(120, 0, 100, 122);
+    menu2.setPosition(120, 0, 100, 124);
     image1_1.setXY(0, 0);
     image1_1.setBitmap(touchgfx::Bitmap(BITMAP_SANTA_COCONUT_APPLETEA_LATTE_100100_ID));
     menu2.add(image1_1);
@@ -98,50 +93,50 @@ MAINViewBase::MAINViewBase() :
 
     recommendMenu.add(menu5);
 
-    scrollContainer.add(recommendMenu);
+    Recommend.add(recommendMenu);
 
-    scrollableContainer1.add(scrollContainer);
+    Body.add(Recommend);
 
     recommendText.setXY(12, 20);
     recommendText.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     recommendText.setLinespacing(0);
     recommendText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DOT0));
-    scrollableContainer1.add(recommendText);
+    Body.add(recommendText);
 
-    swipeContainer1.setXY(12, 185);
-    swipeContainer1.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_INDICATOR1010_ID), touchgfx::Bitmap(BITMAP_INDICATOR_HIGHLIGHT1010_ID));
-    swipeContainer1.setPageIndicatorXY(110, 230);
-    swipeContainer1.setSwipeCutoff(50);
-    swipeContainer1.setEndSwipeElasticWidth(50);
+    Event.setXY(12, 185);
+    Event.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_INDICATOR1010_ID), touchgfx::Bitmap(BITMAP_INDICATOR_HIGHLIGHT1010_ID));
+    Event.setPageIndicatorXY(110, 230);
+    Event.setSwipeCutoff(50);
+    Event.setEndSwipeElasticWidth(50);
 
-    kakaoEvent.setWidth(250);
-    kakaoEvent.setHeight(250);
-    image2.setXY(0, 0);
-    image2.setBitmap(touchgfx::Bitmap(BITMAP_KAKAOEVENT250250_ID));
-    kakaoEvent.add(image2);
+    event1.setWidth(250);
+    event1.setHeight(250);
+    eventImage1.setXY(0, 0);
+    eventImage1.setBitmap(touchgfx::Bitmap(BITMAP_KAKAOEVENT250250_ID));
+    event1.add(eventImage1);
 
-    swipeContainer1.add(kakaoEvent);
+    Event.add(event1);
 
-    page2.setWidth(250);
-    page2.setHeight(250);
-    box1.setPosition(0, 0, 250, 250);
-    box1.setColor(touchgfx::Color::getColorFromRGB(184, 134, 235));
-    page2.add(box1);
+    event2.setWidth(250);
+    event2.setHeight(250);
+    eventImage2.setXY(0, 0);
+    eventImage2.setBitmap(touchgfx::Bitmap(BITMAP_EVENT2_250250_ID));
+    event2.add(eventImage2);
 
-    swipeContainer1.add(page2);
+    Event.add(event2);
 
-    page3.setWidth(250);
-    page3.setHeight(250);
-    box1_1.setPosition(0, 0, 250, 250);
-    box1_1.setColor(touchgfx::Color::getColorFromRGB(97, 195, 212));
-    page3.add(box1_1);
+    event3.setWidth(250);
+    event3.setHeight(250);
+    eventImage3.setXY(0, 0);
+    eventImage3.setBitmap(touchgfx::Bitmap(BITMAP_EVENT3_250250_ID));
+    event3.add(eventImage3);
 
-    swipeContainer1.add(page3);
+    Event.add(event3);
 
-    swipeContainer1.setSelectedPage(0);
-    scrollableContainer1.add(swipeContainer1);
+    Event.setSelectedPage(0);
+    Body.add(Event);
 
-    add(scrollableContainer1);
+    add(Body);
 
     Tail.setPosition(0, 425, 272, 55);
     tailBackground.setPosition(0, 0, 272, 55);
@@ -180,6 +175,12 @@ MAINViewBase::MAINViewBase() :
     Header.add(logoImage);
 
     add(Header);
+
+    testText.setPosition(142, 70, 110, 22);
+    testText.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    testText.setLinespacing(0);
+    testText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_UZ4F));
+    add(testText);
 }
 
 MAINViewBase::~MAINViewBase()
@@ -198,7 +199,7 @@ void MAINViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     {
         //GoOrder
         //When orderButton clicked change screen to ORDER
-        //Go to ORDER with no screen transition
-        application().gotoORDERScreenNoTransition();
+        //Go to ORDER with screen transition towards East
+        application().gotoORDERScreenSlideTransitionEast();
     }
 }

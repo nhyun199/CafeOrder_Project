@@ -214,6 +214,18 @@
     <Filter Include="Header Files\generated\gui_generated\order_screen">
       <UniqueIdentifier>674E73BA-1D5D-45B2-563E-F8BE3DF99622</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\test_screen">
+      <UniqueIdentifier>F8F676CA-3598-D046-C160-D1E6BF807D43</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\test_screen">
+      <UniqueIdentifier>D1EE66C8-259F-F76D-C0B5-A91B1E2EC1B1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\test_screen">
+      <UniqueIdentifier>4A00BC46-2E99-E6FF-E458-71ABBD65AEA6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\test_screen">
+      <UniqueIdentifier>D17587AB-8B52-B79A-B612-6258893F8FE9</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -272,6 +284,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\order_screen\ORDERViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\order_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\test_screen\TESTPresenter.cpp">
+      <Filter>Source Files\gui\test_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\test_screen\TESTView.cpp">
+      <Filter>Source Files\gui\test_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\test_screen\TESTViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\test_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -741,6 +762,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\order_screen\ORDERViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\order_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTPresenter.hpp">
+      <Filter>Header Files\gui\test_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTView.hpp">
+      <Filter>Header Files\gui\test_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\test_screen\TESTViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\test_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

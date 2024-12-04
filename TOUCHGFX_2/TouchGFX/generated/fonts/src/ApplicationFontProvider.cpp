@@ -9,26 +9,29 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
 {
     switch (typography)
     {
-    case Typography::DEFAULT:
-        // verdana_20_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     case Typography::LARGE:
         // verdana_40_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     case Typography::SMALL:
         // verdana_10_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
     case Typography::NOTO_EX_BOLD_10:
         // NotoSansKR_ExtraBold_10_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     case Typography::NOTO_EX_BOLD_10_AUTO_GENERATED_FOR_GB:
         // NotoSansKR_ExtraBold_10_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     case Typography::NOTO_EX_BOLD_15:
         // NotoSansKR_ExtraBold_15_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
     case Typography::NOTO_EX_BOLD_15_AUTO_GENERATED_FOR_GB:
         // NotoSansKR_ExtraBold_15_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[3]);
+    case Typography::PRETENDARD_LIGHT_10:
+        // Pretendard_Light_otf_10_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
+    case Typography::PRETENDARD_LIGHT_10_AUTO_GENERATED_FOR_GB:
+        // Pretendard_Light_otf_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[4]);
     case Typography::PRETENDARD_10:
         // Pretendard_ExtraBold_otf_10_4bpp
@@ -48,6 +51,18 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::HAKGYOANSIM_10_AUTO_GENERATED_FOR_GB:
         // HakgyoansimBareondotumR_otf_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
+    case Typography::PRETENDARD_11:
+        // Pretendard_ExtraBold_otf_11_8bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+    case Typography::PRETENDARD_11_AUTO_GENERATED_FOR_GB:
+        // Pretendard_ExtraBold_otf_11_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+    case Typography::PRETNDARD_16:
+        // Pretendard_ExtraBold_otf_16_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
+    case Typography::PRETNDARD_16_AUTO_GENERATED_FOR_GB:
+        // Pretendard_ExtraBold_otf_16_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
     default:
         return 0;
     }

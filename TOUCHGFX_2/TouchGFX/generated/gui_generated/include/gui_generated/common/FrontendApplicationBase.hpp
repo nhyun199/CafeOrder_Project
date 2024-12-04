@@ -26,10 +26,15 @@ public:
     // MAIN
     void gotoMAINScreenNoTransition();
 
-    void gotoMAINScreenWipeTransitionEast();
+    void gotoMAINScreenSlideTransitionWest();
 
     // ORDER
+    void gotoORDERScreenSlideTransitionEast();
+
     void gotoORDERScreenNoTransition();
+
+    // TEST
+    void gotoTESTScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -42,10 +47,15 @@ protected:
     // MAIN
     void gotoMAINScreenNoTransitionImpl();
 
-    void gotoMAINScreenWipeTransitionEastImpl();
+    void gotoMAINScreenSlideTransitionWestImpl();
 
     // ORDER
+    void gotoORDERScreenSlideTransitionEastImpl();
+
     void gotoORDERScreenNoTransitionImpl();
+
+    // TEST
+    void gotoTESTScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

@@ -6,8 +6,8 @@
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:9:5:ModelListener::ModelListener()	1
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:ModelListener::~ModelListener()	1
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	1
-../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:28:13:ORDERPresenter::~ORDERPresenter()	1
-../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:28:13:virtual ORDERPresenter::~ORDERPresenter()	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:29:13:ORDERPresenter::~ORDERPresenter()	1
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:29:13:virtual ORDERPresenter::~ORDERPresenter()	1
 ../TouchGFX/gui/src/order_screen/ORDERPresenter.cpp:4:1:ORDERPresenter::ORDERPresenter(ORDERView&)	1
 ../TouchGFX/gui/src/order_screen/ORDERPresenter.cpp:10:6:virtual void ORDERPresenter::activate()	1
 ../TouchGFX/gui/src/order_screen/ORDERPresenter.cpp:15:6:virtual void ORDERPresenter::deactivate()	1

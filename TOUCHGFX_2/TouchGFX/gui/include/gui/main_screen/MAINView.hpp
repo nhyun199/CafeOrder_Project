@@ -5,6 +5,7 @@
 #include <gui/main_screen/MAINPresenter.hpp>
 #include <touchgfx/Callback.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 class MAINView : public MAINViewBase
 {
@@ -17,14 +18,6 @@ public:
 protected:
 
 private:
-    /* ----- Function ----- */
-
-
-    /* ----- Variable ------ */
-
-
-    /* ------ Callback ----- */
-
 };
 
 #endif // MAINVIEW_HPP

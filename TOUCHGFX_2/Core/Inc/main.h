@@ -35,6 +35,7 @@ extern "C" {
 #include "stm32746g_discovery_qspi.h"
 #include "stm32746g_discovery_sdram.h"
 #include "stm32746g_discovery_ts.h"
+//#include "stm32f7xx_hal_cortex.h"
 #include <stdio.h>
 /* USER CODE END Includes */
 

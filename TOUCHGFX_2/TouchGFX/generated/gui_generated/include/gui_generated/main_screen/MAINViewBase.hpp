@@ -8,7 +8,6 @@
 #include <mvp/View.hpp>
 #include <gui/main_screen/MAINPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/containers/ScrollableContainer.hpp>
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/Image.hpp>
@@ -32,10 +31,9 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Button PAY;
-    touchgfx::ScrollableContainer scrollableContainer1;
+    touchgfx::ScrollableContainer Body;
     touchgfx::Box bodyBackground;
-    touchgfx::ScrollableContainer scrollContainer;
+    touchgfx::ScrollableContainer Recommend;
     touchgfx::Container recommendMenu;
     touchgfx::Container menu1;
     touchgfx::Image image1;
@@ -53,13 +51,13 @@ protected:
     touchgfx::Image image1_4;
     touchgfx::TextArea textArea1_4;
     touchgfx::TextArea recommendText;
-    touchgfx::SwipeContainer swipeContainer1;
-    touchgfx::Container kakaoEvent;
-    touchgfx::Image image2;
-    touchgfx::Container page2;
-    touchgfx::Box box1;
-    touchgfx::Container page3;
-    touchgfx::Box box1_1;
+    touchgfx::SwipeContainer Event;
+    touchgfx::Container event1;
+    touchgfx::Image eventImage1;
+    touchgfx::Container event2;
+    touchgfx::Image eventImage2;
+    touchgfx::Container event3;
+    touchgfx::Image eventImage3;
     touchgfx::Container Tail;
     touchgfx::Box tailBackground;
     touchgfx::Container Navigation;
@@ -70,6 +68,7 @@ protected:
     touchgfx::Container Header;
     touchgfx::Box headerBackground;
     touchgfx::Image logoImage;
+    touchgfx::TextArea testText;
 
 private:
 

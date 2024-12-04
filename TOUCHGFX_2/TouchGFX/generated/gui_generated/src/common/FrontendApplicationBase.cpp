@@ -15,6 +15,8 @@
 #include <gui/main_screen/MAINPresenter.hpp>
 #include <gui/order_screen/ORDERView.hpp>
 #include <gui/order_screen/ORDERPresenter.hpp>
+#include <gui/test_screen/TESTView.hpp>
+#include <gui/test_screen/TESTPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -61,18 +63,29 @@ void FrontendApplicationBase::gotoMAINScreenNoTransitionImpl()
     touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoMAINScreenWipeTransitionEast()
+void FrontendApplicationBase::gotoMAINScreenSlideTransitionWest()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMAINScreenWipeTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMAINScreenSlideTransitionWestImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMAINScreenWipeTransitionEastImpl()
+void FrontendApplicationBase::gotoMAINScreenSlideTransitionWestImpl()
 {
-    touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // ORDER
+
+void FrontendApplicationBase::gotoORDERScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoORDERScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoORDERScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<ORDERView, ORDERPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
 
 void FrontendApplicationBase::gotoORDERScreenNoTransition()
 {
@@ -83,4 +96,17 @@ void FrontendApplicationBase::gotoORDERScreenNoTransition()
 void FrontendApplicationBase::gotoORDERScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<ORDERView, ORDERPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// TEST
+
+void FrontendApplicationBase::gotoTESTScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoTESTScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoTESTScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<TESTView, TESTPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

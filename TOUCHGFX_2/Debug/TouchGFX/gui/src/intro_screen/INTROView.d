@@ -43,6 +43,7 @@ TouchGFX/gui/src/intro_screen/INTROView.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  ../TouchGFX/gui/include/gui/model/Model.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
  ../TouchGFX/gui/include/gui/intro_screen/INTROPresenter.hpp \
  ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
@@ -94,6 +95,7 @@ TouchGFX/gui/src/intro_screen/INTROView.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 ../TouchGFX/gui/include/gui/model/Model.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 ../TouchGFX/gui/include/gui/intro_screen/INTROPresenter.hpp:
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:

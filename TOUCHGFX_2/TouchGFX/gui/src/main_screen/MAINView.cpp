@@ -18,4 +18,3 @@ void MAINView::tearDownScreen()
 {
     MAINViewBase::tearDownScreen();
 }
-

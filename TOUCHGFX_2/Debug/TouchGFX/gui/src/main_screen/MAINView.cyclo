@@ -2,8 +2,8 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:13:13:MAINView::~MAINView()	1
-../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:13:13:virtual MAINView::~MAINView()	1
+../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:14:13:MAINView::~MAINView()	1
+../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:14:13:virtual MAINView::~MAINView()	1
 ../TouchGFX/gui/src/main_screen/MAINView.cpp:6:1:MAINView::MAINView()	1
 ../TouchGFX/gui/src/main_screen/MAINView.cpp:11:6:virtual void MAINView::setupScreen()	1
 ../TouchGFX/gui/src/main_screen/MAINView.cpp:17:6:virtual void MAINView::tearDownScreen()	1

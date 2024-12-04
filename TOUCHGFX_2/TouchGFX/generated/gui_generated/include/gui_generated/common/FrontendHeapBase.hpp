@@ -9,7 +9,7 @@
 #include <mvp/MVPHeap.hpp>
 
 #include <touchgfx/transitions/NoTransition.hpp>
-#include <touchgfx/transitions/WipeTransition.hpp>
+#include <touchgfx/transitions/SlideTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -20,6 +20,8 @@
 #include <gui/main_screen/MAINPresenter.hpp>
 #include <gui/order_screen/ORDERView.hpp>
 #include <gui/order_screen/ORDERPresenter.hpp>
+#include <gui/test_screen/TESTView.hpp>
+#include <gui/test_screen/TESTPresenter.hpp>
 
 
 /**
@@ -45,7 +47,8 @@ public:
     typedef touchgfx::meta::TypeList< INTROView,
             touchgfx::meta::TypeList< MAINView,
             touchgfx::meta::TypeList< ORDERView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< TESTView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -60,7 +63,8 @@ public:
     typedef touchgfx::meta::TypeList< INTROPresenter,
             touchgfx::meta::TypeList< MAINPresenter,
             touchgfx::meta::TypeList< ORDERPresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< TESTPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -73,8 +77,9 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::TypeList< WipeTransition<EAST>,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< SlideTransition<EAST>,
+            touchgfx::meta::TypeList< SlideTransition<WEST>,
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**

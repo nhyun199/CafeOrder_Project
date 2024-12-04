@@ -30,6 +30,9 @@
     <ClCompile Include="..\..\gui\src\order_screen\ORDERPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\order_screen\ORDERView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\order_screen\ORDERViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\test_screen\TESTPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\test_screen\TESTView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\test_screen\TESTViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -189,6 +192,9 @@
     <ClInclude Include="..\..\gui\include\gui\order_screen\ORDERPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\order_screen\ORDERView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\order_screen\ORDERViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\test_screen\TESTViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

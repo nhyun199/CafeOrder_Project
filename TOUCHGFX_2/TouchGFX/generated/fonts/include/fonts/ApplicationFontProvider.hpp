@@ -49,11 +49,11 @@ struct TypographyFontIndex
     static const touchgfx::FontId PRETENDARD_13_AUTO_GENERATED_FOR_GB = 6;       // Pretendard_ExtraBold_otf_13_4bpp
     static const touchgfx::FontId HAKGYOANSIM_10 = 7;                            // HakgyoansimBareondotumR_otf_10_4bpp
     static const touchgfx::FontId HAKGYOANSIM_10_AUTO_GENERATED_FOR_GB = 7;      // HakgyoansimBareondotumR_otf_10_4bpp
-    static const touchgfx::FontId PRETENDARD_11 = 8;                             // Pretendard_ExtraBold_otf_11_8bpp
-    static const touchgfx::FontId PRETENDARD_11_AUTO_GENERATED_FOR_GB = 9;       // Pretendard_ExtraBold_otf_11_4bpp
-    static const touchgfx::FontId PRETNDARD_16 = 10;                              // Pretendard_ExtraBold_otf_16_4bpp
-    static const touchgfx::FontId PRETNDARD_16_AUTO_GENERATED_FOR_GB = 10;        // Pretendard_ExtraBold_otf_16_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 11;
+    static const touchgfx::FontId PRETENDARD_11 = 8;                             // Pretendard_ExtraBold_otf_11_4bpp
+    static const touchgfx::FontId PRETENDARD_11_AUTO_GENERATED_FOR_GB = 8;       // Pretendard_ExtraBold_otf_11_4bpp
+    static const touchgfx::FontId PRETNDARD_16 = 9;                              // Pretendard_ExtraBold_otf_16_4bpp
+    static const touchgfx::FontId PRETNDARD_16_AUTO_GENERATED_FOR_GB = 9;        // Pretendard_ExtraBold_otf_16_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 10;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

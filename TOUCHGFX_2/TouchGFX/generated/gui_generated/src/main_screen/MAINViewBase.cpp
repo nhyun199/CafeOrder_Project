@@ -150,6 +150,7 @@ MAINViewBase::MAINViewBase() :
 
     basketButton.setXY(147, 0);
     basketButton.setBitmaps(touchgfx::Bitmap(BITMAP_BASKET_40_48_60_ID), touchgfx::Bitmap(BITMAP_BASKET_40_48_ID));
+    basketButton.setAction(buttonCallback);
     Navigation.add(basketButton);
 
     orderButton.setXY(85, 0);
@@ -199,7 +200,14 @@ void MAINViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     {
         //GoOrder
         //When orderButton clicked change screen to ORDER
-        //Go to ORDER with screen transition towards East
-        application().gotoORDERScreenSlideTransitionEast();
+        //Go to ORDER with screen transition towards South
+        application().gotoORDERScreenCoverTransitionSouth();
+    }
+    if (&src == &basketButton)
+    {
+        //GoCart
+        //When basketButton clicked change screen to CART
+        //Go to CART with screen transition towards South
+        application().gotoCARTScreenCoverTransitionSouth();
     }
 }

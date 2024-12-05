@@ -24,17 +24,20 @@ public:
     void gotoINTROScreenNoTransition();
 
     // MAIN
-    void gotoMAINScreenNoTransition();
+    void gotoMAINScreenBlockTransition();
 
-    void gotoMAINScreenSlideTransitionWest();
+    void gotoMAINScreenCoverTransitionNorth();
 
     // ORDER
-    void gotoORDERScreenSlideTransitionEast();
+    void gotoORDERScreenCoverTransitionSouth();
 
-    void gotoORDERScreenNoTransition();
+    void gotoORDERScreenCoverTransitionNorth();
 
-    // TEST
-    void gotoTESTScreenNoTransition();
+    // PAYMENT
+    void gotoPAYMENTScreenCoverTransitionSouth();
+
+    // CART
+    void gotoCARTScreenCoverTransitionSouth();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -45,17 +48,20 @@ protected:
     void gotoINTROScreenNoTransitionImpl();
 
     // MAIN
-    void gotoMAINScreenNoTransitionImpl();
+    void gotoMAINScreenBlockTransitionImpl();
 
-    void gotoMAINScreenSlideTransitionWestImpl();
+    void gotoMAINScreenCoverTransitionNorthImpl();
 
     // ORDER
-    void gotoORDERScreenSlideTransitionEastImpl();
+    void gotoORDERScreenCoverTransitionSouthImpl();
 
-    void gotoORDERScreenNoTransitionImpl();
+    void gotoORDERScreenCoverTransitionNorthImpl();
 
-    // TEST
-    void gotoTESTScreenNoTransitionImpl();
+    // PAYMENT
+    void gotoPAYMENTScreenCoverTransitionSouthImpl();
+
+    // CART
+    void gotoCARTScreenCoverTransitionSouthImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

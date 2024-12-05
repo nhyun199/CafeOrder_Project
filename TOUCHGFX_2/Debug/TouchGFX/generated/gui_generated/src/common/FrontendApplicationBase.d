@@ -46,9 +46,9 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp \
  ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/gui/include/gui/intro_screen/INTROView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/INTROViewBase.hpp \
@@ -78,9 +78,12 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- ../TouchGFX/gui/include/gui/test_screen/TESTView.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp \
- ../TouchGFX/gui/include/gui/test_screen/TESTPresenter.hpp \
+ ../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp \
+ ../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp \
+ ../TouchGFX/gui/include/gui/cart_screen/CARTView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/cart_screen/CARTViewBase.hpp \
+ ../TouchGFX/gui/include/gui/cart_screen/CARTPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -129,9 +132,9 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp:
 ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/gui/include/gui/intro_screen/INTROView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/INTROViewBase.hpp:
@@ -161,8 +164,11 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-../TouchGFX/gui/include/gui/test_screen/TESTView.hpp:
-../TouchGFX/generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp:
-../TouchGFX/gui/include/gui/test_screen/TESTPresenter.hpp:
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp:
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp:
+../TouchGFX/gui/include/gui/cart_screen/CARTView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/cart_screen/CARTViewBase.hpp:
+../TouchGFX/gui/include/gui/cart_screen/CARTPresenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:

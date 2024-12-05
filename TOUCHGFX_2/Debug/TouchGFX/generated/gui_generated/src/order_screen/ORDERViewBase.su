@@ -112,16 +112,17 @@
 ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:164:18:virtual void ORDERViewBase::onMinusButtonClicked()	16	static
 ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:168:18:virtual void ORDERViewBase::hideDetail()	16	static
 ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:172:18:virtual void ORDERViewBase::nowPurchase()	16	static
-../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:178:26:FrontendApplication& ORDERViewBase::application()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:176:18:virtual void ORDERViewBase::putMenu()	16	static
+../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:182:26:FrontendApplication& ORDERViewBase::application()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<ORDERPresenter>::~View()	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<ORDERPresenter>::~View()	16	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:9:1:ORDERViewBase::ORDERViewBase()	2384	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:738:1:ORDERViewBase::~ORDERViewBase()	16	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:738:1:virtual ORDERViewBase::~ORDERViewBase()	16	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:743:6:virtual void ORDERViewBase::setupScreen()	16	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:748:6:void ORDERViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:960:6:void ORDERViewBase::radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton&)	16	static
-../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:999:6:void ORDERViewBase::radioButtonDeselectedCallbackHandler(const touchgfx::AbstractButton&)	16	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:9:1:ORDERViewBase::ORDERViewBase()	2416	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:741:1:ORDERViewBase::~ORDERViewBase()	16	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:741:1:virtual ORDERViewBase::~ORDERViewBase()	16	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:746:6:virtual void ORDERViewBase::setupScreen()	16	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:751:6:void ORDERViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:970:6:void ORDERViewBase::radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton&)	16	static
+../TouchGFX/generated/gui_generated/src/order_screen/ORDERViewBase.cpp:1009:6:void ORDERViewBase::radioButtonDeselectedCallbackHandler(const touchgfx::AbstractButton&)	16	static
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:39:5:touchgfx::View<T>::View() [with T = ORDERPresenter]	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<touchgfx::RadioButtonGroup<5>, const touchgfx::AbstractButton&, void, void>::~Callback()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::RadioButtonGroup<5>, const touchgfx::AbstractButton&, void, void>::~Callback()	16	static

@@ -15,8 +15,10 @@
 #include <gui/main_screen/MAINPresenter.hpp>
 #include <gui/order_screen/ORDERView.hpp>
 #include <gui/order_screen/ORDERPresenter.hpp>
-#include <gui/test_screen/TESTView.hpp>
-#include <gui/test_screen/TESTPresenter.hpp>
+#include <gui/payment_screen/PAYMENTView.hpp>
+#include <gui/payment_screen/PAYMENTPresenter.hpp>
+#include <gui/cart_screen/CARTView.hpp>
+#include <gui/cart_screen/CARTPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -52,61 +54,74 @@ void FrontendApplicationBase::gotoINTROScreenNoTransitionImpl()
 
 // MAIN
 
-void FrontendApplicationBase::gotoMAINScreenNoTransition()
+void FrontendApplicationBase::gotoMAINScreenBlockTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMAINScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMAINScreenBlockTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMAINScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoMAINScreenBlockTransitionImpl()
 {
-    touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoMAINScreenSlideTransitionWest()
+void FrontendApplicationBase::gotoMAINScreenCoverTransitionNorth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMAINScreenSlideTransitionWestImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMAINScreenCoverTransitionNorthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMAINScreenSlideTransitionWestImpl()
+void FrontendApplicationBase::gotoMAINScreenCoverTransitionNorthImpl()
 {
-    touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MAINView, MAINPresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // ORDER
 
-void FrontendApplicationBase::gotoORDERScreenSlideTransitionEast()
+void FrontendApplicationBase::gotoORDERScreenCoverTransitionSouth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoORDERScreenSlideTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoORDERScreenCoverTransitionSouthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoORDERScreenSlideTransitionEastImpl()
+void FrontendApplicationBase::gotoORDERScreenCoverTransitionSouthImpl()
 {
-    touchgfx::makeTransition<ORDERView, ORDERPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<ORDERView, ORDERPresenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoORDERScreenNoTransition()
+void FrontendApplicationBase::gotoORDERScreenCoverTransitionNorth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoORDERScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoORDERScreenCoverTransitionNorthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoORDERScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoORDERScreenCoverTransitionNorthImpl()
 {
-    touchgfx::makeTransition<ORDERView, ORDERPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<ORDERView, ORDERPresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// TEST
+// PAYMENT
 
-void FrontendApplicationBase::gotoTESTScreenNoTransition()
+void FrontendApplicationBase::gotoPAYMENTScreenCoverTransitionSouth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoTESTScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoPAYMENTScreenCoverTransitionSouthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoTESTScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoPAYMENTScreenCoverTransitionSouthImpl()
 {
-    touchgfx::makeTransition<TESTView, TESTPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<PAYMENTView, PAYMENTPresenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// CART
+
+void FrontendApplicationBase::gotoCARTScreenCoverTransitionSouth()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoCARTScreenCoverTransitionSouthImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoCARTScreenCoverTransitionSouthImpl()
+{
+    touchgfx::makeTransition<CARTView, CARTPresenter, touchgfx::CoverTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

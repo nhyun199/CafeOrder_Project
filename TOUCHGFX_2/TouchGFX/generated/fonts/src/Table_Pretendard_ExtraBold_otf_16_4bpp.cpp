@@ -99,10 +99,28 @@ KEEP extern const touchgfx::GlyphNode glyphs_Pretendard_ExtraBold_otf_16_4bpp[] 
     {  4918, 0x007C,   4,  15,  13,   1,   6,   0,   0, 0x00 },
     {  4948, 0x007D,   7,  16,  12,   0,   7, 229,   2, 0x01 },
     {  5012, 0x007E,   9,   3,   6,   1,  11, 231,   2, 0x01 },
-    {     0, 0xACB0,  13,  15,  13,   0,  14,   0,   0, 0x00 },
-    {   105, 0xAE30,  13,  15,  13,   0,  14,   0,   0, 0x00 },
+    {     0, 0xAC00,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   105, 0xAC11,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   210, 0xACB0,  13,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   315, 0xAE08,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   420, 0xAE30,  13,  15,  13,   0,  14,   0,   0, 0x00 },
+    {     0, 0xB2C8,  12,  15,  13,   1,  14,   0,   0, 0x00 },
+    {    90, 0xB2E4,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   195, 0xB3CC,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   300, 0xB418,  13,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   405, 0xB4DC,  14,  12,  12,   0,  14,   0,   0, 0x00 },
+    {     0, 0xB85C,  14,  12,  12,   0,  14,   0,   0, 0x00 },
+    {    84, 0xB8CC,  14,  12,  12,   0,  14,   0,   0, 0x00 },
+    {   168, 0xBB38,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {     0, 0xC2B5,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   105, 0xC544,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   210, 0xC5C8,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   315, 0xC644,  14,  15,  13,   0,  14,   0,   0, 0x00 },
     {     0, 0xC81C,  13,  15,  13,   0,  14,   0,   0, 0x00 },
-    {     0, 0xD558,  14,  15,  13,   0,  14,   0,   0, 0x00 }
+    {   105, 0xC8FC,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   210, 0xCE74,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {     0, 0xD558,  14,  15,  13,   0,  14,   0,   0, 0x00 },
+    {   105, 0xD604,  13,  15,  13,   0,  14,   0,   0, 0x00 }
 };
 
 // Pretendard_ExtraBold_otf_16_4bpp
@@ -112,6 +130,12 @@ FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_Pretendard_ExtraBold_otf_16_4bpp_0[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_Pretendard_ExtraBold_otf_16_4bpp_21[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_Pretendard_ExtraBold_otf_16_4bpp_22[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_Pretendard_ExtraBold_otf_16_4bpp_23[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
+FONT_GLYPH_LOCATION_FLASH_PRAGMA
+KEEP extern const uint8_t unicodes_Pretendard_ExtraBold_otf_16_4bpp_24[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
 KEEP extern const uint8_t unicodes_Pretendard_ExtraBold_otf_16_4bpp_25[] FONT_GLYPH_LOCATION_FLASH_ATTRIBUTE;
 FONT_GLYPH_LOCATION_FLASH_PRAGMA
@@ -140,9 +164,9 @@ KEEP extern const uint8_t* const unicodes_Pretendard_ExtraBold_otf_16_4bpp[] FON
     0,
     0,
     unicodes_Pretendard_ExtraBold_otf_16_4bpp_21,
-    0,
-    0,
-    0,
+    unicodes_Pretendard_ExtraBold_otf_16_4bpp_22,
+    unicodes_Pretendard_ExtraBold_otf_16_4bpp_23,
+    unicodes_Pretendard_ExtraBold_otf_16_4bpp_24,
     unicodes_Pretendard_ExtraBold_otf_16_4bpp_25,
     unicodes_Pretendard_ExtraBold_otf_16_4bpp_26
 };
@@ -152,6 +176,6 @@ touchgfx::GeneratedFont& getFont_Pretendard_ExtraBold_otf_16_4bpp();
 
 touchgfx::GeneratedFont& getFont_Pretendard_ExtraBold_otf_16_4bpp()
 {
-    static touchgfx::GeneratedFont Pretendard_ExtraBold_otf_16_4bpp(glyphs_Pretendard_ExtraBold_otf_16_4bpp, 99, 20, 16, 0, 0, 4, 1, 1, 1, unicodes_Pretendard_ExtraBold_otf_16_4bpp, kerning_Pretendard_ExtraBold_otf_16_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont Pretendard_ExtraBold_otf_16_4bpp(glyphs_Pretendard_ExtraBold_otf_16_4bpp, 117, 20, 16, 0, 0, 4, 1, 1, 1, unicodes_Pretendard_ExtraBold_otf_16_4bpp, kerning_Pretendard_ExtraBold_otf_16_4bpp, 63, 0, 0, 0);
     return Pretendard_ExtraBold_otf_16_4bpp;
 }

@@ -5,66 +5,508 @@
   </Languages>
   <Texts>
     <TextGroup Id="name">
-      <Text Id="menuText0" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText0" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">메가리카노</Translation>
       </Text>
-      <Text Id="menuText1" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText1" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">산타 코코넛 애플티 라떼</Translation>
       </Text>
-      <Text Id="menuText2" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText2" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">딸기라떼</Translation>
       </Text>
-      <Text Id="menuText3" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText3" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">딸기쿠키프라페</Translation>
       </Text>
-      <Text Id="menuText4" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText4" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">큐브라떼</Translation>
       </Text>
-      <Text Id="menuText5" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText5" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">(ICE)아메리카노</Translation>
       </Text>
-      <Text Id="menuText6" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText6" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">(HOT)아메리카노</Translation>
       </Text>
-      <Text Id="menuText7" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText7" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">티라미수라떼</Translation>
       </Text>
-      <Text Id="menuText8" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText8" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">카페모카</Translation>
       </Text>
-      <Text Id="menuText9" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText9" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">녹차라떼</Translation>
       </Text>
-      <Text Id="menuText10" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText10" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">오레오초코라떼</Translation>
       </Text>
-      <Text Id="menuText11" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText11" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">곡물라떼</Translation>
       </Text>
-      <Text Id="menuText12" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText12" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">복숭아아이스티</Translation>
       </Text>
-      <Text Id="menuText13" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText13" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">사과유자차</Translation>
       </Text>
-      <Text Id="menuText14" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText14" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">레몬티</Translation>
       </Text>
-      <Text Id="menuText15" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText15" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">자몽티</Translation>
       </Text>
-      <Text Id="menuText16" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText16" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">치즈케익</Translation>
       </Text>
-      <Text Id="menuText17" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText17" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">초코무스 케익</Translation>
       </Text>
-      <Text Id="menuText18" Alignment="Left" TypographyId="Pretendard_11">
+      <Text Id="menuText18" Alignment="Center" TypographyId="Pretendard_11">
         <Translation Language="GB">티라미수 케익</Translation>
       </Text>
     </TextGroup>
-    <TextGroup Id="menu_description" />
+    <TextGroup Id="menu_description">
+      <Text Id="description0" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">깊고 진한 메가MGC커피 아메리카노를 &#10;'960ml' 더 큼직하게 즐길 수 있는 대용량 커피.</Translation>
+      </Text>
+      <Text Id="description1" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">산타클로스의 빨간 모자와 하얀 수염을 닮은 겨울 티 라떼. &#10;달콤하고 부드러운 코코넛과 상큼한 파인애플 베이스에 &#10;달콤하고 향긋한 애플티를 더한 티라떼.</Translation>
+      </Text>
+      <Text Id="description2" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">딸기과육이 풍부히 느껴지는 스테디 셀러 &#10;산뜻하고 달콤한 딸기가 가득해 부드러운 &#10;우유와 어우러져 더욱 기분 좋게 즐기는 아이스 라떼.</Translation>
+      </Text>
+      <Text Id="description3" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">부드러운 바닐라와 달달한 딸기, &#10;바삭한 오레오 쿠키가 달콤한 하모니를 선물하는 프라페.</Translation>
+      </Text>
+      <Text Id="description4" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">연유를 섞은 라떼에 에스프레소를 얼린 커피큐브를 올려, &#10;녹을수록 더 진한 커피가 느껴지는 라떼.</Translation>
+      </Text>
+      <Text Id="description5" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">메가MGC커피 블렌드 원두로 추출한 에스프레소에 물을 더해, &#10;풍부한 바디감을 느낄 수 있는 스탠다드 커피.</Translation>
+      </Text>
+      <Text Id="description6" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">메가MGC커피 블렌드 원두로 추출한 에스프레소에 물을 더해, &#10;풍부한 바디감을 느낄 수 있는 스탠다드 커피.</Translation>
+      </Text>
+      <Text Id="description7" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">에스프레소와 티라미수 소스 &amp; 우유 그리고 풍미를 &#10;더해주는 달달한 크림까지 곁들여 완성한 티라미수 라떼.</Translation>
+      </Text>
+      <Text Id="description8" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">초코를 만나 풍부해진 에스프레소와 고소한 우유, &#10;부드러운 휘핑크림까지 더해 달콤하게 즐기는 커피.</Translation>
+      </Text>
+      <Text Id="description9" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">향긋한 녹차에 우유를 더해 입 안에 &#10;부드러운 푸릇함을 선물하는 라떼.</Translation>
+      </Text>
+      <Text Id="description10" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">진한 초코와 리얼 오레오를 블렌딩해 씹는 &#10;맛을 더한 달콤한 아이스 라떼.</Translation>
+      </Text>
+      <Text Id="description11" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">우유에 곡물을 더해 고소하고 &#10;든든하게 즐기는 라떼.</Translation>
+      </Text>
+      <Text Id="description12" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">깊은 맛의 홍차와 달콤한 복숭아의 은은한 &#10;향이 어우러진 시원한 여름철 인기 음료.</Translation>
+      </Text>
+      <Text Id="description13" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">애플티의 향긋함과 유자청의 &#10;상큼달콤함을 한컵에 담아낸 과일티.</Translation>
+      </Text>
+      <Text Id="description14" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">상큼한 레몬의 맛과 향을 오롯이 &#10;살린 비타민C 가득한 과일티.</Translation>
+      </Text>
+      <Text Id="description15" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">달콤쌉싸름한 자몽의 조화로운 맛을 한 잔 &#10;가득 느낄 수 있는 과일티.</Translation>
+      </Text>
+      <Text Id="description16" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">진한 치즈의 맛을 달콤하고 부드럽게 &#10;느낄 수 있는 케이크.</Translation>
+      </Text>
+      <Text Id="description17" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">달콤한 초콜릿 본연의 맛을 더 진하게 &#10;느낄 수 있는 케이크.</Translation>
+      </Text>
+      <Text Id="description18" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB">부드러운 치즈 맛과 코코아의 조화로운 &#10;향으로 호불호 없이 즐기는 케이크.</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_NCGE" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_ADLW" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_QG5C" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_4SX1" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_GIBP" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_UAZT" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_Y30S" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_FTTV" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_UDE7" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_DBML" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_BMY0" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_UF39" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_U9WA" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_3124" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_242X" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_55AY" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_6HST" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_OJJS" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_42JQ" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_10IF" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_4M72" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_CAOD" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_S067" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_VURF" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_4QDU" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_1B8Q" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_4C9U" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_R2LP" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_N5UH" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_GD2P" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_EPJ4" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_NI5B" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_H68I" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_2B8Q" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_8LAK" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_GRYO" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_WX4O" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_J322" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_T8OV" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_936X" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_ND2D" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_O25U" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_2K81" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_9TXH" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_GJVL" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_GIC3" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_2Q73" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_XPII" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_X4WY" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_C4D7" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_IJYM" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_FABE" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_2HSE" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_VL2Y" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_8QPA" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_3QFR" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_DF9N" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_8ONP" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_UVHV" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_XIFM" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_N8RX" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_2K04" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_4VN3" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_NU1Z" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_IN7L" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_T245" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_NOC9" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_O1OC" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_TZ1B" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_9PRH" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_R95H" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_T5A4" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_TC0N" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_HK35" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_TZ7M" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_8SHO" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB">금액</Translation>
+      </Text>
+      <Text Id="__SingleUse_ONP8" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_PSUM" Alignment="Right" TypographyId="Pretendard_13">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JDLG" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB">수량</Translation>
+      </Text>
+      <Text Id="__SingleUse_70GM" Alignment="Left" TypographyId="Pretendard_10">
+        <Translation Language="GB">주문상품</Translation>
+      </Text>
+      <Text Id="__SingleUse_8UW3" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB">개</Translation>
+      </Text>
+      <Text Id="__SingleUse_C8Z5" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_UQ1F" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_SQZ8" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_JHF4" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_XTSY" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_IA5E" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_FX6U" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_EMP0" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_EANV" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_2GKF" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_M8E3" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_R3QM" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_D3DN" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_MVAW" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_RJY9" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_ZKFQ" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_K41L" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_7NTC" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_2S3K" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_T7D6" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_2IR6" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_2VH7" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_Y0RH" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_6IVG" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_SBDK" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_TU3P" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_2IO1" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_867J" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_4I6K" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_WSYL" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_CRFQ" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_X71U" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_9YXU" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_P7ZV" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_ODIT" Alignment="Left" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_7NRY" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_6ZGS" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_8Z1X" Alignment="Right" TypographyId="Pretendard_11">
+        <Translation Language="GB">&lt;value&gt;                   </Translation>
+      </Text>
+      <Text Id="__SingleUse_OTN0" Alignment="Center" TypographyId="Pretndard_16">
+        <Translation Language="GB">결제하기</Translation>
+      </Text>
+      <Text Id="__SingleUse_RVRO" Alignment="Right" TypographyId="Pretendard_13">
+        <Translation Language="GB">원</Translation>
+      </Text>
+      <Text Id="__SingleUse_J85M" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB">총 상품금액</Translation>
+      </Text>
+      <Text Id="__SingleUse_8JY9" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB">장바구니</Translation>
+      </Text>
+      <Text Id="__SingleUse_U3FT" Alignment="Center" TypographyId="Pretendard_11">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_0YN0" Alignment="Center" TypographyId="Pretendard_Light_10">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_IOLX" Alignment="Center" TypographyId="Pretndard_16">
+        <Translation Language="GB">결제가 완료되었습니다.&#10;주문하기로 돌아갑니다.</Translation>
+      </Text>
+      <Text Id="__SingleUse_CGNE" Alignment="Center" TypographyId="Pretndard_16">
+        <Translation Language="GB">현금</Translation>
+      </Text>
+      <Text Id="__SingleUse_1976" Alignment="Center" TypographyId="Pretndard_16">
+        <Translation Language="GB">카드</Translation>
+      </Text>
       <Text Id="__SingleUse_VE5H" Alignment="Center" TypographyId="Pretndard_16">
         <Translation Language="GB">결제하기</Translation>
       </Text>
@@ -115,9 +557,6 @@
       </Text>
       <Text Id="__SingleUse_FTUP" Alignment="Center" TypographyId="Pretendard_13">
         <Translation Language="GB">바로 주문</Translation>
-      </Text>
-      <Text Id="__SingleUse_DEJO" Alignment="Center" TypographyId="Pretendard_Light_10">
-        <Translation Language="GB"></Translation>
       </Text>
       <Text Id="__SingleUse_0O6E" Alignment="Left" TypographyId="Pretendard_Light_10">
         <Translation Language="GB">1</Translation>
@@ -337,7 +776,7 @@
     <Typography Id="Hakgyoansim_10" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
       <LanguageSetting Language="GB" Font="HakgyoansimBareondotumR.otf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
-    <Typography Id="Pretendard_11" Font="Pretendard-ExtraBold.otf" Size="11" Bpp="8" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
+    <Typography Id="Pretendard_11" Font="Pretendard-ExtraBold.otf" Size="11" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">
       <LanguageSetting Language="GB" Font="Pretendard-ExtraBold.otf" Size="11" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     </Typography>
     <Typography Id="Pretndard_16" Font="Pretendard-ExtraBold.otf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E">

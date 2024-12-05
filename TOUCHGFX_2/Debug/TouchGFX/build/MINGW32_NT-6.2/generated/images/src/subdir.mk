@@ -49,6 +49,7 @@ O_SRCS += \
 ../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_chocolateMousseCake100100.o \
 ../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_crop10045_1.o \
 ../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_crop10045_2.o \
+../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_crop22038.o \
 ../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_cropButton_10050.o \
 ../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_cube_latte_100100.o \
 ../TouchGFX/build/MINGW32_NT-6.2/generated/images/src/image_detail_order_1.o \

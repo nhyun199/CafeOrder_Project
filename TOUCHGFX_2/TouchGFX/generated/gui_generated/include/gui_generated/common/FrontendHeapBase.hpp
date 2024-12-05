@@ -9,7 +9,8 @@
 #include <mvp/MVPHeap.hpp>
 
 #include <touchgfx/transitions/NoTransition.hpp>
-#include <touchgfx/transitions/SlideTransition.hpp>
+#include <touchgfx/transitions/BlockTransition.hpp>
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -20,8 +21,10 @@
 #include <gui/main_screen/MAINPresenter.hpp>
 #include <gui/order_screen/ORDERView.hpp>
 #include <gui/order_screen/ORDERPresenter.hpp>
-#include <gui/test_screen/TESTView.hpp>
-#include <gui/test_screen/TESTPresenter.hpp>
+#include <gui/payment_screen/PAYMENTView.hpp>
+#include <gui/payment_screen/PAYMENTPresenter.hpp>
+#include <gui/cart_screen/CARTView.hpp>
+#include <gui/cart_screen/CARTPresenter.hpp>
 
 
 /**
@@ -47,8 +50,9 @@ public:
     typedef touchgfx::meta::TypeList< INTROView,
             touchgfx::meta::TypeList< MAINView,
             touchgfx::meta::TypeList< ORDERView,
-            touchgfx::meta::TypeList< TESTView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< PAYMENTView,
+            touchgfx::meta::TypeList< CARTView,
+            touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -63,8 +67,9 @@ public:
     typedef touchgfx::meta::TypeList< INTROPresenter,
             touchgfx::meta::TypeList< MAINPresenter,
             touchgfx::meta::TypeList< ORDERPresenter,
-            touchgfx::meta::TypeList< TESTPresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< PAYMENTPresenter,
+            touchgfx::meta::TypeList< CARTPresenter,
+            touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -77,9 +82,10 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::TypeList< SlideTransition<EAST>,
-            touchgfx::meta::TypeList< SlideTransition<WEST>,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< BlockTransition,
+            touchgfx::meta::TypeList< CoverTransition<SOUTH>,
+            touchgfx::meta::TypeList< CoverTransition<NORTH>,
+            touchgfx::meta::Nil > > >
             > GeneratedTransitionTypes;
 
     /**

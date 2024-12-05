@@ -30,9 +30,12 @@
     <ClCompile Include="..\..\gui\src\order_screen\ORDERPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\order_screen\ORDERView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\order_screen\ORDERViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\test_screen\TESTPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\test_screen\TESTView.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\test_screen\TESTViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\payment_screen\PAYMENTPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\payment_screen\PAYMENTView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\payment_screen\PAYMENTViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\cart_screen\CARTPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\cart_screen\CARTView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\cart_screen\CARTViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -192,9 +195,12 @@
     <ClInclude Include="..\..\gui\include\gui\order_screen\ORDERPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\order_screen\ORDERView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\order_screen\ORDERViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTView.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\test_screen\TESTViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\payment_screen\PAYMENTPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\payment_screen\PAYMENTView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\payment_screen\PAYMENTViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\cart_screen\CARTPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\cart_screen\CARTView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cart_screen\CARTViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

@@ -214,17 +214,29 @@
     <Filter Include="Header Files\generated\gui_generated\order_screen">
       <UniqueIdentifier>674E73BA-1D5D-45B2-563E-F8BE3DF99622</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\test_screen">
-      <UniqueIdentifier>F8F676CA-3598-D046-C160-D1E6BF807D43</UniqueIdentifier>
+    <Filter Include="Source Files\gui\payment_screen">
+      <UniqueIdentifier>36D8DCEC-45CB-1EDD-240A-CEB287FDE982</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\test_screen">
-      <UniqueIdentifier>D1EE66C8-259F-F76D-C0B5-A91B1E2EC1B1</UniqueIdentifier>
+    <Filter Include="Header Files\gui\payment_screen">
+      <UniqueIdentifier>126B5CEE-9D5B-A33C-0661-9B4BC7EB3600</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\test_screen">
-      <UniqueIdentifier>4A00BC46-2E99-E6FF-E458-71ABBD65AEA6</UniqueIdentifier>
+    <Filter Include="Header Files\generated\gui_generated\payment_screen">
+      <UniqueIdentifier>40D0B632-7699-59EF-6FEA-D0981C9684D2</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\test_screen">
-      <UniqueIdentifier>D17587AB-8B52-B79A-B612-6258893F8FE9</UniqueIdentifier>
+    <Filter Include="Source Files\generated\gui_generated\payment_screen">
+      <UniqueIdentifier>ECE590D5-CB22-04FA-51FC-A57844E09DA6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\cart_screen">
+      <UniqueIdentifier>D2EE0F7C-15D1-DAE1-85A4-D878955FD9FE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\cart_screen">
+      <UniqueIdentifier>3742848B-74FA-C8EB-2CAF-33FFEAE4E43F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\cart_screen">
+      <UniqueIdentifier>780142FD-B6E4-8546-2947-82E92F318F74</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\cart_screen">
+      <UniqueIdentifier>AC6323F3-5826-7A51-0E60-122A43116709</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -285,14 +297,23 @@
     <ClCompile Include="..\..\generated\gui_generated\src\order_screen\ORDERViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\order_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\test_screen\TESTPresenter.cpp">
-      <Filter>Source Files\gui\test_screen</Filter>
+    <ClCompile Include="..\..\gui\src\payment_screen\PAYMENTPresenter.cpp">
+      <Filter>Source Files\gui\payment_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\test_screen\TESTView.cpp">
-      <Filter>Source Files\gui\test_screen</Filter>
+    <ClCompile Include="..\..\gui\src\payment_screen\PAYMENTView.cpp">
+      <Filter>Source Files\gui\payment_screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\test_screen\TESTViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\test_screen</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\payment_screen\PAYMENTViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\payment_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cart_screen\CARTPresenter.cpp">
+      <Filter>Source Files\gui\cart_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cart_screen\CARTView.cpp">
+      <Filter>Source Files\gui\cart_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\cart_screen\CARTViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\cart_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -763,14 +784,23 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\order_screen\ORDERViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\order_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTPresenter.hpp">
-      <Filter>Header Files\gui\test_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\payment_screen\PAYMENTPresenter.hpp">
+      <Filter>Header Files\gui\payment_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\test_screen\TESTView.hpp">
-      <Filter>Header Files\gui\test_screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\payment_screen\PAYMENTView.hpp">
+      <Filter>Header Files\gui\payment_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\test_screen\TESTViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\test_screen</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\payment_screen\PAYMENTViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\payment_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cart_screen\CARTPresenter.hpp">
+      <Filter>Header Files\gui\cart_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cart_screen\CARTView.hpp">
+      <Filter>Header Files\gui\cart_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cart_screen\CARTViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\cart_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

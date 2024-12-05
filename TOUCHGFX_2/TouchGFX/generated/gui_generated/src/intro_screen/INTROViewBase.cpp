@@ -45,8 +45,8 @@ void INTROViewBase::handleTickEvent()
     {
         //Switch_screen_after_3s
         //When every N tick change screen to MAIN
-        //Go to MAIN with no screen transition
-        application().gotoMAINScreenNoTransition();
+        //Go to MAIN with block transition
+        application().gotoMAINScreenBlockTransition();
         frameCountSwitch_screen_after_3sInterval = 0;
     }
 }

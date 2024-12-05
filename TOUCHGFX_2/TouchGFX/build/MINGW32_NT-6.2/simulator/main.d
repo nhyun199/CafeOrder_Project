@@ -64,9 +64,9 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -100,9 +100,12 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- gui/include/gui/test_screen/TESTView.hpp \
- generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp \
- gui/include/gui/test_screen/TESTPresenter.hpp \
+ gui/include/gui/payment_screen/PAYMENTView.hpp \
+ generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp \
+ gui/include/gui/payment_screen/PAYMENTPresenter.hpp \
+ gui/include/gui/cart_screen/CARTView.hpp \
+ generated/gui_generated/include/gui_generated/cart_screen/CARTViewBase.hpp \
+ gui/include/gui/cart_screen/CARTPresenter.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -237,11 +240,11 @@ generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
 
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp:
+
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 
 gui/include/gui/common/FrontendApplication.hpp:
 
@@ -309,11 +312,17 @@ gui/include/gui/order_screen/ORDERPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
-gui/include/gui/test_screen/TESTView.hpp:
+gui/include/gui/payment_screen/PAYMENTView.hpp:
 
-generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp:
+generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp:
 
-gui/include/gui/test_screen/TESTPresenter.hpp:
+gui/include/gui/payment_screen/PAYMENTPresenter.hpp:
+
+gui/include/gui/cart_screen/CARTView.hpp:
+
+generated/gui_generated/include/gui_generated/cart_screen/CARTViewBase.hpp:
+
+gui/include/gui/cart_screen/CARTPresenter.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

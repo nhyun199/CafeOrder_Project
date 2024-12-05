@@ -17,7 +17,6 @@ ORDERViewBase::ORDERViewBase() :
 
     bodyBackground.setPosition(0, 55, 272, 425);
     bodyBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    bodyBackground.setVisible(false);
     add(bodyBackground);
 
     scrollableContainer1.setPosition(0, 115, 272, 365);
@@ -25,7 +24,6 @@ ORDERViewBase::ORDERViewBase() :
     scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     scrollableContainer1.setScrollbarsAlpha(255);
     scrollableContainer1.setScrollbarsVisible(false);
-    scrollableContainer1.setVisible(false);
     recommend.setPosition(0, 0, 272, 483);
     backGround1.setPosition(0, 0, 272, 483);
     backGround1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -563,7 +561,6 @@ ORDERViewBase::ORDERViewBase() :
 
     boundary1.setPosition(0, 113, 272, 1);
     boundary1.setColor(touchgfx::Color::getColorFromRGB(227, 225, 225));
-    boundary1.setVisible(false);
     add(boundary1);
 
     CategoryButton.setPosition(0, 82, 272, 30);
@@ -571,7 +568,6 @@ ORDERViewBase::ORDERViewBase() :
     CategoryButton.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     CategoryButton.setScrollbarsAlpha(255);
     CategoryButton.setScrollbarsVisible(false);
-    CategoryButton.setVisible(false);
     CategoryBody.setPosition(0, 0, 294, 30);
     categoryBackground.setPosition(0, 0, 294, 30);
     categoryBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -621,7 +617,6 @@ ORDERViewBase::ORDERViewBase() :
     add(CategoryButton);
 
     Header.setPosition(0, 0, 272, 55);
-    Header.setVisible(false);
     headerBackground.setPosition(0, 0, 272, 55);
     headerBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Header.add(headerBackground);
@@ -637,9 +632,14 @@ ORDERViewBase::ORDERViewBase() :
     backButton.setAction(buttonCallback);
     Header.add(backButton);
 
+    cartButton.setXY(241, 17);
+    cartButton.setBitmaps(touchgfx::Bitmap(BITMAP_CART_2020_ID), touchgfx::Bitmap(BITMAP_CART_2020_ID));
+    Header.add(cartButton);
+
     add(Header);
 
     orderDetail.setPosition(0, 0, 272, 480);
+    orderDetail.setVisible(false);
     detailBackground.setPosition(0, 0, 272, 480);
     detailBackground.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     orderDetail.add(detailBackground);
@@ -650,6 +650,7 @@ ORDERViewBase::ORDERViewBase() :
     putMenu_Button.setLabelText(touchgfx::TypedText(T___SINGLEUSE_U9FS));
     putMenu_Button.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     putMenu_Button.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    putMenu_Button.setAction(buttonCallback);
     Tail.add(putMenu_Button);
 
     Purchase_Button.setXY(23, 35);
@@ -682,7 +683,7 @@ ORDERViewBase::ORDERViewBase() :
 
     orderDetail.add(Tail);
 
-    countControll.setPosition(0, 265, 272, 40);
+    countControll.setPosition(0, 280, 272, 40);
     minusButton.setXY(21, 13);
     minusButton.setBitmaps(touchgfx::Bitmap(BITMAP_MINUS_1515_ID), touchgfx::Bitmap(BITMAP_MINUS_1515_ID));
     minusButton.setAction(buttonCallback);
@@ -711,20 +712,22 @@ ORDERViewBase::ORDERViewBase() :
 
     orderDetail.add(countControll);
 
-    menuDescription.setPosition(52, 171, 157, 43);
+    menuDescription.setPosition(6, 218, 261, 47);
     menuDescription.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     menuDescription.setLinespacing(0);
-    menuDescription.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DEJO));
+    menuDescription.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0YN0));
     orderDetail.add(menuDescription);
+
+    textArea3.setPosition(67, 194, 139, 24);
+    textArea3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea3.setLinespacing(0);
+    textArea3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_U3FT));
+    orderDetail.add(textArea3);
 
     menuImage.setXY(76, 65);
     orderDetail.add(menuImage);
 
     HeaderDetail.setPosition(0, 0, 272, 55);
-    cartButton.setXY(241, 17);
-    cartButton.setBitmaps(touchgfx::Bitmap(BITMAP_CART_2020_ID), touchgfx::Bitmap(BITMAP_CART_2020_ID));
-    HeaderDetail.add(cartButton);
-
     backButton2.setXY(11, 17);
     backButton2.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_2020_ID), touchgfx::Bitmap(BITMAP_BACK_2020_ID));
     backButton2.setAction(buttonCallback);
@@ -751,8 +754,8 @@ void ORDERViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     {
         //GoMain
         //When backButton clicked change screen to MAIN
-        //Go to MAIN with screen transition towards West
-        application().gotoMAINScreenSlideTransitionWest();
+        //Go to MAIN with screen transition towards North
+        application().gotoMAINScreenCoverTransitionNorth();
     }
     if (&src == &addButton)
     {
@@ -951,9 +954,16 @@ void ORDERViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         nowPurchase();
     
         //Interaction1
-        //When now_purchase completed change screen to TEST
-        //Go to TEST with no screen transition
-        application().gotoTESTScreenNoTransition();
+        //When now_purchase completed change screen to PAYMENT
+        //Go to PAYMENT with screen transition towards South
+        application().gotoPAYMENTScreenCoverTransitionSouth();
+    }
+    if (&src == &putMenu_Button)
+    {
+        //putMenu
+        //When putMenu_Button clicked call virtual function
+        //Call putMenu
+        putMenu();
     }
 }
 

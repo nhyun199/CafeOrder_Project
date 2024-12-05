@@ -124,9 +124,9 @@ int _write(int file, char *ptr, int len)
   return len;
 }
 
-void ButtonClickTest()
+void print(const char* message)
 {
-  printf("Button Clicked !!!!\r\n");
+  HAL_UART_Transmit(&huart1, (uint8_t*)message, strlen(message),HAL_MAX_DELAY);
 }
 /* USER CODE END PFP */
 

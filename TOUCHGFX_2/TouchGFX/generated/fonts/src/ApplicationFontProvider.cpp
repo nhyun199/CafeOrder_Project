@@ -52,17 +52,17 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
         // HakgyoansimBareondotumR_otf_10_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::PRETENDARD_11:
-        // Pretendard_ExtraBold_otf_11_8bpp
+        // Pretendard_ExtraBold_otf_11_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
     case Typography::PRETENDARD_11_AUTO_GENERATED_FOR_GB:
         // Pretendard_ExtraBold_otf_11_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
     case Typography::PRETNDARD_16:
         // Pretendard_ExtraBold_otf_16_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
     case Typography::PRETNDARD_16_AUTO_GENERATED_FOR_GB:
         // Pretendard_ExtraBold_otf_16_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[10]);
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
     default:
         return 0;
     }

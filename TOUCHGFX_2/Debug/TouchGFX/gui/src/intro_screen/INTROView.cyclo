@@ -5,4 +5,4 @@
 ../TouchGFX/gui/include/gui/intro_screen/INTROView.hpp:11:13:virtual INTROView::~INTROView()	1
 ../TouchGFX/gui/src/intro_screen/INTROView.cpp:3:1:INTROView::INTROView()	1
 ../TouchGFX/gui/src/intro_screen/INTROView.cpp:8:6:virtual void INTROView::setupScreen()	1
-../TouchGFX/gui/src/intro_screen/INTROView.cpp:13:6:virtual void INTROView::tearDownScreen()	1
+../TouchGFX/gui/src/intro_screen/INTROView.cpp:14:6:virtual void INTROView::tearDownScreen()	1

@@ -25,6 +25,7 @@ public:
     virtual void onMinusButtonClicked();
     virtual void hideDetail();
     virtual void nowPurchase();
+    virtual void putMenu();
 
     virtual void menu0();
     virtual void menu1();

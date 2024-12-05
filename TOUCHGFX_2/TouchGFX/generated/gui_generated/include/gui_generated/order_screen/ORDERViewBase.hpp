@@ -173,6 +173,10 @@ public:
     {
         // Override and implement this function in ORDER
     }
+    virtual void putMenu()
+    {
+        // Override and implement this function in ORDER
+    }
 
 protected:
     FrontendApplication& application() {
@@ -308,6 +312,7 @@ protected:
     touchgfx::Box headerBackground;
     touchgfx::TextArea titleText;
     touchgfx::Button backButton;
+    touchgfx::Button cartButton;
     touchgfx::Container orderDetail;
     touchgfx::Box detailBackground;
     touchgfx::Container Tail;
@@ -322,9 +327,9 @@ protected:
     touchgfx::TextAreaWithOneWildcard menuPrice;
     touchgfx::TextAreaWithOneWildcard menuCount;
     touchgfx::TextArea menuDescription;
+    touchgfx::TextArea textArea3;
     touchgfx::Image menuImage;
     touchgfx::Container HeaderDetail;
-    touchgfx::Button cartButton;
     touchgfx::Button backButton2;
 
     /*

@@ -44,7 +44,7 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionBlock",
               "ActionComponent": "MAIN"
             }
           }
@@ -433,9 +433,22 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "East",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
               "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "GoCart",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "basketButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "CART"
             }
           }
         ]
@@ -449,7 +462,6 @@
             "Y": 55,
             "Width": 272,
             "Height": 425,
-            "Visible": false,
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -462,7 +474,6 @@
             "Y": 115,
             "Width": 272,
             "Height": 365,
-            "Visible": false,
             "VerticalScrollEnabled": true,
             "ScrollbarsAlpha": 255,
             "Components": [
@@ -1614,7 +1625,6 @@
             "Y": 113,
             "Width": 272,
             "Height": 1,
-            "Visible": false,
             "LockPosition": true,
             "Color": {
               "Red": 227,
@@ -1628,7 +1638,6 @@
             "Y": 82,
             "Width": 272,
             "Height": 30,
-            "Visible": false,
             "HorizontalScrollEnabled": true,
             "ScrollbarsAlpha": 255,
             "Components": [
@@ -1725,7 +1734,6 @@
             "Name": "Header",
             "Width": 272,
             "Height": 55,
-            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -1762,6 +1770,17 @@
                 "LockPosition": true,
                 "Pressed": "back_2020.png",
                 "Released": "back_2020.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "cartButton",
+                "X": 241,
+                "Y": 17,
+                "Width": 20,
+                "Height": 20,
+                "LockPosition": true,
+                "Pressed": "cart_2020.png",
+                "Released": "cart_2020.png"
               }
             ]
           },
@@ -1770,6 +1789,7 @@
             "Name": "orderDetail",
             "Width": 272,
             "Height": 480,
+            "Visible": false,
             "LockPosition": true,
             "Components": [
               {
@@ -1839,7 +1859,7 @@
                     "X": 23,
                     "Y": 11,
                     "Width": 36,
-                    "Height": 11,
+                    "Height": 12,
                     "TextId": "__SingleUse_2PT4",
                     "TextRotation": "0",
                     "AutoSize": true
@@ -1884,10 +1904,9 @@
               {
                 "Type": "Container",
                 "Name": "countControll",
-                "Y": 265,
+                "Y": 280,
                 "Width": 272,
                 "Height": 40,
-                "LockPosition": true,
                 "Components": [
                   {
                     "Type": "Button",
@@ -1944,11 +1963,21 @@
               {
                 "Type": "TextArea",
                 "Name": "menuDescription",
-                "X": 52,
-                "Y": 171,
-                "Width": 157,
-                "Height": 43,
-                "TextId": "__SingleUse_DEJO",
+                "X": 6,
+                "Y": 218,
+                "Width": 261,
+                "Height": 47,
+                "TextId": "__SingleUse_0YN0",
+                "TextRotation": "0"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "X": 67,
+                "Y": 194,
+                "Width": 139,
+                "Height": 24,
+                "TextId": "__SingleUse_U3FT",
                 "TextRotation": "0"
               },
               {
@@ -1966,16 +1995,6 @@
                 "Height": 55,
                 "LockPosition": true,
                 "Components": [
-                  {
-                    "Type": "Button",
-                    "Name": "cartButton",
-                    "X": 241,
-                    "Y": 17,
-                    "Width": 20,
-                    "Height": 20,
-                    "Pressed": "cart_2020.png",
-                    "Released": "cart_2020.png"
-                  },
                   {
                     "Type": "Button",
                     "Name": "backButton2",
@@ -2000,8 +2019,8 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "West",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
               "ActionComponent": "MAIN"
             }
           },
@@ -2466,8 +2485,20 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "TEST"
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "PAYMENT"
+            }
+          },
+          {
+            "InteractionName": "putMenu",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "putMenu_Button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "putMenu"
             }
           }
         ],
@@ -2556,14 +2587,272 @@
         ]
       },
       {
-        "Name": "TEST",
+        "Name": "PAYMENT",
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
+            "Type": "Container",
+            "Name": "container1",
             "Width": 272,
             "Height": 480,
-            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "box1",
+                "Width": 272,
+                "Height": 480,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Container",
+                "Name": "Tail",
+                "Y": 379,
+                "Width": 272,
+                "Height": 101,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea2_1",
+                    "X": 17,
+                    "Y": 12,
+                    "Width": 44,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_R6HC",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "totalPrice2",
+                    "X": 164,
+                    "Y": 12,
+                    "Width": 80,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_GKR6",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 51,
+                      "Blue": 83
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_CAY7",
+                      "UseBuffer": true,
+                      "BufferSize": 20
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "text_WON",
+                    "X": 244,
+                    "Y": 12,
+                    "Width": 11,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_1US7",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 51,
+                      "Blue": 83
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "paymentButton",
+                    "X": 26,
+                    "Y": 47,
+                    "Width": 220,
+                    "Height": 38,
+                    "LockPosition": true,
+                    "Pressed": "crop22038.png",
+                    "Released": "crop22038.png",
+                    "TextId": "__SingleUse_VE5H",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
+                  }
+                ]
+              },
+              {
+                "Type": "TextArea",
+                "Name": "text_WON_1",
+                "X": 245,
+                "Y": 262,
+                "Width": 10,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_ZZOP",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "X": 21,
+                "Y": 70,
+                "Width": 47,
+                "Height": 15,
+                "LockPosition": true,
+                "TextId": "__SingleUse_CD45",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "menuname",
+                "X": 140,
+                "Y": 191,
+                "Width": 115,
+                "Height": 22,
+                "TextId": "__SingleUse_GE53",
+                "TextRotation": "0"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "count",
+                "X": 16,
+                "Y": 262,
+                "Width": 30,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_O4JP",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_W0QF",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "totalPrice",
+                "X": 174,
+                "Y": 262,
+                "Width": 70,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_X5H3",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_PVNP",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "X": 46,
+                "Y": 262,
+                "Width": 10,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_AQL8",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1",
+                "Y": 55,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1_1",
+                "Y": 373,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1_2",
+                "Y": 223,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "menuImage",
+                "X": 21,
+                "Y": 94,
+                "Width": 80,
+                "Height": 80,
+                "LockPosition": true
+              },
+              {
+                "Type": "Container",
+                "Name": "Header",
+                "Width": 272,
+                "Height": 55,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "titleText",
+                    "X": 114,
+                    "Y": 19,
+                    "Width": 44,
+                    "Height": 15,
+                    "TextId": "__SingleUse_N190",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "backButton",
+                    "X": 11,
+                    "Y": 17,
+                    "Width": 20,
+                    "Height": 20,
+                    "Pressed": "back_2020.png",
+                    "Released": "back_2020.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "Width": 272,
+            "Height": 480,
+            "Visible": false,
             "Color": {
               "Red": 255,
               "Green": 255,
@@ -2571,44 +2860,136 @@
             }
           },
           {
+            "Type": "ButtonWithLabel",
+            "Name": "billEX",
+            "X": 22,
+            "Y": 40,
+            "Width": 100,
+            "Height": 45,
+            "Visible": false,
+            "Pressed": "crop10045_2.png",
+            "Released": "crop10045_2.png",
+            "TextId": "__SingleUse_1976",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "creditCardEX",
+            "X": 22,
+            "Y": 105,
+            "Width": 100,
+            "Height": 45,
+            "Visible": false,
+            "Pressed": "crop10045_2.png",
+            "Released": "crop10045_2.png",
+            "TextId": "__SingleUse_CGNE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea4",
+            "X": 22,
+            "Y": 174,
+            "Width": 156,
+            "Height": 36,
+            "Visible": false,
+            "TextId": "__SingleUse_IOLX",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "paymentInfoTransmitt",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "paymentButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "transmittServer"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "CART",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 272,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "boundary1_1",
+            "Y": 378,
+            "Width": 272,
+            "Height": 1,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 225,
+              "Blue": 225
+            }
+          },
+          {
             "Type": "Container",
             "Name": "Tail",
             "Y": 379,
             "Width": 272,
-            "Height": 96,
+            "Height": 101,
             "Components": [
               {
                 "Type": "TextArea",
                 "Name": "textArea2_1",
                 "X": 17,
                 "Y": 12,
-                "Width": 44,
+                "Width": 58,
                 "Height": 15,
-                "LockPosition": true,
-                "TextId": "__SingleUse_R6HC",
+                "TextId": "__SingleUse_J85M",
                 "TextRotation": "0",
                 "AutoSize": true
-              },
-              {
-                "Type": "TextArea",
-                "Name": "totalPrice2",
-                "X": 164,
-                "Y": 12,
-                "Width": 80,
-                "Height": 15,
-                "LockPosition": true,
-                "TextId": "__SingleUse_GKR6",
-                "TextRotation": "0",
-                "Color": {
-                  "Red": 255,
-                  "Green": 51,
-                  "Blue": 83
-                },
-                "Wildcard1": {
-                  "TextId": "__SingleUse_CAY7",
-                  "UseBuffer": true,
-                  "BufferSize": 20
-                }
               },
               {
                 "Type": "TextArea",
@@ -2618,7 +2999,7 @@
                 "Width": 11,
                 "Height": 15,
                 "LockPosition": true,
-                "TextId": "__SingleUse_1US7",
+                "TextId": "__SingleUse_RVRO",
                 "TextRotation": "0",
                 "Color": {
                   "Red": 255,
@@ -2628,8 +3009,28 @@
                 "AutoSize": true
               },
               {
+                "Type": "TextArea",
+                "Name": "lastTotal",
+                "X": 170,
+                "Y": 12,
+                "Width": 70,
+                "Height": 15,
+                "TextId": "__SingleUse_PSUM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 51,
+                  "Blue": 83
+                },
+                "Wildcard1": {
+                  "TextId": "__SingleUse_ONP8",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
                 "Type": "ButtonWithLabel",
-                "Name": "buttonWithLabel1",
+                "Name": "paymentButton",
                 "X": 26,
                 "Y": 47,
                 "Width": 220,
@@ -2637,7 +3038,7 @@
                 "LockPosition": true,
                 "Pressed": "crop22038.png",
                 "Released": "crop22038.png",
-                "TextId": "__SingleUse_VE5H",
+                "TextId": "__SingleUse_OTN0",
                 "ReleasedColor": {
                   "Red": 255,
                   "Green": 255,
@@ -2653,11 +3054,1037 @@
             ]
           },
           {
+            "Type": "ListLayout",
+            "Name": "list_WON",
+            "X": 245,
+            "Y": 84,
+            "Width": 10,
+            "Height": 266,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "WON_1",
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_DF9N",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_2",
+                "Y": 14,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_3QFR",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_3",
+                "Y": 28,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_8QPA",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_4",
+                "Y": 42,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_VL2Y",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_5",
+                "Y": 56,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2HSE",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_6",
+                "Y": 70,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_FABE",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_7",
+                "Y": 84,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_IJYM",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_8",
+                "Y": 98,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_C4D7",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_9",
+                "Y": 112,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_X4WY",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_10",
+                "Y": 126,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_XPII",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_11",
+                "Y": 140,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2Q73",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_12",
+                "Y": 154,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_GIC3",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_13",
+                "Y": 168,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_GJVL",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_14",
+                "Y": 182,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_9TXH",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_15",
+                "Y": 196,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2K81",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_16",
+                "Y": 210,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_O25U",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_17",
+                "Y": 224,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_ND2D",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_18",
+                "Y": 238,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_936X",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_19",
+                "Y": 252,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_T8OV",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "list_GAE",
+            "X": 170,
+            "Y": 84,
+            "Width": 10,
+            "Height": 266,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "GAE_1",
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_T5A4",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_2",
+                "Y": 14,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_R95H",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_3",
+                "Y": 28,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_9PRH",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_4",
+                "Y": 42,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_TZ1B",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_5",
+                "Y": 56,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2K04",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_6",
+                "Y": 70,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_N8RX",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_7",
+                "Y": 84,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_XIFM",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_8",
+                "Y": 98,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_O1OC",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_9",
+                "Y": 112,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_NOC9",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_10",
+                "Y": 126,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_T245",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_11",
+                "Y": 140,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_IN7L",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_12",
+                "Y": 154,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_NU1Z",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_13",
+                "Y": 168,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_4VN3",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_14",
+                "Y": 182,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_8UW3",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_15",
+                "Y": 196,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_TZ7M",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_16",
+                "Y": 210,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_HK35",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_17",
+                "Y": 224,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_TC0N",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_18",
+                "Y": 238,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_UVHV",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_19",
+                "Y": 252,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_8ONP",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "countList",
+            "X": 142,
+            "Y": 84,
+            "Width": 60,
+            "Height": 266,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "order1",
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_8Z1X",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_C8Z5",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order2",
+                "Y": 14,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_6ZGS",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_UQ1F",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order3",
+                "Y": 28,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_7NRY",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_ODIT",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order4",
+                "Y": 42,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_P7ZV",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_9YXU",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order5",
+                "Y": 56,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_X71U",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_CRFQ",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order6",
+                "Y": 70,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_WSYL",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4I6K",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order7",
+                "Y": 84,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_867J",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2IO1",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order8",
+                "Y": 98,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_TU3P",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_SBDK",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order9",
+                "Y": 112,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_6IVG",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_Y0RH",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order10",
+                "Y": 126,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_2VH7",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2IR6",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order11",
+                "Y": 140,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_T7D6",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2S3K",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order12",
+                "Y": 154,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_7NTC",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_K41L",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order13",
+                "Y": 168,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_ZKFQ",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_RJY9",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order14",
+                "Y": 182,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_MVAW",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_D3DN",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order15",
+                "Y": 196,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_R3QM",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_M8E3",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order16",
+                "Y": 210,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_2GKF",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_EANV",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order17",
+                "Y": 224,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_EMP0",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FX6U",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order18",
+                "Y": 238,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_IA5E",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_XTSY",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order19",
+                "Y": 252,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_JHF4",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_SQZ8",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "priceList",
+            "X": 178,
+            "Y": 84,
+            "Width": 100,
+            "Height": 267,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "order1_1",
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_J322",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_WX4O",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order2_1",
+                "Y": 14,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_GRYO",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_8LAK",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order3_1",
+                "Y": 28,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_2B8Q",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_H68I",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order4_1",
+                "Y": 42,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_NI5B",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_EPJ4",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order5_1",
+                "Y": 56,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_GD2P",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_N5UH",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order6_1",
+                "Y": 70,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_R2LP",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4C9U",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order7_1",
+                "Y": 84,
+                "Width": 100,
+                "Height": 15,
+                "TextId": "__SingleUse_1B8Q",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4QDU",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order8_1",
+                "Y": 99,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_VURF",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_S067",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order9_1",
+                "Y": 113,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_CAOD",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4M72",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order10_1",
+                "Y": 127,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_10IF",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_42JQ",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order11_1",
+                "Y": 141,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_OJJS",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_6HST",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order12_1",
+                "Y": 155,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_55AY",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_242X",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order13_1",
+                "Y": 169,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_3124",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_U9WA",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order14_1",
+                "Y": 183,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_UF39",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_BMY0",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order15_1",
+                "Y": 197,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_DBML",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_UDE7",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order16_1",
+                "Y": 211,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_FTTV",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_Y30S",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order17_1",
+                "Y": 225,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_UAZT",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_GIBP",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order18_1",
+                "Y": 239,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_4SX1",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_QG5C",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order19_1",
+                "Y": 253,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_ADLW",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_NCGE",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "nameList",
+            "X": 18,
+            "Y": 84,
+            "Width": 47,
+            "Height": 14,
+            "Direction": "South",
+            "Components": []
+          },
+          {
             "Type": "Container",
             "Name": "Header",
             "Width": 272,
-            "Height": 55,
+            "Height": 77,
             "Components": [
+              {
+                "Type": "Box",
+                "Name": "boundary1_2",
+                "Y": 76,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1",
+                "Y": 55,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
               {
                 "Type": "TextArea",
                 "Name": "titleText",
@@ -2665,7 +4092,8 @@
                 "Y": 19,
                 "Width": 44,
                 "Height": 15,
-                "TextId": "__SingleUse_N190",
+                "LockPosition": true,
+                "TextId": "__SingleUse_8JY9",
                 "TextRotation": "0",
                 "AutoSize": true
               },
@@ -2676,140 +4104,61 @@
                 "Y": 17,
                 "Width": 20,
                 "Height": 20,
+                "LockPosition": true,
                 "Pressed": "back_2020.png",
                 "Released": "back_2020.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "X": 19,
+                "Y": 60,
+                "Width": 36,
+                "Height": 12,
+                "LockPosition": true,
+                "TextId": "__SingleUse_70GM",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea4",
+                "X": 160,
+                "Y": 60,
+                "Width": 18,
+                "Height": 12,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JDLG",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea5",
+                "X": 220,
+                "Y": 60,
+                "Width": 18,
+                "Height": 12,
+                "LockPosition": true,
+                "TextId": "__SingleUse_8SHO",
+                "TextRotation": "0",
+                "AutoSize": true
               }
             ]
-          },
-          {
-            "Type": "TextArea",
-            "Name": "text_WON_1",
-            "X": 245,
-            "Y": 262,
-            "Width": 10,
-            "Height": 14,
-            "TextId": "__SingleUse_ZZOP",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 21,
-            "Y": 70,
-            "Width": 47,
-            "Height": 15,
-            "TextId": "__SingleUse_CD45",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "menuname",
-            "X": 144,
-            "Y": 94,
-            "Width": 115,
-            "Height": 22,
-            "TextId": "__SingleUse_GE53",
-            "TextRotation": "0"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "count",
-            "X": 16,
-            "Y": 262,
-            "Width": 30,
-            "Height": 14,
-            "TextId": "__SingleUse_O4JP",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_W0QF",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "totalPrice",
-            "X": 174,
-            "Y": 262,
-            "Width": 70,
-            "Height": 14,
-            "TextId": "__SingleUse_X5H3",
-            "TextRotation": "0",
-            "Wildcard1": {
-              "TextId": "__SingleUse_PVNP",
-              "UseBuffer": true,
-              "BufferSize": 20
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea3",
-            "X": 46,
-            "Y": 262,
-            "Width": 10,
-            "Height": 14,
-            "TextId": "__SingleUse_AQL8",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "Box",
-            "Name": "boundary1",
-            "Y": 55,
-            "Width": 272,
-            "Height": 1,
-            "Color": {
-              "Red": 227,
-              "Green": 225,
-              "Blue": 225
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "boundary1_1",
-            "Y": 373,
-            "Width": 272,
-            "Height": 1,
-            "Color": {
-              "Red": 227,
-              "Green": 225,
-              "Blue": 225
-            }
-          },
-          {
-            "Type": "Box",
-            "Name": "boundary1_2",
-            "Y": 223,
-            "Width": 272,
-            "Height": 1,
-            "Color": {
-              "Red": 227,
-              "Green": 225,
-              "Blue": 225
-            }
-          },
-          {
-            "Type": "Image",
-            "Name": "menuImage",
-            "X": 21,
-            "Y": 94,
-            "Width": 80,
-            "Height": 80
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "GoMain",
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "backButton"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "ORDER"
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "MAIN"
             }
           }
         ]

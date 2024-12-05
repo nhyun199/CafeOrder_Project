@@ -61,6 +61,7 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 extern void ButtonClickTest();
+extern void print(const char* message);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

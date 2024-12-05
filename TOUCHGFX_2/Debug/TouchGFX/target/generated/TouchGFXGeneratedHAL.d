@@ -42,9 +42,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -80,9 +80,12 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- ../TouchGFX/gui/include/gui/test_screen/TESTView.hpp \
- ../TouchGFX/generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp \
- ../TouchGFX/gui/include/gui/test_screen/TESTPresenter.hpp \
+ ../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp \
+ ../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp \
+ ../TouchGFX/gui/include/gui/cart_screen/CARTView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/cart_screen/CARTViewBase.hpp \
+ ../TouchGFX/gui/include/gui/cart_screen/CARTPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
@@ -126,9 +129,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Application.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/BlockTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -164,7 +167,10 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-../TouchGFX/gui/include/gui/test_screen/TESTView.hpp:
-../TouchGFX/generated/gui_generated/include/gui_generated/test_screen/TESTViewBase.hpp:
-../TouchGFX/gui/include/gui/test_screen/TESTPresenter.hpp:
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp:
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp:
+../TouchGFX/gui/include/gui/cart_screen/CARTView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/cart_screen/CARTViewBase.hpp:
+../TouchGFX/gui/include/gui/cart_screen/CARTPresenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:

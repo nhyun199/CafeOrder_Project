@@ -1,0 +1,4605 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "INTRO",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "background",
+            "Width": 272,
+            "Height": 480,
+            "Color": {
+              "Red": 253,
+              "Green": 208
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "logoImage",
+            "X": 36,
+            "Y": 164,
+            "Width": 200,
+            "Height": 100,
+            "RelativeFilename": "bi_logo3_200-100.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "copyright",
+            "X": 33,
+            "Y": 454,
+            "Width": 207,
+            "Height": 13,
+            "TextId": "__SingleUse_8YH5",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Switch_screen_after_3s",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 210
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionBlock",
+              "ActionComponent": "MAIN"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "MAIN",
+        "Components": [
+          {
+            "Type": "Container",
+            "Name": "Tail",
+            "Y": 425,
+            "Width": 272,
+            "Height": 55,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "tailBackground",
+                "Width": 272,
+                "Height": 55,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Container",
+                "Name": "Navigation",
+                "Y": 3,
+                "Width": 272,
+                "Height": 48,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "ToggleButton",
+                    "Name": "basketButton",
+                    "X": 162,
+                    "Y": 1,
+                    "Width": 40,
+                    "Height": 48,
+                    "Pressed": "basket_40-48.png",
+                    "Released": "basket_40-48-60.png"
+                  },
+                  {
+                    "Type": "ToggleButton",
+                    "Name": "orderButton",
+                    "X": 72,
+                    "Y": 1,
+                    "Width": 40,
+                    "Height": 48,
+                    "Pressed": "order_40-48.png",
+                    "Released": "order_40-48-60.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "Body",
+            "Y": 55,
+            "Width": 272,
+            "Height": 370,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "bodyBackground",
+                "Width": 272,
+                "Height": 512,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "ScrollableContainer",
+                "Name": "Recommend",
+                "X": 12,
+                "Y": 42,
+                "Width": 250,
+                "Height": 130,
+                "HorizontalScrollEnabled": true,
+                "ScrollbarsAlpha": 255,
+                "Components": [
+                  {
+                    "Type": "Container",
+                    "Name": "recommendMenu",
+                    "Width": 600,
+                    "Height": 130,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "Container",
+                        "Name": "menu1",
+                        "Width": 100,
+                        "Height": 112,
+                        "Components": [
+                          {
+                            "Type": "Image",
+                            "Name": "image1",
+                            "Width": 100,
+                            "Height": 100,
+                            "LockPosition": true,
+                            "RelativeFilename": "americano_100100.png"
+                          },
+                          {
+                            "Type": "TextArea",
+                            "Name": "textArea1",
+                            "X": 28,
+                            "Y": 99,
+                            "Width": 45,
+                            "Height": 12,
+                            "LockPosition": true,
+                            "TextId": "__SingleUse_DREI",
+                            "TextRotation": "0",
+                            "AutoSize": true
+                          }
+                        ]
+                      },
+                      {
+                        "Type": "Container",
+                        "Name": "menu2",
+                        "X": 120,
+                        "Width": 100,
+                        "Height": 124,
+                        "Components": [
+                          {
+                            "Type": "Image",
+                            "Name": "image1_1",
+                            "Width": 100,
+                            "Height": 100,
+                            "RelativeFilename": "santa_coconut_appletea_latte_100100.png"
+                          },
+                          {
+                            "Type": "TextArea",
+                            "Name": "textArea1_1",
+                            "X": 24,
+                            "Y": 100,
+                            "Width": 47,
+                            "Height": 24,
+                            "TextId": "__SingleUse_C70E",
+                            "TextRotation": "0",
+                            "AutoSize": true
+                          }
+                        ]
+                      },
+                      {
+                        "Type": "Container",
+                        "Name": "menu3",
+                        "X": 240,
+                        "Width": 100,
+                        "Height": 112,
+                        "Components": [
+                          {
+                            "Type": "Image",
+                            "Name": "image1_2",
+                            "Width": 100,
+                            "Height": 100,
+                            "RelativeFilename": "strawberry_latte_100100.png"
+                          },
+                          {
+                            "Type": "TextArea",
+                            "Name": "textArea1_2",
+                            "X": 32,
+                            "Y": 100,
+                            "Width": 36,
+                            "Height": 12,
+                            "TextId": "__SingleUse_NDFL",
+                            "TextRotation": "0",
+                            "AutoSize": true
+                          }
+                        ]
+                      },
+                      {
+                        "Type": "Container",
+                        "Name": "menu4",
+                        "X": 360,
+                        "Width": 100,
+                        "Height": 112,
+                        "Components": [
+                          {
+                            "Type": "Image",
+                            "Name": "image1_3",
+                            "Width": 100,
+                            "Height": 100,
+                            "RelativeFilename": "strawberry_cookie_frappe_100100.png"
+                          },
+                          {
+                            "Type": "TextArea",
+                            "Name": "textArea1_3",
+                            "X": 19,
+                            "Y": 100,
+                            "Width": 63,
+                            "Height": 12,
+                            "TextId": "__SingleUse_MEAM",
+                            "TextRotation": "0",
+                            "AutoSize": true
+                          }
+                        ]
+                      },
+                      {
+                        "Type": "Container",
+                        "Name": "menu5",
+                        "X": 480,
+                        "Width": 100,
+                        "Height": 112,
+                        "Components": [
+                          {
+                            "Type": "Image",
+                            "Name": "image1_4",
+                            "Width": 100,
+                            "Height": 100,
+                            "RelativeFilename": "cube_latte_100100.png"
+                          },
+                          {
+                            "Type": "TextArea",
+                            "Name": "textArea1_4",
+                            "X": 32,
+                            "Y": 100,
+                            "Width": 36,
+                            "Height": 12,
+                            "TextId": "__SingleUse_T6JZ",
+                            "TextRotation": "0",
+                            "AutoSize": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "TextArea",
+                "Name": "recommendText",
+                "X": 12,
+                "Y": 20,
+                "Width": 110,
+                "Height": 12,
+                "TextId": "__SingleUse_DOT0",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "SwipeContainer",
+                "Name": "Event",
+                "X": 12,
+                "Y": 185,
+                "Width": 250,
+                "Height": 250,
+                "SwipeCutoff": 50,
+                "ShowPageIndicator": true,
+                "PageIndicatorX": 110,
+                "PageIndicatorY": 230,
+                "CenteredX": true,
+                "IndicatorImageNormal": "indicator1010.png",
+                "IndicatorImageHighlight": "indicator_highlight1010.png",
+                "EndSwipeElasticWidth": 50,
+                "SelectedPage": "event1",
+                "Components": [
+                  {
+                    "Type": "Container",
+                    "Name": "event1",
+                    "Width": 250,
+                    "Height": 250,
+                    "Components": [
+                      {
+                        "Type": "Image",
+                        "Name": "eventImage1",
+                        "Width": 250,
+                        "Height": 250,
+                        "RelativeFilename": "kakaoEvent250250.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "event2",
+                    "Width": 250,
+                    "Height": 250,
+                    "Components": [
+                      {
+                        "Type": "Image",
+                        "Name": "eventImage2",
+                        "Width": 250,
+                        "Height": 250,
+                        "RelativeFilename": "event2_250250.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "event3",
+                    "Width": 250,
+                    "Height": 250,
+                    "Components": [
+                      {
+                        "Type": "Image",
+                        "Name": "eventImage3",
+                        "Width": 250,
+                        "Height": 250,
+                        "RelativeFilename": "event3_250250.png"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "TestButton",
+                "X": 87,
+                "Y": 454,
+                "Width": 100,
+                "Height": 45,
+                "Pressed": "crop10045_2.png",
+                "Released": "crop10045_2.png",
+                "TextId": "__SingleUse_IYVH",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "Header",
+            "Width": 272,
+            "Height": 55,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "headerBackground",
+                "Width": 272,
+                "Height": 55,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "logoImage",
+                "X": 86,
+                "Y": 2,
+                "Width": 100,
+                "Height": 50,
+                "LockPosition": true,
+                "RelativeFilename": "bi_logo1_100-50.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GoOrder",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "orderButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "GoCart",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "basketButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "CART"
+            }
+          },
+          {
+            "InteractionName": "Test",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "TestButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Test1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "ORDER",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bodyBackground",
+            "Y": 55,
+            "Width": 272,
+            "Height": 425,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "Y": 115,
+            "Width": 272,
+            "Height": 365,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "recommend",
+                "Width": 272,
+                "Height": 483,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "backGround1",
+                    "Width": 272,
+                    "Height": 483,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "re_menu1",
+                    "X": 25,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuPrice1",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_TXVZ",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuName1",
+                        "X": 28,
+                        "Y": 100,
+                        "Width": 45,
+                        "Height": 12,
+                        "TextId": "__SingleUse_S7HT",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "re_menuButton1",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "americano_100100.png",
+                        "Released": "americano_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "re_menu2",
+                    "X": 147,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 139,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuPrice2",
+                        "X": 32,
+                        "Y": 126,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_3Q3A",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuName2",
+                        "X": 24,
+                        "Y": 100,
+                        "Width": 47,
+                        "Height": 24,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_LJB4",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "re_menuButton2",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "santa_coconut_appletea_latte_100100.png",
+                        "Released": "santa_coconut_appletea_latte_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "re_menu3",
+                    "X": 25,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuPrice3",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_UZSQ",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuName3",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_IKAB",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "re_menuButton3",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "strawberry_latte_100100.png",
+                        "Released": "strawberry_latte_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "re_menu4",
+                    "X": 147,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuPrice4",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_8DUM",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuName4",
+                        "X": 19,
+                        "Y": 100,
+                        "Width": 63,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_EC6Q",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "re_menuButton4",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "strawberry_cookie_frappe_100100.png",
+                        "Released": "strawberry_cookie_frappe_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "re_menu5",
+                    "X": 25,
+                    "Y": 316,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuPrice5",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_N9NV",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "re_menuName5",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_X4IT",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "re_menuButton5",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "cube_latte_100100.png",
+                        "Released": "cube_latte_100100.png"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "coffe",
+                "Width": 272,
+                "Height": 483,
+                "Visible": false,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "backGround2",
+                    "Width": 272,
+                    "Height": 483,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "coffe_menu1",
+                    "X": 25,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuPrice1",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_MXSJ",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuName1",
+                        "X": 28,
+                        "Y": 100,
+                        "Width": 45,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_221N",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "coffe_menuButton1",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "americano_100100.png",
+                        "Released": "americano_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "coffe_menu2",
+                    "X": 147,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 139,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuPrice2",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_28WU",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuName2",
+                        "X": 16,
+                        "Y": 100,
+                        "Width": 69,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_5ZNX",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "coffe_menuButton2",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "americano_ice100100.png",
+                        "Released": "americano_ice100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "coffe_menu3",
+                    "X": 25,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuPrice3",
+                        "X": 32,
+                        "Y": 115,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_WE35",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuName3",
+                        "X": 13,
+                        "Y": 100,
+                        "Width": 75,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_MT4Q",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "coffe_menuButton3",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "americano_hot100100.png",
+                        "Released": "americano_hot100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "coffe_menu4",
+                    "X": 147,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuPrice4",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_0HUW",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuName4",
+                        "X": 23,
+                        "Y": 100,
+                        "Width": 54,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_6ZCL",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "coffe_menuButton4",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "TiramisuLatte100100.png",
+                        "Released": "TiramisuLatte100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "coffe_menu5",
+                    "X": 25,
+                    "Y": 316,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuPrice5",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_KDOA",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuName5",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "TextId": "__SingleUse_N4QD",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "coffe_menuButton5",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "cube_latte_100100.png",
+                        "Released": "cube_latte_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "coffe_menu6",
+                    "X": 147,
+                    "Y": 316,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuPrice6",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_I1GW",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "coffe_menuName6",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "LockPosition": true,
+                        "TextId": "__SingleUse_IRUH",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "coffe_menuButton6",
+                        "Width": 100,
+                        "Height": 100,
+                        "LockPosition": true,
+                        "Pressed": "caffeMocha100100.png",
+                        "Released": "caffeMocha100100.png"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "beverage",
+                "Width": 272,
+                "Height": 483,
+                "Visible": false,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "backGround3",
+                    "Width": 272,
+                    "Height": 483,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "beverage_menu1",
+                    "X": 25,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuPrice1",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_UFQ4",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuName1",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "TextId": "__SingleUse_YI7V",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "beverage_menuButton1",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "strawberry_latte_100100.png",
+                        "Released": "strawberry_latte_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "beverage_menu1_1",
+                    "X": 147,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 139,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuPrice1_1",
+                        "X": 32,
+                        "Y": 126,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_1SUT",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuName1_1",
+                        "X": 24,
+                        "Y": 100,
+                        "Width": 47,
+                        "Height": 24,
+                        "TextId": "__SingleUse_4S11",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "beverage_menuButton1_1",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "santa_coconut_appletea_latte_100100.png",
+                        "Released": "santa_coconut_appletea_latte_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "beverage_menu1_2",
+                    "X": 25,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuPrice1_2",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_96QB",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuName1_2",
+                        "X": 19,
+                        "Y": 100,
+                        "Width": 63,
+                        "Height": 12,
+                        "TextId": "__SingleUse_AVCL",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "beverage_menuButton1_2",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "strawberry_cookie_frappe_100100.png",
+                        "Released": "strawberry_cookie_frappe_100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "beverage_menu1_3",
+                    "X": 147,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuPrice1_3",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_TZZ9",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuName1_3",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "TextId": "__SingleUse_M3AL",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "beverage_menuButton1_3",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "greenTeaLatte100100.png",
+                        "Released": "greenTeaLatte100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "beverage_menu1_4",
+                    "X": 25,
+                    "Y": 316,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuPrice1_4",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_KNSV",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuName1_4",
+                        "X": 19,
+                        "Y": 100,
+                        "Width": 63,
+                        "Height": 12,
+                        "TextId": "__SingleUse_V40E",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "beverage_menuButton1_4",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "oreoChocolateLatte100100.png",
+                        "Released": "oreoChocolateLatte100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "beverage_menu1_5",
+                    "X": 147,
+                    "Y": 316,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuPrice1_5",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_CNUJ",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "beverage_menuName1_5",
+                        "X": 32,
+                        "Y": 100,
+                        "Width": 36,
+                        "Height": 12,
+                        "TextId": "__SingleUse_53L6",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "beverage_menuButton1_5",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "grainLatte100100.png",
+                        "Released": "grainLatte100100.png"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "tea",
+                "Width": 272,
+                "Height": 483,
+                "Visible": false,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "backGround4",
+                    "Width": 272,
+                    "Height": 483,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "tea_menu1",
+                    "X": 25,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuPrice1",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_3LGM",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuName1",
+                        "X": 19,
+                        "Y": 100,
+                        "Width": 63,
+                        "Height": 12,
+                        "TextId": "__SingleUse_NQAW",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "tea_menuButton1",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "peachIcedTea100100.png",
+                        "Released": "peachIcedTea100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "tea_menu2",
+                    "X": 147,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuPrice2",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_I59I",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuName2",
+                        "X": 28,
+                        "Y": 100,
+                        "Width": 45,
+                        "Height": 12,
+                        "TextId": "__SingleUse_W95W",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "tea_menuButton2",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "ApplecitronTea100100.png",
+                        "Released": "ApplecitronTea100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "tea_menu3",
+                    "X": 25,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuPrice3",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_S4P9",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuName3",
+                        "X": 37,
+                        "Y": 100,
+                        "Width": 27,
+                        "Height": 12,
+                        "TextId": "__SingleUse_BKTS",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "tea_menuButton3",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "lemonTea100100.png",
+                        "Released": "lemonTea100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "tea_menu4",
+                    "X": 147,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "LockPosition": true,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuPrice4",
+                        "X": 32,
+                        "Y": 115,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_EV8C",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "tea_menuName4",
+                        "X": 37,
+                        "Y": 100,
+                        "Width": 27,
+                        "Height": 12,
+                        "TextId": "__SingleUse_26XM",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "tea_menuButton4",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "grapefruitTea100100.png",
+                        "Released": "grapefruitTea100100.png"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "food",
+                "Width": 272,
+                "Height": 483,
+                "Visible": false,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "backGround5",
+                    "Width": 272,
+                    "Height": 483,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "food_menu1",
+                    "X": 25,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "food_menuPrice1",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_ZN7P",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "food_menuName1",
+                        "X": 31,
+                        "Y": 100,
+                        "Width": 38,
+                        "Height": 12,
+                        "TextId": "__SingleUse_J8PQ",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "food_menuButton1",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "cheeseCake100100.png",
+                        "Released": "cheeseCake100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "food_menu2",
+                    "X": 147,
+                    "Y": 20,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "food_menuPrice2",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_LUMX",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "food_menuName2",
+                        "X": 22,
+                        "Y": 100,
+                        "Width": 56,
+                        "Height": 12,
+                        "TextId": "__SingleUse_WMVX",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "food_menuButton2",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "chocolateMousseCake100100.png",
+                        "Released": "chocolateMousseCake100100.png"
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "Container",
+                    "Name": "food_menu3",
+                    "X": 25,
+                    "Y": 168,
+                    "Width": 100,
+                    "Height": 128,
+                    "Components": [
+                      {
+                        "Type": "TextArea",
+                        "Name": "food_menuPrice3",
+                        "X": 32,
+                        "Y": 116,
+                        "Width": 36,
+                        "Height": 13,
+                        "TextId": "__SingleUse_XCO8",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "TextArea",
+                        "Name": "food_menuName3",
+                        "X": 22,
+                        "Y": 100,
+                        "Width": 56,
+                        "Height": 12,
+                        "TextId": "__SingleUse_TZO7",
+                        "TextRotation": "0",
+                        "AutoSize": true
+                      },
+                      {
+                        "Type": "Button",
+                        "Name": "food_menuButton3",
+                        "Width": 100,
+                        "Height": 100,
+                        "Pressed": "tiramisuCake100100.png",
+                        "Released": "tiramisuCake100100.png"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "initial",
+                "Width": 272,
+                "Height": 483,
+                "Visible": false,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "backGround6",
+                    "Width": 272,
+                    "Height": 365,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea1",
+                    "X": 15,
+                    "Y": 20,
+                    "Width": 157,
+                    "Height": 16,
+                    "TextId": "__SingleUse_ENY0",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "boundary1",
+            "Y": 113,
+            "Width": 272,
+            "Height": 1,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 225,
+              "Blue": 225
+            }
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "CategoryButton",
+            "Y": 82,
+            "Width": 272,
+            "Height": 30,
+            "HorizontalScrollEnabled": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "CategoryBody",
+                "Width": 294,
+                "Height": 30,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "categoryBackground",
+                    "Width": 294,
+                    "Height": 30,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    }
+                  },
+                  {
+                    "Type": "RadioButton",
+                    "Name": "recommendButton",
+                    "X": 10,
+                    "Width": 47,
+                    "Height": 30,
+                    "Selected": true,
+                    "Deselectable": true,
+                    "FileNameSelected": "category_recommend_activate_4730.png",
+                    "FileNameSelectedPressed": "category_recommend_activate_4730.png",
+                    "FileNameUnselected": "category_recommend_deactivate_4730.png",
+                    "FileNameUnselectedPressed": "category_recommend_deactivate_4730.png",
+                    "RadioButtonGroup": "radioButtonGroup1"
+                  },
+                  {
+                    "Type": "RadioButton",
+                    "Name": "coffeButton",
+                    "X": 62,
+                    "Width": 36,
+                    "Height": 30,
+                    "Deselectable": true,
+                    "FileNameSelected": "category_coffe_activate_3630.png",
+                    "FileNameSelectedPressed": "category_coffe_activate_3630.png",
+                    "FileNameUnselected": "category_coffe_deactivate_3630.png",
+                    "FileNameUnselectedPressed": "category_coffe_deactivate_3630.png",
+                    "RadioButtonGroup": "radioButtonGroup1"
+                  },
+                  {
+                    "Type": "RadioButton",
+                    "Name": "beverageButton",
+                    "X": 103,
+                    "Width": 36,
+                    "Height": 30,
+                    "Deselectable": true,
+                    "FileNameSelected": "category_beverage_activate_3630.png",
+                    "FileNameSelectedPressed": "category_beverage_activate_3630.png",
+                    "FileNameUnselected": "category_beverage_deactivate_3630.png",
+                    "FileNameUnselectedPressed": "category_beverage_deactivate_3630.png",
+                    "RadioButtonGroup": "radioButtonGroup1"
+                  },
+                  {
+                    "Type": "RadioButton",
+                    "Name": "teaButton",
+                    "X": 144,
+                    "Width": 30,
+                    "Height": 30,
+                    "Deselectable": true,
+                    "FileNameSelected": "category_tea_activate_3030.png",
+                    "FileNameSelectedPressed": "category_tea_activate_3030.png",
+                    "FileNameUnselected": "category_tea_deactivate_3030.png",
+                    "FileNameUnselectedPressed": "category_tea_deactivate_3030.png",
+                    "RadioButtonGroup": "radioButtonGroup1"
+                  },
+                  {
+                    "Type": "RadioButton",
+                    "Name": "foodButton",
+                    "X": 179,
+                    "Width": 36,
+                    "Height": 30,
+                    "Deselectable": true,
+                    "FileNameSelected": "category_food_activate_3630.png",
+                    "FileNameSelectedPressed": "category_food_activate_3630.png",
+                    "FileNameUnselected": "category_food_deactivate_3630.png",
+                    "FileNameUnselectedPressed": "category_food_deactivate_3630.png",
+                    "RadioButtonGroup": "radioButtonGroup1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "Header",
+            "Width": 272,
+            "Height": 55,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "headerBackground",
+                "Width": 272,
+                "Height": 55,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "titleText",
+                "X": 114,
+                "Y": 19,
+                "Width": 44,
+                "Height": 15,
+                "LockPosition": true,
+                "TextId": "__SingleUse_0QVJ",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Button",
+                "Name": "backButton",
+                "X": 11,
+                "Y": 17,
+                "Width": 20,
+                "Height": 20,
+                "LockPosition": true,
+                "Pressed": "main_2020.png",
+                "Released": "main_2020.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "cartButton",
+                "X": 241,
+                "Y": 17,
+                "Width": 20,
+                "Height": 20,
+                "LockPosition": true,
+                "Pressed": "cart_2020.png",
+                "Released": "cart_2020.png"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "orderDetail",
+            "Width": 272,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": true,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "detailBackground",
+                "Width": 272,
+                "Height": 480,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Container",
+                "Name": "Tail",
+                "Y": 380,
+                "Width": 272,
+                "Height": 100,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "putMenu_Button",
+                    "X": 149,
+                    "Y": 35,
+                    "Width": 100,
+                    "Height": 45,
+                    "Pressed": "crop10045_2.png",
+                    "Released": "crop10045_2.png",
+                    "TextId": "__SingleUse_U9FS",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "Purchase_Button",
+                    "X": 23,
+                    "Y": 35,
+                    "Width": 100,
+                    "Height": 45,
+                    "Pressed": "crop10045_1.png",
+                    "Released": "crop10045_1.png",
+                    "TextId": "__SingleUse_FTUP",
+                    "ReleasedColor": {
+                      "Red": 69,
+                      "Green": 33
+                    },
+                    "PressedColor": {
+                      "Red": 69,
+                      "Green": 33
+                    },
+                    "TextRotation": "0"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea2",
+                    "X": 23,
+                    "Y": 11,
+                    "Width": 36,
+                    "Height": 12,
+                    "TextId": "__SingleUse_2PT4",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "totalPrice",
+                    "X": 159,
+                    "Y": 10,
+                    "Width": 80,
+                    "Height": 15,
+                    "TextId": "__SingleUse_OM5A",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 51,
+                      "Blue": 83
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_9M3I",
+                      "UseBuffer": true,
+                      "BufferSize": 20
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "text_WON",
+                    "X": 240,
+                    "Y": 10,
+                    "Width": 10,
+                    "Height": 15,
+                    "TextId": "__SingleUse_MCK5",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 51,
+                      "Blue": 83
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "countControll",
+                "Y": 280,
+                "Width": 272,
+                "Height": 40,
+                "Components": [
+                  {
+                    "Type": "Button",
+                    "Name": "minusButton",
+                    "X": 21,
+                    "Y": 13,
+                    "Width": 15,
+                    "Height": 15,
+                    "Pressed": "minus_1515.png",
+                    "Released": "minus_1515.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "addButton",
+                    "X": 67,
+                    "Y": 13,
+                    "Width": 15,
+                    "Height": 15,
+                    "Pressed": "add_1515.png",
+                    "Released": "add_1515.png"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "menuPrice",
+                    "X": 171,
+                    "Y": 14,
+                    "Width": 80,
+                    "Height": 15,
+                    "TextId": "__SingleUse_UPGC",
+                    "TextRotation": "0",
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_PO5L",
+                      "UseBuffer": true,
+                      "BufferSize": 20
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "menuCount",
+                    "X": 30,
+                    "Y": 14,
+                    "Width": 45,
+                    "Height": 15,
+                    "TextId": "__SingleUse_9XCX",
+                    "TextRotation": "0",
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_0O6E",
+                      "UseBuffer": true,
+                      "BufferSize": 15
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "TextArea",
+                "Name": "menuDescription",
+                "X": 6,
+                "Y": 218,
+                "Width": 261,
+                "Height": 47,
+                "TextId": "__SingleUse_0YN0",
+                "TextRotation": "0"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "X": 67,
+                "Y": 194,
+                "Width": 139,
+                "Height": 24,
+                "TextId": "__SingleUse_U3FT",
+                "TextRotation": "0"
+              },
+              {
+                "Type": "Image",
+                "Name": "menuImage",
+                "X": 76,
+                "Y": 65,
+                "Width": 80,
+                "Height": 80
+              },
+              {
+                "Type": "Container",
+                "Name": "HeaderDetail",
+                "Width": 272,
+                "Height": 55,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "Button",
+                    "Name": "cartButton2",
+                    "X": 241,
+                    "Y": 17,
+                    "Width": 20,
+                    "Height": 20,
+                    "LockPosition": true,
+                    "Pressed": "cart_2020.png",
+                    "Released": "cart_2020.png"
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "backButton2",
+                    "X": 11,
+                    "Y": 17,
+                    "Width": 20,
+                    "Height": 20,
+                    "Pressed": "back_2020.png",
+                    "Released": "back_2020.png"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "container1",
+                "X": 41,
+                "Y": 199,
+                "Width": 190,
+                "Height": 58,
+                "Visible": false,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "box1",
+                    "Y": 2,
+                    "Width": 190,
+                    "Height": 56,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 178,
+                      "Green": 170,
+                      "Blue": 170
+                    },
+                    "Alpha": 189
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea4",
+                    "X": 50,
+                    "Y": 22,
+                    "Width": 91,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_C6AA",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GoMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "MAIN"
+            }
+          },
+          {
+            "InteractionName": "click_recommend",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "recommendButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER selected_recommend",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "click_coffe",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "coffeButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER selected_coffe",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "click_beverage",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "beverageButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER selected_beverage",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "click_tea",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "teaButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER selected_tea",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "click_food",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "foodButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER selected_food",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "deselectable1",
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "recommendButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER deselectable_button",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "deselectable2",
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "coffeButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER deselectable_button",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "deselectable3",
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "beverageButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER deselectable_button",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "deselectable4",
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "teaButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER deselectable_button",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "deselectable5",
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "foodButton"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER deselectable_button",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "clickedAdd",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "addButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "onAddButtonClicked"
+            }
+          },
+          {
+            "InteractionName": "clickedMinus",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "minusButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "onMinusButtonClicked"
+            }
+          },
+          {
+            "InteractionName": "hideOrderDetail",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backButton2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "hideDetail"
+            }
+          },
+          {
+            "InteractionName": "menu0_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "re_menuButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu0",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu1_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "re_menuButton2"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu1",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu2_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "re_menuButton3"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu2",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu3_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "re_menuButton4"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu3",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu4_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "re_menuButton5"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu4",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu0_call2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "coffe_menuButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu0",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu5_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "coffe_menuButton2"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu5",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu6_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "coffe_menuButton3"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu6",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu7_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "coffe_menuButton4"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu7",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu4_call2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "coffe_menuButton5"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu4",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu8_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "coffe_menuButton6"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu8",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu2_call2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "beverage_menuButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu2",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu1_call2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "beverage_menuButton1_1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu1",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu3_call2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "beverage_menuButton1_2"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu3",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu9_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "beverage_menuButton1_3"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu9",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu10_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "beverage_menuButton1_4"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu10",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu11_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "beverage_menuButton1_5"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu11",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu12_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tea_menuButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu12",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu13_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tea_menuButton2"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu13",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu14_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tea_menuButton3"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu14",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu15_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tea_menuButton4"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu15",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu16_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "food_menuButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu16",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu17_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "food_menuButton2"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu17",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "menu18_call",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "food_menuButton3"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ORDER menu18",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "now_purchase",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Purchase_Button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "nowPurchase"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "now_purchase"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "PAYMENT"
+            }
+          },
+          {
+            "InteractionName": "putMenu",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "putMenu_Button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "putMenu"
+            }
+          },
+          {
+            "InteractionName": "onCartButtonClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cartButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "CART"
+            }
+          },
+          {
+            "InteractionName": "showContainer",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "putMenu_Button"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "wait",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "showContainer"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 600
+            }
+          },
+          {
+            "InteractionName": "hideContainer",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "wait"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "container1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cartButton2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "CART"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "selected_recommend",
+            "Description": "show recommend menu"
+          },
+          {
+            "Name": "selected_coffe",
+            "Description": "show coffe menu"
+          },
+          {
+            "Name": "selected_beverage",
+            "Description": "show beverage menu"
+          },
+          {
+            "Name": "selected_tea",
+            "Description": "show tea menu"
+          },
+          {
+            "Name": "selected_food",
+            "Description": "show food menu"
+          },
+          {
+            "Name": "deselectable_button",
+            "Description": "show_initial"
+          },
+          {
+            "Name": "menu0"
+          },
+          {
+            "Name": "menu1"
+          },
+          {
+            "Name": "menu2"
+          },
+          {
+            "Name": "menu3"
+          },
+          {
+            "Name": "menu4"
+          },
+          {
+            "Name": "menu5"
+          },
+          {
+            "Name": "menu6"
+          },
+          {
+            "Name": "menu7"
+          },
+          {
+            "Name": "menu8"
+          },
+          {
+            "Name": "menu9"
+          },
+          {
+            "Name": "menu10"
+          },
+          {
+            "Name": "menu11"
+          },
+          {
+            "Name": "menu12"
+          },
+          {
+            "Name": "menu13"
+          },
+          {
+            "Name": "menu14"
+          },
+          {
+            "Name": "menu15"
+          },
+          {
+            "Name": "menu16"
+          },
+          {
+            "Name": "menu17"
+          },
+          {
+            "Name": "menu18"
+          }
+        ]
+      },
+      {
+        "Name": "PAYMENT",
+        "Components": [
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Width": 272,
+            "Height": 480,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "box1",
+                "Width": 272,
+                "Height": 480,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                }
+              },
+              {
+                "Type": "Container",
+                "Name": "Tail",
+                "Y": 379,
+                "Width": 272,
+                "Height": 101,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea2_1",
+                    "X": 17,
+                    "Y": 12,
+                    "Width": 44,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_R6HC",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "totalPrice2",
+                    "X": 164,
+                    "Y": 12,
+                    "Width": 80,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_GKR6",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 51,
+                      "Blue": 83
+                    },
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_CAY7",
+                      "UseBuffer": true,
+                      "BufferSize": 20
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "text_WON",
+                    "X": 244,
+                    "Y": 12,
+                    "Width": 11,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_1US7",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Red": 255,
+                      "Green": 51,
+                      "Blue": 83
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "paymentButton",
+                    "X": 26,
+                    "Y": 47,
+                    "Width": 220,
+                    "Height": 38,
+                    "LockPosition": true,
+                    "Pressed": "crop22038.png",
+                    "Released": "crop22038.png",
+                    "TextId": "__SingleUse_VE5H",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
+                  }
+                ]
+              },
+              {
+                "Type": "TextArea",
+                "Name": "text_WON_1",
+                "X": 245,
+                "Y": 262,
+                "Width": 10,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_ZZOP",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "X": 21,
+                "Y": 70,
+                "Width": 47,
+                "Height": 15,
+                "LockPosition": true,
+                "TextId": "__SingleUse_CD45",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "menuname",
+                "X": 140,
+                "Y": 191,
+                "Width": 115,
+                "Height": 22,
+                "TextId": "__SingleUse_GE53",
+                "TextRotation": "0"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "count",
+                "X": 16,
+                "Y": 262,
+                "Width": 30,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_O4JP",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_W0QF",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "totalPrice",
+                "X": 174,
+                "Y": 262,
+                "Width": 70,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_X5H3",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_PVNP",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "X": 46,
+                "Y": 262,
+                "Width": 10,
+                "Height": 14,
+                "LockPosition": true,
+                "TextId": "__SingleUse_AQL8",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1",
+                "Y": 55,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1_1",
+                "Y": 373,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1_2",
+                "Y": 223,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Image",
+                "Name": "menuImage",
+                "X": 21,
+                "Y": 94,
+                "Width": 80,
+                "Height": 80,
+                "LockPosition": true
+              },
+              {
+                "Type": "Container",
+                "Name": "PayArea",
+                "X": 42,
+                "Y": 205,
+                "Width": 188,
+                "Height": 69,
+                "Visible": false,
+                "Components": [
+                  {
+                    "Type": "Box",
+                    "Name": "box2_1",
+                    "Width": 188,
+                    "Height": 69,
+                    "LockPosition": true,
+                    "Color": {
+                      "Red": 250,
+                      "Green": 222,
+                      "Blue": 222
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "textArea6",
+                    "X": 47,
+                    "Y": 18,
+                    "Width": 95,
+                    "Height": 15,
+                    "LockPosition": true,
+                    "TextId": "__SingleUse_RVZV",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "YES",
+                    "X": 27,
+                    "Y": 44,
+                    "Width": 50,
+                    "Height": 17,
+                    "Pressed": "Yes_No.png",
+                    "Released": "Yes_No.png",
+                    "TextId": "__SingleUse_P228",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
+                  },
+                  {
+                    "Type": "ButtonWithLabel",
+                    "Name": "NO",
+                    "X": 111,
+                    "Y": 44,
+                    "Width": 50,
+                    "Height": 17,
+                    "Pressed": "Yes_No.png",
+                    "Released": "Yes_No.png",
+                    "TextId": "__SingleUse_X970",
+                    "ReleasedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "PressedColor": {
+                      "Red": 255,
+                      "Green": 255,
+                      "Blue": 255
+                    },
+                    "TextRotation": "0"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "Header",
+                "Width": 272,
+                "Height": 55,
+                "LockPosition": true,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "titleText",
+                    "X": 114,
+                    "Y": 19,
+                    "Width": 44,
+                    "Height": 15,
+                    "TextId": "__SingleUse_N190",
+                    "TextRotation": "0",
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "Button",
+                    "Name": "backButton",
+                    "X": 11,
+                    "Y": 17,
+                    "Width": 20,
+                    "Height": 20,
+                    "Pressed": "back_2020.png",
+                    "Released": "back_2020.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "Width": 272,
+            "Height": 480,
+            "Visible": false,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "billEX",
+            "X": 22,
+            "Y": 40,
+            "Width": 100,
+            "Height": 45,
+            "Visible": false,
+            "Pressed": "crop10045_2.png",
+            "Released": "crop10045_2.png",
+            "TextId": "__SingleUse_1976",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "creditCardEX",
+            "X": 22,
+            "Y": 105,
+            "Width": 100,
+            "Height": 45,
+            "Visible": false,
+            "Pressed": "crop10045_2.png",
+            "Released": "crop10045_2.png",
+            "TextId": "__SingleUse_CGNE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea4",
+            "X": 22,
+            "Y": 174,
+            "Width": 149,
+            "Height": 36,
+            "Visible": false,
+            "TextId": "__SingleUse_IOLX",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "paymentButton"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "PayArea"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "NO"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "PayArea"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "YES"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "transmittinfo"
+            }
+          },
+          {
+            "InteractionName": "Interaction5",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction4"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "PayArea"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "CART",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 272,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "boundary1_1",
+            "Y": 378,
+            "Width": 272,
+            "Height": 1,
+            "LockPosition": true,
+            "Color": {
+              "Red": 227,
+              "Green": 225,
+              "Blue": 225
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "Tail",
+            "Y": 379,
+            "Width": 272,
+            "Height": 101,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea2_1",
+                "X": 17,
+                "Y": 12,
+                "Width": 58,
+                "Height": 15,
+                "TextId": "__SingleUse_J85M",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "text_WON",
+                "X": 244,
+                "Y": 12,
+                "Width": 11,
+                "Height": 15,
+                "LockPosition": true,
+                "TextId": "__SingleUse_RVRO",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 51,
+                  "Blue": 83
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "lastTotal",
+                "X": 170,
+                "Y": 12,
+                "Width": 70,
+                "Height": 15,
+                "TextId": "__SingleUse_PSUM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 51,
+                  "Blue": 83
+                },
+                "Wildcard1": {
+                  "TextId": "__SingleUse_ONP8",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "paymentButton",
+                "X": 26,
+                "Y": 47,
+                "Width": 220,
+                "Height": 38,
+                "LockPosition": true,
+                "Pressed": "crop22038.png",
+                "Released": "crop22038.png",
+                "TextId": "__SingleUse_OTN0",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "list_WON",
+            "X": 245,
+            "Y": 84,
+            "Width": 10,
+            "Height": 266,
+            "LockPosition": true,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "WON_1",
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_DF9N",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_2",
+                "Y": 14,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_3QFR",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_3",
+                "Y": 28,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_8QPA",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_4",
+                "Y": 42,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_VL2Y",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_5",
+                "Y": 56,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2HSE",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_6",
+                "Y": 70,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_FABE",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_7",
+                "Y": 84,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_IJYM",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_8",
+                "Y": 98,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_C4D7",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_9",
+                "Y": 112,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_X4WY",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_10",
+                "Y": 126,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_XPII",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_11",
+                "Y": 140,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2Q73",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_12",
+                "Y": 154,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_GIC3",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_13",
+                "Y": 168,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_GJVL",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_14",
+                "Y": 182,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_9TXH",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_15",
+                "Y": 196,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2K81",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_16",
+                "Y": 210,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_O25U",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_17",
+                "Y": 224,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_ND2D",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_18",
+                "Y": 238,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_936X",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "WON_19",
+                "Y": 252,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_T8OV",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "list_GAE",
+            "X": 170,
+            "Y": 84,
+            "Width": 10,
+            "Height": 266,
+            "LockPosition": true,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "GAE_1",
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_T5A4",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_2",
+                "Y": 14,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_R95H",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_3",
+                "Y": 28,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_9PRH",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_4",
+                "Y": 42,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_TZ1B",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_5",
+                "Y": 56,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_2K04",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_6",
+                "Y": 70,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_N8RX",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_7",
+                "Y": 84,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_XIFM",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_8",
+                "Y": 98,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_O1OC",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_9",
+                "Y": 112,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_NOC9",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_10",
+                "Y": 126,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_T245",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_11",
+                "Y": 140,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_IN7L",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_12",
+                "Y": 154,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_NU1Z",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_13",
+                "Y": 168,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_4VN3",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_14",
+                "Y": 182,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_8UW3",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_15",
+                "Y": 196,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_TZ7M",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_16",
+                "Y": 210,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_HK35",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_17",
+                "Y": 224,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_TC0N",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_18",
+                "Y": 238,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_UVHV",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "GAE_19",
+                "Y": 252,
+                "Width": 10,
+                "Height": 14,
+                "Visible": false,
+                "TextId": "__SingleUse_8ONP",
+                "TextRotation": "0",
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "countList",
+            "X": 142,
+            "Y": 84,
+            "Width": 60,
+            "Height": 266,
+            "LockPosition": true,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "order1",
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_8Z1X",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_C8Z5",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order2",
+                "Y": 14,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_6ZGS",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_UQ1F",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order3",
+                "Y": 28,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_7NRY",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_ODIT",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order4",
+                "Y": 42,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_P7ZV",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_9YXU",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order5",
+                "Y": 56,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_X71U",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_CRFQ",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order6",
+                "Y": 70,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_WSYL",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4I6K",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order7",
+                "Y": 84,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_867J",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2IO1",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order8",
+                "Y": 98,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_TU3P",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_SBDK",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order9",
+                "Y": 112,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_6IVG",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_Y0RH",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order10",
+                "Y": 126,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_2VH7",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2IR6",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order11",
+                "Y": 140,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_T7D6",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_2S3K",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order12",
+                "Y": 154,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_7NTC",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_K41L",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order13",
+                "Y": 168,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_ZKFQ",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_RJY9",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order14",
+                "Y": 182,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_MVAW",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_D3DN",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order15",
+                "Y": 196,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_R3QM",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_M8E3",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order16",
+                "Y": 210,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_2GKF",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_EANV",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order17",
+                "Y": 224,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_EMP0",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_FX6U",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order18",
+                "Y": 238,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_IA5E",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_XTSY",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order19",
+                "Y": 252,
+                "Width": 60,
+                "Height": 14,
+                "TextId": "__SingleUse_JHF4",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_SQZ8",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "priceList",
+            "X": 178,
+            "Y": 84,
+            "Width": 100,
+            "Height": 267,
+            "LockPosition": true,
+            "Direction": "South",
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "order1_1",
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_J322",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_WX4O",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order2_1",
+                "Y": 14,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_GRYO",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_8LAK",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order3_1",
+                "Y": 28,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_2B8Q",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_H68I",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order4_1",
+                "Y": 42,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_NI5B",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_EPJ4",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order5_1",
+                "Y": 56,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_GD2P",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_N5UH",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order6_1",
+                "Y": 70,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_R2LP",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4C9U",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order7_1",
+                "Y": 84,
+                "Width": 100,
+                "Height": 15,
+                "TextId": "__SingleUse_1B8Q",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4QDU",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order8_1",
+                "Y": 99,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_VURF",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_S067",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order9_1",
+                "Y": 113,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_CAOD",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_4M72",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order10_1",
+                "Y": 127,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_10IF",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_42JQ",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order11_1",
+                "Y": 141,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_OJJS",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_6HST",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order12_1",
+                "Y": 155,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_55AY",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_242X",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order13_1",
+                "Y": 169,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_3124",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_U9WA",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order14_1",
+                "Y": 183,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_UF39",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_BMY0",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order15_1",
+                "Y": 197,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_DBML",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_UDE7",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order16_1",
+                "Y": 211,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_FTTV",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_Y30S",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order17_1",
+                "Y": 225,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_UAZT",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_GIBP",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order18_1",
+                "Y": 239,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_4SX1",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_QG5C",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "order19_1",
+                "Y": 253,
+                "Width": 100,
+                "Height": 14,
+                "TextId": "__SingleUse_ADLW",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "TextId": "__SingleUse_NCGE",
+                  "UseBuffer": true,
+                  "BufferSize": 20
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ListLayout",
+            "Name": "nameList",
+            "X": 18,
+            "Y": 84,
+            "Width": 47,
+            "Height": 14,
+            "LockPosition": true,
+            "Direction": "South",
+            "Components": []
+          },
+          {
+            "Type": "Container",
+            "Name": "Header",
+            "Width": 272,
+            "Height": 77,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "boundary1_2",
+                "Y": 76,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "Box",
+                "Name": "boundary1",
+                "Y": 55,
+                "Width": 272,
+                "Height": 1,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 227,
+                  "Green": 225,
+                  "Blue": 225
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "titleText",
+                "X": 114,
+                "Y": 19,
+                "Width": 44,
+                "Height": 15,
+                "LockPosition": true,
+                "TextId": "__SingleUse_8JY9",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea3",
+                "X": 19,
+                "Y": 60,
+                "Width": 36,
+                "Height": 12,
+                "LockPosition": true,
+                "TextId": "__SingleUse_70GM",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea4",
+                "X": 160,
+                "Y": 60,
+                "Width": 18,
+                "Height": 12,
+                "LockPosition": true,
+                "TextId": "__SingleUse_JDLG",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea5",
+                "X": 220,
+                "Y": 60,
+                "Width": 18,
+                "Height": 12,
+                "LockPosition": true,
+                "TextId": "__SingleUse_8SHO",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "Button",
+                "Name": "backButton",
+                "X": 11,
+                "Y": 17,
+                "Width": 20,
+                "Height": 20,
+                "LockPosition": true,
+                "Pressed": "back_2020.png",
+                "Released": "back_2020.png"
+              },
+              {
+                "Type": "Button",
+                "Name": "cartButton",
+                "X": 241,
+                "Y": 17,
+                "Width": 20,
+                "Height": 20,
+                "LockPosition": true,
+                "Pressed": "order_2020.png",
+                "Released": "order_2020.png"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "PayArea",
+            "X": 42,
+            "Y": 205,
+            "Width": 188,
+            "Height": 69,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "box2",
+                "Width": 188,
+                "Height": 69,
+                "LockPosition": true,
+                "Color": {
+                  "Red": 250,
+                  "Green": 222,
+                  "Blue": 222
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea6",
+                "X": 47,
+                "Y": 18,
+                "Width": 95,
+                "Height": 15,
+                "LockPosition": true,
+                "TextId": "__SingleUse_9ZEA",
+                "TextRotation": "0",
+                "AutoSize": true
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "YES",
+                "X": 27,
+                "Y": 44,
+                "Width": 50,
+                "Height": 17,
+                "Pressed": "Yes_No.png",
+                "Released": "Yes_No.png",
+                "TextId": "__SingleUse_0LYJ",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "NO",
+                "X": 111,
+                "Y": 44,
+                "Width": 50,
+                "Height": 17,
+                "Pressed": "Yes_No.png",
+                "Released": "Yes_No.png",
+                "TextId": "__SingleUse_2NPO",
+                "ReleasedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GoMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "backButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "MAIN"
+            }
+          },
+          {
+            "InteractionName": "goOrder",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "cartButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "ORDER"
+            }
+          },
+          {
+            "InteractionName": "showPay",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "paymentButton"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "PayArea"
+            }
+          },
+          {
+            "InteractionName": "onNoButtonClicked",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "NO"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "PayArea"
+            }
+          },
+          {
+            "InteractionName": "transmittInfo",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "YES"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "transmittInfo"
+            }
+          },
+          {
+            "InteractionName": "hidePay",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "transmittInfo"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "PayArea"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "INTRO",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash -j8",
+    "FlashTargetIntCommandOverride": "make -f ../gcc/Makefile intflash -j8",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x6",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../TOUCHGFX_2.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.24.1"
+}

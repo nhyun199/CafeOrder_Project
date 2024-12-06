@@ -1,0 +1,10 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:14:13:MAINView::~MAINView()	1
+../TouchGFX/gui/include/gui/main_screen/MAINView.hpp:14:13:virtual MAINView::~MAINView()	1
+../TouchGFX/gui/src/main_screen/MAINView.cpp:13:1:MAINView::MAINView()	1
+../TouchGFX/gui/src/main_screen/MAINView.cpp:18:6:virtual void MAINView::setupScreen()	1
+../TouchGFX/gui/src/main_screen/MAINView.cpp:24:6:virtual void MAINView::tearDownScreen()	1
+../TouchGFX/gui/src/main_screen/MAINView.cpp:29:6:virtual void MAINView::Test1()	3

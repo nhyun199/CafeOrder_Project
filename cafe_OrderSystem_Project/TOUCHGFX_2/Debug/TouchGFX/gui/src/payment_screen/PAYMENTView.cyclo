@@ -1,0 +1,23 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Bitmap.hpp:136:5:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../TouchGFX/gui/include/gui/model/Model.hpp:57:14:uint32_t Model::getCounter()	1
+../TouchGFX/gui/include/gui/model/Model.hpp:67:14:uint32_t Model::getTotalPrice()	1
+../TouchGFX/gui/include/gui/model/Model.hpp:72:14:uint16_t Model::getImageCode()	1
+../TouchGFX/gui/include/gui/model/Model.hpp:77:9:int Model::getTextID()	1
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp:55:14:uint32_t PAYMENTPresenter::getCounter()	1
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp:65:14:uint32_t PAYMENTPresenter::getTotalPrice()	1
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp:70:14:uint16_t PAYMENTPresenter::getImageCode()	1
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTPresenter.hpp:75:9:int PAYMENTPresenter::getTextID()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:59:5:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp:12:13:PAYMENTView::~PAYMENTView()	1
+../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp:12:13:virtual PAYMENTView::~PAYMENTView()	1
+../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:10:1:PAYMENTView::PAYMENTView()	1
+../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:15:6:virtual void PAYMENTView::setupScreen()	1
+../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:35:6:virtual void PAYMENTView::tearDownScreen()	1
+../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:40:6:void PAYMENTView::formatPriceWithComma(uint32_t, touchgfx::Unicode::UnicodeChar*, uint16_t)	3
+../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:63:6:virtual void PAYMENTView::transmittinfo()	3

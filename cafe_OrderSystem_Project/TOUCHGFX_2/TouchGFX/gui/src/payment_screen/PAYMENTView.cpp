@@ -82,7 +82,7 @@ void PAYMENTView::transmittinfo()
       return;
   }
 
-  snprintf(buffer, sizeof(buffer), "----------  주문 접수  ----------\r\n");
+  snprintf(buffer, sizeof(buffer), "------ 주문 접수\r\n");
   send(sock, buffer, strlen(buffer), 0);
 
 
@@ -94,7 +94,7 @@ void PAYMENTView::transmittinfo()
   snprintf(buffer, sizeof(buffer), "제품번호 : %d   제품명 : %s  수량 : %lu  금액 : %lu\r\n", _textId, _menu.c_str(), _count, _price);
   send(sock, buffer, strlen(buffer), 0);
 
-  snprintf(buffer, sizeof(buffer), "총 %lu원 결제되었습니다.\r\n\n", _price);
+  snprintf(buffer, sizeof(buffer), "총 %lu원 결제되었습니다.\n이용해주셔서 감사합니다.\r\n\n", _price);
   send(sock, buffer, strlen(buffer), 0);
 
   close(sock);

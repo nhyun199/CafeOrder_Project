@@ -206,7 +206,7 @@ void CARTView::transmittInfo()
       return;
   }
 
-  snprintf(buffer, sizeof(buffer), "----------  주문 접수  ----------\r\n");
+  snprintf(buffer, sizeof(buffer), "------ 주문 접수\r\n");
   send(sock, buffer, strlen(buffer), 0);
 
   for (int i = 0; i < presenter->getCartSize(); i++)
@@ -216,13 +216,13 @@ void CARTView::transmittInfo()
       uint32_t _sumPrice = presenter->getCartSumPrice(i);
       int _textId = presenter->getCartTextID(i);
 
-      snprintf(buffer, sizeof(buffer), "제품번호 : %d   제품명 : %s  수량 : %lu  금액 : %lu\r\n",
+      snprintf(buffer, sizeof(buffer), "제품번호 : %d    제품명 : %s  수량 : %lu  금액 : %lu\r\n",
                _textId, _menu.c_str(), _sumCount, _sumPrice);
       send(sock, buffer, strlen(buffer), 0);
   }
 
   uint32_t totalPrice = calculateTotalPrice();
-  snprintf(buffer, sizeof(buffer), "총 %lu원 결제되었습니다.\r\n\n", totalPrice);
+  snprintf(buffer, sizeof(buffer), "총 %lu원 결제되었습니다.\n이용해주셔서 감사합니다.\r\n\n", totalPrice);
   send(sock, buffer, strlen(buffer), 0);
 
   close(sock);

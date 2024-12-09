@@ -99,12 +99,9 @@ KEEP extern const touchgfx::GlyphNode glyphs_Pretendard_ExtraBold_otf_13_4bpp[] 
     {  3372, 0x007C,   3,  13,  11,   1,   5,   0,   0, 0x00 },
     {  3398, 0x007D,   5,  13,  10,   0,   5,   0,   0, 0x00 },
     {  3437, 0x007E,   7,   3,   5,   1,   9,  63,   1, 0x01 },
-    {     0, 0xACA0,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {    78, 0xACB0,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   156, 0xAD6C,  11,  12,  10,   0,  11,   0,   0, 0x00 },
-    {   228, 0xAE08,  11,  12,  10,   0,  11,   0,   0, 0x00 },
-    {   300, 0xAE30,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   378, 0xAE4C,  12,  13,  11,   0,  11,   0,   0, 0x00 },
+    {     0, 0xAD6C,  11,  12,  10,   0,  11,   0,   0, 0x00 },
+    {    72, 0xAE08,  11,  12,  10,   0,  11,   0,   0, 0x00 },
+    {   144, 0xAE30,  11,  13,  11,   0,  11,   0,   0, 0x00 },
     {     0, 0xB2C8,  11,  13,  11,   0,  11,   0,   0, 0x00 },
     {    78, 0xB2E4,  12,  13,  11,   0,  11,   0,   0, 0x00 },
     {   156, 0xB2F4,  12,  13,  11,   0,  11,   0,   0, 0x00 },
@@ -114,15 +111,13 @@ KEEP extern const touchgfx::GlyphNode glyphs_Pretendard_ExtraBold_otf_13_4bpp[] 
     {     0, 0xC0C1,  12,  13,  11,   0,  11,   0,   0, 0x00 },
     {    78, 0xC138,  11,  13,  11,   0,  11,   0,   0, 0x00 },
     {   156, 0xC2B5,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   234, 0xC2DC,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   312, 0xC558,  12,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   390, 0xC561,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   468, 0xC6D0,  11,  12,  11,   0,  11,   0,   0, 0x00 },
-    {   540, 0xC744,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {   618, 0xC7A5,  12,  13,  11,   0,  11,   0,   0, 0x00 },
-    {     0, 0xC81C,  11,  13,  11,   0,  11,   0,   0, 0x00 },
-    {    78, 0xC8FC,  11,  12,  10,   0,  11,   0,   0, 0x00 },
-    {   150, 0xCD1D,  11,  13,  11,   0,  11,   0,   0, 0x00 },
+    {   234, 0xC558,  12,  13,  11,   0,  11,   0,   0, 0x00 },
+    {   312, 0xC561,  11,  13,  11,   0,  11,   0,   0, 0x00 },
+    {   390, 0xC6D0,  11,  12,  11,   0,  11,   0,   0, 0x00 },
+    {   462, 0xC744,  11,  13,  11,   0,  11,   0,   0, 0x00 },
+    {   540, 0xC7A5,  12,  13,  11,   0,  11,   0,   0, 0x00 },
+    {     0, 0xC8FC,  11,  12,  10,   0,  11,   0,   0, 0x00 },
+    {    72, 0xCD1D,  11,  13,  11,   0,  11,   0,   0, 0x00 },
     {     0, 0xD488,  11,  13,  11,   0,  11,   0,   0, 0x00 },
     {    78, 0xD558,  12,  13,  11,   0,  11,   0,   0, 0x00 }
 };
@@ -180,6 +175,6 @@ touchgfx::GeneratedFont& getFont_Pretendard_ExtraBold_otf_13_4bpp();
 
 touchgfx::GeneratedFont& getFont_Pretendard_ExtraBold_otf_13_4bpp()
 {
-    static touchgfx::GeneratedFont Pretendard_ExtraBold_otf_13_4bpp(glyphs_Pretendard_ExtraBold_otf_13_4bpp, 121, 16, 13, 0, 0, 4, 1, 1, 1, unicodes_Pretendard_ExtraBold_otf_13_4bpp, kerning_Pretendard_ExtraBold_otf_13_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont Pretendard_ExtraBold_otf_13_4bpp(glyphs_Pretendard_ExtraBold_otf_13_4bpp, 116, 16, 13, 0, 0, 4, 1, 1, 1, unicodes_Pretendard_ExtraBold_otf_13_4bpp, kerning_Pretendard_ExtraBold_otf_13_4bpp, 63, 0, 0, 0);
     return Pretendard_ExtraBold_otf_13_4bpp;
 }

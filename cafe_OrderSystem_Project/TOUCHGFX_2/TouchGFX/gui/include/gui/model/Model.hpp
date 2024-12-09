@@ -79,30 +79,26 @@ public:
       return textID;
     }
 
-    void addTextId(int textID)
+    const Cart& getCartItem(int index)
     {
-      textIdList.add(textID);
+      return CartList[index];
     }
 
-    int getTextIdList(int index)
+    int getCartSize()
     {
-      return textIdList[index];
+      return CartList.size();
     }
 
-    int getTextIdListSize()
-    {
-      return textIdList.size();
-    }
 
     void addItem(int textId, uint32_t counter, uint32_t price)
     {
-	Cart newMenu;
-	newMenu._textID = textId;
-	newMenu._counter = counter;
-	newMenu._price = price;
-	newMenu.sumCount = counter;
-	newMenu.sumPrice = price * counter;
-	CartList.add(newMenu);
+      Cart newMenu;
+      newMenu._textID = textId;
+      newMenu._counter = counter;
+      newMenu._price = price;
+      newMenu.sumCount = counter;
+      newMenu.sumPrice = price * counter;
+      CartList.add(newMenu);
     }
 
     void updateItem(int textId, uint32_t counter, uint32_t price)
@@ -128,14 +124,9 @@ public:
       }
     }
 
-    const Cart& getCartItem(int index)
+    void deleteCartList()
     {
-      return CartList[index];
-    }
-
-    int getCartSize()
-    {
-      return CartList.size();
+      CartList.clear();
     }
 
 protected:
@@ -146,8 +137,6 @@ protected:
     uint16_t imageCode;
     int textID;
 
-
-    touchgfx::Vector<int, 19> textIdList;
     touchgfx::Vector<Cart, 19> CartList;
 };
 

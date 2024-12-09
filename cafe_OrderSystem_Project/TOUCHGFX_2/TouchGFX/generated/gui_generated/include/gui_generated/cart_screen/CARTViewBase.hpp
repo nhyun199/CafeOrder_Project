@@ -29,6 +29,10 @@ public:
     {
         // Override and implement this function in CART
     }
+    virtual void empty()
+    {
+        // Override and implement this function in CART
+    }
 
 protected:
     FrontendApplication& application() {
@@ -46,6 +50,7 @@ protected:
     touchgfx::TextArea text_WON;
     touchgfx::TextAreaWithOneWildcard lastTotal;
     touchgfx::ButtonWithLabel paymentButton;
+    touchgfx::Container Body;
     touchgfx::ListLayout list_WON;
     touchgfx::TextArea WON_1;
     touchgfx::TextArea WON_2;
@@ -136,11 +141,17 @@ protected:
     touchgfx::TextArea textArea5;
     touchgfx::Button backButton;
     touchgfx::Button cartButton;
+    touchgfx::Button deleteButton;
     touchgfx::Container PayArea;
     touchgfx::Box box2;
     touchgfx::TextArea textArea6;
     touchgfx::ButtonWithLabel YES;
     touchgfx::ButtonWithLabel NO;
+    touchgfx::Container emptyArea;
+    touchgfx::Box box2_1;
+    touchgfx::TextArea textArea6_1;
+    touchgfx::ButtonWithLabel YES_2;
+    touchgfx::ButtonWithLabel NO_2;
 
     /*
      * Wildcard Buffers

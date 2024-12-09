@@ -27,16 +27,6 @@ public:
 
     virtual ~CARTPresenter() {}
 
-    int getTextIdList(int index)
-    {
-      return model->getTextIdList(index);
-    }
-
-    int getTextIdListSize()
-    {
-      return model->getTextIdListSize();
-    }
-
     int getCartTextID(int index)
     {
       return model->getCartItem(index)._textID;
@@ -55,6 +45,11 @@ public:
     int getCartSize()
     {
       return model->getCartSize();
+    }
+
+    void deleteCartList()
+    {
+      model->deleteCartList();
     }
 
 private:

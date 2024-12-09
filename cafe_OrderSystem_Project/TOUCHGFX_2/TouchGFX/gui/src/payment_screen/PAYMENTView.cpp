@@ -85,13 +85,15 @@ void PAYMENTView::transmittinfo()
   snprintf(buffer, sizeof(buffer), "------ 주문 접수\r\n");
   send(sock, buffer, strlen(buffer), 0);
 
-
+  string ex1 = "수량";
+  string ex2 = "금액";
   string _menu = Menu::menuList[textID];
   uint32_t _count = counter;
   uint32_t _price = _totalPrice;
   int _textId = textID;
 
-  snprintf(buffer, sizeof(buffer), "제품번호 : %d   제품명 : %s  수량 : %lu  금액 : %lu\r\n", _textId, _menu.c_str(), _count, _price);
+  snprintf(buffer, sizeof(buffer), "제품번호 : %-5d 제품명 : %-25s %-5s : %-5lu %-5s : %-10lu\r\n",
+	   _textId, _menu.c_str(), ex1.c_str(), _count, ex2.c_str(), _price);
   send(sock, buffer, strlen(buffer), 0);
 
   snprintf(buffer, sizeof(buffer), "총 %lu원 결제되었습니다.\n이용해주셔서 감사합니다.\r\n\n", _price);

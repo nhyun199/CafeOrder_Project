@@ -17,6 +17,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void transmittInfo();
+    virtual void empty();
     void addOrder(int index, int textId, uint32_t sumCount, uint32_t sumPrice);
     void formatPriceWithComma(uint32_t value, Unicode::UnicodeChar* buffer, uint32_t bufferSize);
     TextArea* getGAEText(int index);

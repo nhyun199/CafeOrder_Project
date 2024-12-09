@@ -123,6 +123,18 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_J980" Alignment="Left" TypographyId="Pretendard_13">
+        <Translation Language="GB">주문하기</Translation>
+      </Text>
+      <Text Id="__SingleUse_97XP" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">아니오</Translation>
+      </Text>
+      <Text Id="__SingleUse_WLQ0" Alignment="Center" TypographyId="Pretendard_10">
+        <Translation Language="GB">예</Translation>
+      </Text>
+      <Text Id="__SingleUse_HRM0" Alignment="Left" TypographyId="Pretndard_16">
+        <Translation Language="GB">장바구니를 비우시겠습니까?</Translation>
+      </Text>
       <Text Id="__SingleUse_IYVH" Alignment="Center" TypographyId="Noto_Ex_Bold_15">
         <Translation Language="GB">테스트</Translation>
       </Text>
@@ -132,7 +144,7 @@
       <Text Id="__SingleUse_P228" Alignment="Center" TypographyId="Pretendard_10">
         <Translation Language="GB">예</Translation>
       </Text>
-      <Text Id="__SingleUse_RVZV" Alignment="Left" TypographyId="Pretendard_13">
+      <Text Id="__SingleUse_RVZV" Alignment="Left" TypographyId="Pretndard_16">
         <Translation Language="GB">결제하시겠습니까?</Translation>
       </Text>
       <Text Id="__SingleUse_2NPO" Alignment="Center" TypographyId="Pretendard_10">
@@ -141,7 +153,7 @@
       <Text Id="__SingleUse_0LYJ" Alignment="Center" TypographyId="Pretendard_10">
         <Translation Language="GB">예</Translation>
       </Text>
-      <Text Id="__SingleUse_9ZEA" Alignment="Left" TypographyId="Pretendard_13">
+      <Text Id="__SingleUse_9ZEA" Alignment="Left" TypographyId="Pretndard_16">
         <Translation Language="GB">결제하시겠습니까?</Translation>
       </Text>
       <Text Id="__SingleUse_C6AA" Alignment="Left" TypographyId="Pretendard_13">
@@ -524,12 +536,6 @@
       </Text>
       <Text Id="__SingleUse_IOLX" Alignment="Center" TypographyId="Pretndard_16">
         <Translation Language="GB">결제가 완료되었습니다.&#10;주문하기로 돌아갑니다.</Translation>
-      </Text>
-      <Text Id="__SingleUse_CGNE" Alignment="Center" TypographyId="Pretndard_16">
-        <Translation Language="GB">현금</Translation>
-      </Text>
-      <Text Id="__SingleUse_1976" Alignment="Center" TypographyId="Pretndard_16">
-        <Translation Language="GB">카드</Translation>
       </Text>
       <Text Id="__SingleUse_VE5H" Alignment="Center" TypographyId="Pretndard_16">
         <Translation Language="GB">결제하기</Translation>

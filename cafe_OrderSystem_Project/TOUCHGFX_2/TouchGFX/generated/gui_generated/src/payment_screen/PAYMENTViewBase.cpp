@@ -104,19 +104,19 @@ PAYMENTViewBase::PAYMENTViewBase() :
     menuImage.setXY(21, 94);
     container1.add(menuImage);
 
-    PayArea.setPosition(42, 205, 188, 69);
+    PayArea.setPosition(36, 191, 200, 80);
     PayArea.setVisible(false);
-    box2_1.setPosition(0, 0, 188, 69);
+    box2_1.setPosition(0, 0, 200, 80);
     box2_1.setColor(touchgfx::Color::getColorFromRGB(250, 222, 222));
     PayArea.add(box2_1);
 
-    textArea6.setXY(47, 18);
+    textArea6.setXY(40, 22);
     textArea6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea6.setLinespacing(0);
     textArea6.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RVZV));
     PayArea.add(textArea6);
 
-    YES.setXY(27, 44);
+    YES.setXY(35, 50);
     YES.setBitmaps(touchgfx::Bitmap(BITMAP_YES_NO_ID), touchgfx::Bitmap(BITMAP_YES_NO_ID));
     YES.setLabelText(touchgfx::TypedText(T___SINGLEUSE_P228));
     YES.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -124,7 +124,7 @@ PAYMENTViewBase::PAYMENTViewBase() :
     YES.setAction(buttonCallback);
     PayArea.add(YES);
 
-    NO.setXY(111, 44);
+    NO.setXY(115, 50);
     NO.setBitmaps(touchgfx::Bitmap(BITMAP_YES_NO_ID), touchgfx::Bitmap(BITMAP_YES_NO_ID));
     NO.setLabelText(touchgfx::TypedText(T___SINGLEUSE_X970));
     NO.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -141,8 +141,8 @@ PAYMENTViewBase::PAYMENTViewBase() :
     titleText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_N190));
     Header.add(titleText);
 
-    backButton.setXY(11, 17);
-    backButton.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_2020_ID), touchgfx::Bitmap(BITMAP_BACK_2020_ID));
+    backButton.setXY(11, 12);
+    backButton.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_3030_ID), touchgfx::Bitmap(BITMAP_BACK_3030_ID));
     backButton.setAction(buttonCallback);
     Header.add(backButton);
 
@@ -154,22 +154,6 @@ PAYMENTViewBase::PAYMENTViewBase() :
     box2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     box2.setVisible(false);
     add(box2);
-
-    billEX.setXY(22, 40);
-    billEX.setBitmaps(touchgfx::Bitmap(BITMAP_CROP10045_2_ID), touchgfx::Bitmap(BITMAP_CROP10045_2_ID));
-    billEX.setLabelText(touchgfx::TypedText(T___SINGLEUSE_1976));
-    billEX.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    billEX.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    billEX.setVisible(false);
-    add(billEX);
-
-    creditCardEX.setXY(22, 105);
-    creditCardEX.setBitmaps(touchgfx::Bitmap(BITMAP_CROP10045_2_ID), touchgfx::Bitmap(BITMAP_CROP10045_2_ID));
-    creditCardEX.setLabelText(touchgfx::TypedText(T___SINGLEUSE_CGNE));
-    creditCardEX.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    creditCardEX.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    creditCardEX.setVisible(false);
-    add(creditCardEX);
 
     textArea4.setXY(22, 174);
     textArea4.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));

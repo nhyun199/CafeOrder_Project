@@ -39,6 +39,8 @@ public:
     // CART
     void gotoCARTScreenWipeTransitionEast();
 
+    void gotoCARTScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -62,6 +64,8 @@ protected:
 
     // CART
     void gotoCARTScreenWipeTransitionEastImpl();
+
+    void gotoCARTScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

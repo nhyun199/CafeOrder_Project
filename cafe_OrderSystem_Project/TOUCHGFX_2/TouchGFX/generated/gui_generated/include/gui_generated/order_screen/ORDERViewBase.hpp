@@ -333,6 +333,7 @@ protected:
     touchgfx::Container HeaderDetail;
     touchgfx::Button cartButton2;
     touchgfx::Button backButton2;
+    touchgfx::TextArea titleText_1;
     touchgfx::Container container1;
     touchgfx::Box box1;
     touchgfx::TextArea textArea4;

@@ -628,13 +628,13 @@ ORDERViewBase::ORDERViewBase() :
     titleText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0QVJ));
     Header.add(titleText);
 
-    backButton.setXY(11, 17);
-    backButton.setBitmaps(touchgfx::Bitmap(BITMAP_MAIN_2020_ID), touchgfx::Bitmap(BITMAP_MAIN_2020_ID));
+    backButton.setXY(11, 12);
+    backButton.setBitmaps(touchgfx::Bitmap(BITMAP_MAIN_3030_ID), touchgfx::Bitmap(BITMAP_MAIN_3030_ID));
     backButton.setAction(buttonCallback);
     Header.add(backButton);
 
-    cartButton.setXY(241, 17);
-    cartButton.setBitmaps(touchgfx::Bitmap(BITMAP_CART_2020_ID), touchgfx::Bitmap(BITMAP_CART_2020_ID));
+    cartButton.setXY(232, 12);
+    cartButton.setBitmaps(touchgfx::Bitmap(BITMAP_CART_3030_ID), touchgfx::Bitmap(BITMAP_CART_3030_ID));
     cartButton.setAction(buttonCallback);
     Header.add(cartButton);
 
@@ -730,15 +730,21 @@ ORDERViewBase::ORDERViewBase() :
     orderDetail.add(menuImage);
 
     HeaderDetail.setPosition(0, 0, 272, 55);
-    cartButton2.setXY(241, 17);
-    cartButton2.setBitmaps(touchgfx::Bitmap(BITMAP_CART_2020_ID), touchgfx::Bitmap(BITMAP_CART_2020_ID));
+    cartButton2.setXY(232, 12);
+    cartButton2.setBitmaps(touchgfx::Bitmap(BITMAP_CART_3030_ID), touchgfx::Bitmap(BITMAP_CART_3030_ID));
     cartButton2.setAction(buttonCallback);
     HeaderDetail.add(cartButton2);
 
-    backButton2.setXY(11, 17);
-    backButton2.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_2020_ID), touchgfx::Bitmap(BITMAP_BACK_2020_ID));
+    backButton2.setXY(11, 12);
+    backButton2.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_3030_ID), touchgfx::Bitmap(BITMAP_BACK_3030_ID));
     backButton2.setAction(buttonCallback);
     HeaderDetail.add(backButton2);
+
+    titleText_1.setXY(114, 19);
+    titleText_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    titleText_1.setLinespacing(0);
+    titleText_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J980));
+    HeaderDetail.add(titleText_1);
 
     orderDetail.add(HeaderDetail);
 

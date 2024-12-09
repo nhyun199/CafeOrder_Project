@@ -189,6 +189,8 @@ void CARTView::transmittInfo()
   int sock;
   struct sockaddr_in server_addr;
   char buffer[1024];
+  string ex1 = "수량";
+  string ex2 = "금액";
 
   sock = socket(AF_INET, SOCK_STREAM, 0);
   if (sock < 0) {
@@ -216,8 +218,9 @@ void CARTView::transmittInfo()
       uint32_t _sumPrice = presenter->getCartSumPrice(i);
       int _textId = presenter->getCartTextID(i);
 
-      snprintf(buffer, sizeof(buffer), "제품번호 : %d    제품명 : %s  수량 : %lu  금액 : %lu\r\n",
-               _textId, _menu.c_str(), _sumCount, _sumPrice);
+      snprintf(buffer, sizeof(buffer),
+               "제품번호 : %-5d 제품명 : %-25s %-5s : %-5lu %-5s : %-10lu\r\n",
+               _textId, _menu.c_str(), ex1.c_str(), _sumCount, ex2.c_str(), _sumPrice);
       send(sock, buffer, strlen(buffer), 0);
   }
 
@@ -226,4 +229,9 @@ void CARTView::transmittInfo()
   send(sock, buffer, strlen(buffer), 0);
 
   close(sock);
+}
+
+void CARTView::empty()
+{
+  presenter->deleteCartList();
 }

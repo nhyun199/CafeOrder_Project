@@ -20,4 +20,4 @@
 ../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:15:6:virtual void PAYMENTView::setupScreen()	40	static
 ../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:35:6:virtual void PAYMENTView::tearDownScreen()	16	static
 ../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:40:6:void PAYMENTView::formatPriceWithComma(uint32_t, touchgfx::Unicode::UnicodeChar*, uint16_t)	72	static
-../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:63:6:virtual void PAYMENTView::transmittinfo()	1112	static
+../TouchGFX/gui/src/payment_screen/PAYMENTView.cpp:63:6:virtual void PAYMENTView::transmittinfo()	1184	static

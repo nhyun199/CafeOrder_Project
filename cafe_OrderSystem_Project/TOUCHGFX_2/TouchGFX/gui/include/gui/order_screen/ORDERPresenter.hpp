@@ -78,11 +78,6 @@ public:
       return model->getTextID();
     }
 
-    void addTextId(int textID)
-    {
-      model->addTextId(textID);
-    }
-
     void updateItem(int textId, uint32_t counter, uint32_t price)
     {
       model->updateItem(textId, counter, price);

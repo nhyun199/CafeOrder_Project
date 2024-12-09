@@ -125,3 +125,14 @@ void FrontendApplicationBase::gotoCARTScreenWipeTransitionEastImpl()
 {
     touchgfx::makeTransition<CARTView, CARTPresenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
+
+void FrontendApplicationBase::gotoCARTScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoCARTScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoCARTScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<CARTView, CARTPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}

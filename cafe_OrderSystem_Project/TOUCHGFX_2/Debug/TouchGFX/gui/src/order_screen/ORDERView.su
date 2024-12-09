@@ -9,14 +9,14 @@
 ../TouchGFX/gui/include/gui/model/Model.hpp:47:10:void Model::saveImageCode(uint16_t)	16	static
 ../TouchGFX/gui/include/gui/model/Model.hpp:52:10:void Model::saveTextID(int)	16	static
 ../TouchGFX/gui/include/gui/model/Model.hpp:23:20:Model::_Cart::_Cart()	16	static
-../TouchGFX/gui/include/gui/model/Model.hpp:97:10:void Model::addItem(int, uint32_t, uint32_t)	64	static
-../TouchGFX/gui/include/gui/model/Model.hpp:108:10:void Model::updateItem(int, uint32_t, uint32_t)	40	static
+../TouchGFX/gui/include/gui/model/Model.hpp:93:10:void Model::addItem(int, uint32_t, uint32_t)	64	static
+../TouchGFX/gui/include/gui/model/Model.hpp:104:10:void Model::updateItem(int, uint32_t, uint32_t)	40	static
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:31:10:void ORDERPresenter::saveCounter(uint32_t)	16	static
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:36:10:void ORDERPresenter::savePrice(uint32_t)	16	static
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:41:10:void ORDERPresenter::saveTotalPrice(uint32_t)	16	static
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:46:10:void ORDERPresenter::saveImageCode(uint16_t)	16	static
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:51:10:void ORDERPresenter::saveTextID(int)	16	static
-../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:86:10:void ORDERPresenter::updateItem(int, uint32_t, uint32_t)	24	static
+../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:81:10:void ORDERPresenter::updateItem(int, uint32_t, uint32_t)	24	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:59:5:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	16	static
@@ -57,6 +57,6 @@
 ../TouchGFX/gui/src/order_screen/ORDERView.cpp:539:6:virtual void ORDERView::menu16()	48	static
 ../TouchGFX/gui/src/order_screen/ORDERView.cpp:563:6:virtual void ORDERView::menu17()	48	static
 ../TouchGFX/gui/src/order_screen/ORDERView.cpp:587:6:virtual void ORDERView::menu18()	48	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:417:10:void touchgfx::Vector<T, capacity>::add(T) [with T = Model::_Cart; short unsigned int capacity = 19]	24	static
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:529:14:uint16_t touchgfx::Vector<T, capacity>::size() const [with T = Model::_Cart; short unsigned int capacity = 19]	16	static
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:391:8:T& touchgfx::Vector<T, capacity>::operator[](uint16_t) [with T = Model::_Cart; short unsigned int capacity = 19]	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:529:14:uint16_t touchgfx::Vector<T, capacity>::size() const [with T = Model::_Cart; short unsigned int capacity = 19]	16	static
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp:417:10:void touchgfx::Vector<T, capacity>::add(T) [with T = Model::_Cart; short unsigned int capacity = 19]	24	static

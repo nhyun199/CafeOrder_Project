@@ -52,7 +52,8 @@ CARTViewBase::CARTViewBase() :
 
     add(Tail);
 
-    list_WON.setXY(245, 84);
+    Body.setPosition(1, 78, 271, 300);
+    list_WON.setXY(244, 6);
     list_WON.setDirection(touchgfx::SOUTH);
     WON_1.setWidth(10);
     WON_1.setHeight(14);
@@ -206,9 +207,9 @@ CARTViewBase::CARTViewBase() :
     WON_19.setVisible(false);
     list_WON.add(WON_19);
 
-    add(list_WON);
+    Body.add(list_WON);
 
-    list_GAE.setXY(170, 84);
+    list_GAE.setXY(169, 6);
     list_GAE.setDirection(touchgfx::SOUTH);
     GAE_1.setWidth(10);
     GAE_1.setHeight(14);
@@ -362,9 +363,9 @@ CARTViewBase::CARTViewBase() :
     GAE_19.setVisible(false);
     list_GAE.add(GAE_19);
 
-    add(list_GAE);
+    Body.add(list_GAE);
 
-    countList.setXY(142, 84);
+    countList.setXY(141, 6);
     countList.setDirection(touchgfx::SOUTH);
     order1.setWidth(60);
     order1.setHeight(14);
@@ -537,9 +538,9 @@ CARTViewBase::CARTViewBase() :
     order19.setTypedText(touchgfx::TypedText(T___SINGLEUSE_JHF4));
     countList.add(order19);
 
-    add(countList);
+    Body.add(countList);
 
-    priceList.setXY(178, 84);
+    priceList.setXY(177, 6);
     priceList.setDirection(touchgfx::SOUTH);
     order1_1.setWidth(100);
     order1_1.setHeight(14);
@@ -712,11 +713,13 @@ CARTViewBase::CARTViewBase() :
     order19_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ADLW));
     priceList.add(order19_1);
 
-    add(priceList);
+    Body.add(priceList);
 
-    nameList.setPosition(18, 84, 47, 14);
+    nameList.setPosition(17, 6, 47, 14);
     nameList.setDirection(touchgfx::SOUTH);
-    add(nameList);
+    Body.add(nameList);
+
+    add(Body);
 
     Header.setPosition(0, 0, 272, 77);
     boundary1_2.setPosition(0, 76, 272, 1);
@@ -751,31 +754,36 @@ CARTViewBase::CARTViewBase() :
     textArea5.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8SHO));
     Header.add(textArea5);
 
-    backButton.setXY(11, 17);
-    backButton.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_2020_ID), touchgfx::Bitmap(BITMAP_BACK_2020_ID));
+    backButton.setXY(11, 12);
+    backButton.setBitmaps(touchgfx::Bitmap(BITMAP_BACK_3030_ID), touchgfx::Bitmap(BITMAP_BACK_3030_ID));
     backButton.setAction(buttonCallback);
     Header.add(backButton);
 
-    cartButton.setXY(241, 17);
-    cartButton.setBitmaps(touchgfx::Bitmap(BITMAP_ORDER_2020_ID), touchgfx::Bitmap(BITMAP_ORDER_2020_ID));
+    cartButton.setXY(231, 12);
+    cartButton.setBitmaps(touchgfx::Bitmap(BITMAP_ORDER_3030_ID), touchgfx::Bitmap(BITMAP_ORDER_3030_ID));
     cartButton.setAction(buttonCallback);
     Header.add(cartButton);
 
+    deleteButton.setXY(190, 12);
+    deleteButton.setBitmaps(touchgfx::Bitmap(BITMAP_DELETE_3030_ID), touchgfx::Bitmap(BITMAP_DELETE_3030_ID));
+    deleteButton.setAction(buttonCallback);
+    Header.add(deleteButton);
+
     add(Header);
 
-    PayArea.setPosition(42, 205, 188, 69);
+    PayArea.setPosition(36, 191, 200, 80);
     PayArea.setVisible(false);
-    box2.setPosition(0, 0, 188, 69);
+    box2.setPosition(0, 0, 200, 80);
     box2.setColor(touchgfx::Color::getColorFromRGB(250, 222, 222));
     PayArea.add(box2);
 
-    textArea6.setXY(47, 18);
+    textArea6.setXY(40, 22);
     textArea6.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea6.setLinespacing(0);
     textArea6.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9ZEA));
     PayArea.add(textArea6);
 
-    YES.setXY(27, 44);
+    YES.setXY(35, 50);
     YES.setBitmaps(touchgfx::Bitmap(BITMAP_YES_NO_ID), touchgfx::Bitmap(BITMAP_YES_NO_ID));
     YES.setLabelText(touchgfx::TypedText(T___SINGLEUSE_0LYJ));
     YES.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -783,7 +791,7 @@ CARTViewBase::CARTViewBase() :
     YES.setAction(buttonCallback);
     PayArea.add(YES);
 
-    NO.setXY(111, 44);
+    NO.setXY(115, 50);
     NO.setBitmaps(touchgfx::Bitmap(BITMAP_YES_NO_ID), touchgfx::Bitmap(BITMAP_YES_NO_ID));
     NO.setLabelText(touchgfx::TypedText(T___SINGLEUSE_2NPO));
     NO.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -792,6 +800,36 @@ CARTViewBase::CARTViewBase() :
     PayArea.add(NO);
 
     add(PayArea);
+
+    emptyArea.setPosition(36, 191, 200, 80);
+    emptyArea.setVisible(false);
+    box2_1.setPosition(0, 0, 200, 80);
+    box2_1.setColor(touchgfx::Color::getColorFromRGB(250, 222, 222));
+    emptyArea.add(box2_1);
+
+    textArea6_1.setXY(11, 20);
+    textArea6_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea6_1.setLinespacing(0);
+    textArea6_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HRM0));
+    emptyArea.add(textArea6_1);
+
+    YES_2.setXY(35, 50);
+    YES_2.setBitmaps(touchgfx::Bitmap(BITMAP_YES_NO_ID), touchgfx::Bitmap(BITMAP_YES_NO_ID));
+    YES_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_WLQ0));
+    YES_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    YES_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    YES_2.setAction(buttonCallback);
+    emptyArea.add(YES_2);
+
+    NO_2.setXY(115, 50);
+    NO_2.setBitmaps(touchgfx::Bitmap(BITMAP_YES_NO_ID), touchgfx::Bitmap(BITMAP_YES_NO_ID));
+    NO_2.setLabelText(touchgfx::TypedText(T___SINGLEUSE_97XP));
+    NO_2.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    NO_2.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    NO_2.setAction(buttonCallback);
+    emptyArea.add(NO_2);
+
+    add(emptyArea);
 }
 
 CARTViewBase::~CARTViewBase()
@@ -848,5 +886,33 @@ void CARTViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //Hide PayArea
         PayArea.setVisible(false);
         PayArea.invalidate();
+    }
+    if (&src == &YES_2)
+    {
+        //empty_Cart
+        //When YES_2 clicked call virtual function
+        //Call empty
+        empty();
+    
+        //resetScreen
+        //When empty_Cart completed change screen to CART
+        //Go to CART with no screen transition
+        application().gotoCARTScreenNoTransition();
+    }
+    if (&src == &deleteButton)
+    {
+        //showEmpty
+        //When deleteButton clicked show emptyArea
+        //Show emptyArea
+        emptyArea.setVisible(true);
+        emptyArea.invalidate();
+    }
+    if (&src == &NO_2)
+    {
+        //hideEmpty
+        //When NO_2 clicked hide emptyArea
+        //Hide emptyArea
+        emptyArea.setVisible(false);
+        emptyArea.invalidate();
     }
 }

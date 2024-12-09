@@ -65,8 +65,6 @@ protected:
     touchgfx::TextArea titleText;
     touchgfx::Button backButton;
     touchgfx::Box box2;
-    touchgfx::ButtonWithLabel billEX;
-    touchgfx::ButtonWithLabel creditCardEX;
     touchgfx::TextArea textArea4;
 
     /*

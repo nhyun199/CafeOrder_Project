@@ -1,5 +1,4 @@
 ../TouchGFX/gui/include/gui/model/Model.hpp:23:20:Model::_Cart::_Cart()	1
 ../TouchGFX/gui/src/model/Model.cpp:4:1:Model::Model()	1
 ../TouchGFX/gui/src/model/Model.cpp:9:6:void Model::tick()	1
-../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:379:5:touchgfx::Vector<T, capacity>::Vector() [with T = int; short unsigned int capacity = 19]	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/types.hpp:379:5:touchgfx::Vector<T, capacity>::Vector() [with T = Model::_Cart; short unsigned int capacity = 19]	2

@@ -147,7 +147,8 @@ int main() {
         close(server_fd);
         exit(EXIT_FAILURE);
     }
-    printf("Server listening on port %d...\n", PORT);
+    //printf("Server listening on port %d...\n", PORT);
+    printf("손님의 주문을 기다리는 중입니다.\n");
 
     while (1) {
         new_socket = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen);

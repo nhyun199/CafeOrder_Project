@@ -135,9 +135,6 @@
       <Text Id="__SingleUse_HRM0" Alignment="Left" TypographyId="Pretndard_16">
         <Translation Language="GB">장바구니를 비우시겠습니까?</Translation>
       </Text>
-      <Text Id="__SingleUse_IYVH" Alignment="Center" TypographyId="Noto_Ex_Bold_15">
-        <Translation Language="GB">테스트</Translation>
-      </Text>
       <Text Id="__SingleUse_X970" Alignment="Center" TypographyId="Pretendard_10">
         <Translation Language="GB">아니오</Translation>
       </Text>

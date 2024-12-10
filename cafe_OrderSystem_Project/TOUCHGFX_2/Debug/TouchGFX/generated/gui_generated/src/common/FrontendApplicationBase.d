@@ -70,13 +70,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp \
  ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp \
@@ -172,13 +172,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 ../TouchGFX/gui/include/gui/order_screen/ORDERView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/order_screen/ORDERViewBase.hpp:
 ../TouchGFX/gui/include/gui/order_screen/ORDERPresenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 ../TouchGFX/gui/include/gui/payment_screen/PAYMENTView.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/payment_screen/PAYMENTViewBase.hpp:

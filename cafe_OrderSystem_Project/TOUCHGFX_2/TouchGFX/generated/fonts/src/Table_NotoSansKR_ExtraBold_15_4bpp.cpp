@@ -104,14 +104,12 @@ KEEP extern const touchgfx::GlyphNode glyphs_NotoSansKR_ExtraBold_15_4bpp[] FONT
     {    91, 0xB9AC,  12,  14,  13,   1,  14,   0,   0, 0x00 },
     {     0, 0xC120,  13,  14,  13,   0,  14,   0,   0, 0x00 },
     {    98, 0xC138,  13,  14,  13,   0,  14,   0,   0, 0x00 },
-    {   196, 0xC2A4,  14,  12,  12,   0,  14,   0,   0, 0x00 },
-    {   280, 0xC694,  13,  12,  12,   0,  14,   0,   0, 0x00 },
+    {   196, 0xC694,  13,  12,  12,   0,  14,   0,   0, 0x00 },
     {     0, 0xC8FC,  14,  13,  12,   0,  14,   0,   0, 0x00 },
     {    91, 0xCE74,  14,  14,  13,   0,  14,   0,   0, 0x00 },
     {     0, 0xD0DD,  13,  14,  13,   0,  14,   0,   0, 0x00 },
     {    98, 0xD14C,  13,  14,  13,   0,  14,   0,   0, 0x00 },
-    {   196, 0xD2B8,  14,  12,  12,   0,  14,   0,   0, 0x00 },
-    {   280, 0xD574,  13,  14,  13,   0,  14,   0,   0, 0x00 }
+    {   196, 0xD574,  13,  14,  13,   0,  14,   0,   0, 0x00 }
 };
 
 // NotoSansKR_ExtraBold_15_4bpp
@@ -165,6 +163,6 @@ touchgfx::GeneratedFont& getFont_NotoSansKR_ExtraBold_15_4bpp();
 
 touchgfx::GeneratedFont& getFont_NotoSansKR_ExtraBold_15_4bpp()
 {
-    static touchgfx::GeneratedFont NotoSansKR_ExtraBold_15_4bpp(glyphs_NotoSansKR_ExtraBold_15_4bpp, 108, 19, 15, 0, 0, 4, 1, 1, 1, unicodes_NotoSansKR_ExtraBold_15_4bpp, kerning_NotoSansKR_ExtraBold_15_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont NotoSansKR_ExtraBold_15_4bpp(glyphs_NotoSansKR_ExtraBold_15_4bpp, 106, 19, 15, 0, 0, 4, 1, 1, 1, unicodes_NotoSansKR_ExtraBold_15_4bpp, kerning_NotoSansKR_ExtraBold_15_4bpp, 63, 0, 0, 0);
     return NotoSansKR_ExtraBold_15_4bpp;
 }

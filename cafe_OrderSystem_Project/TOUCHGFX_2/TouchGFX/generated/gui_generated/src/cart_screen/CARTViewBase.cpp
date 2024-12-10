@@ -886,6 +886,16 @@ void CARTViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //Hide PayArea
         PayArea.setVisible(false);
         PayArea.invalidate();
+    
+        //Interaction1
+        //When hidePay completed execute C++ code
+        //Execute C++ code
+        empty();
+    
+        //Interaction2
+        //When Interaction1 completed change screen to CART
+        //Go to CART with no screen transition
+        application().gotoCARTScreenNoTransition();
     }
     if (&src == &YES_2)
     {

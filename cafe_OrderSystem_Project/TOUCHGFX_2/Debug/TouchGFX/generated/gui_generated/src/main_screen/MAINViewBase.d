@@ -58,7 +58,6 @@ TouchGFX/generated/gui_generated/src/main_screen/MAINViewBase.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
@@ -120,7 +119,6 @@ TouchGFX/generated/gui_generated/src/main_screen/MAINViewBase.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 ../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

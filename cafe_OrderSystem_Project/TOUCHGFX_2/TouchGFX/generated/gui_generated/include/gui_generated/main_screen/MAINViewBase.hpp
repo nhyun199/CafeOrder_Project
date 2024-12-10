@@ -14,7 +14,6 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/SwipeContainer.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class MAINViewBase : public touchgfx::View<MAINPresenter>
 {
@@ -22,14 +21,6 @@ public:
     MAINViewBase();
     virtual ~MAINViewBase();
     virtual void setupScreen();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void Test1()
-    {
-        // Override and implement this function in MAIN
-    }
 
 protected:
     FrontendApplication& application() {
@@ -72,7 +63,6 @@ protected:
     touchgfx::Image eventImage2;
     touchgfx::Container event3;
     touchgfx::Image eventImage3;
-    touchgfx::ButtonWithLabel TestButton;
     touchgfx::Container Header;
     touchgfx::Box headerBackground;
     touchgfx::Image logoImage;

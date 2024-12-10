@@ -59,7 +59,6 @@ TouchGFX/gui/src/main_screen/MAINView.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
  ../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h \
@@ -136,7 +135,6 @@ TouchGFX/gui/src/main_screen/MAINView.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h:
 ../Middlewares/Third_Party/LwIP/src/include/lwip/ip_addr.h:

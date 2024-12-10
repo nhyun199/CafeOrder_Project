@@ -156,14 +156,6 @@ MAINViewBase::MAINViewBase() :
     Event.setSelectedPage(0);
     Body.add(Event);
 
-    TestButton.setXY(87, 454);
-    TestButton.setBitmaps(touchgfx::Bitmap(BITMAP_CROP10045_2_ID), touchgfx::Bitmap(BITMAP_CROP10045_2_ID));
-    TestButton.setLabelText(touchgfx::TypedText(T___SINGLEUSE_IYVH));
-    TestButton.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    TestButton.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    TestButton.setAction(buttonCallback);
-    Body.add(TestButton);
-
     add(Body);
 
     Header.setPosition(0, 0, 272, 55);
@@ -203,12 +195,5 @@ void MAINViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When basketButton clicked change screen to CART
         //Go to CART with screen transition towards East
         application().gotoCARTScreenWipeTransitionEast();
-    }
-    if (&src == &TestButton)
-    {
-        //Test
-        //When TestButton clicked call virtual function
-        //Call Test1
-        Test1();
     }
 }

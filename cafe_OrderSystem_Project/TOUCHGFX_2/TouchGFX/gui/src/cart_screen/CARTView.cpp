@@ -40,7 +40,6 @@ void CARTView::setupScreen()
 
     formatPriceWithComma(totalPrice, lastTotalBuffer, LASTTOTAL_SIZE);
     lastTotal.invalidate();
-
 }
 
 void CARTView::tearDownScreen()

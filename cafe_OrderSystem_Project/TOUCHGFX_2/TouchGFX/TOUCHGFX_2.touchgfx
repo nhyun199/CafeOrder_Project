@@ -355,28 +355,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "Type": "ButtonWithLabel",
-                "Name": "TestButton",
-                "X": 87,
-                "Y": 454,
-                "Width": 100,
-                "Height": 45,
-                "Pressed": "crop10045_2.png",
-                "Released": "crop10045_2.png",
-                "TextId": "__SingleUse_IYVH",
-                "ReleasedColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "PressedColor": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "TextRotation": "0"
               }
             ]
           },
@@ -437,18 +415,6 @@
               "ScreenTransitionType": "ScreenTransitionWipe",
               "ScreenTransitionDirection": "East",
               "ActionComponent": "CART"
-            }
-          },
-          {
-            "InteractionName": "Test",
-            "HasCompletedTrigger": true,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "TestButton"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "Test1"
             }
           }
         ]
@@ -4637,6 +4603,31 @@
             "Action": {
               "Type": "ActionHide",
               "ActionComponent": "emptyArea"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "hidePay"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "empty();"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "CART"
             }
           }
         ]
